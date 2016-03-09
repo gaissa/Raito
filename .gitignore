@@ -1,7 +1,11 @@
 oc-admin/
 oc-includes/
-oc-content/uploads
-oc-content/downloads
+oc-content/uploads/
+oc-content/downloads/
+oc-content/*.php
+oc-content/plugins/*.php
+oc-content/themes/*.php
+oc-content/languages/*.php
 favicon.ico
 robots.txt
-*.php
+/*.php
