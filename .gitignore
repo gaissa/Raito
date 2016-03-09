@@ -1,0 +1,7 @@
+oc-admin/
+oc-includes/
+oc-content/uploads
+oc-content/downloads
+favicon.ico
+robots.txt
+*.php
