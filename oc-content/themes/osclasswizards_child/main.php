@@ -43,7 +43,7 @@
 ?>
 
 <h1 class="title">
-  <?php _e('Premium Listings',OSCLASSWIZARDS_THEME_FOLDER);?>
+  <?php _e('Premium Listings','osclasswizards_child');?>
 </h1>
 <div id="listing-card-list" class="listing-card-list listings_grid listings_grids">
   <ul class="row premium_slider">
@@ -78,13 +78,13 @@
           <?php $admin = false; ?>
           <?php if($admin){ ?>
           <span class="admin-options"> <a href="<?php echo osc_premium_edit_url(); ?>" rel="nofollow">
-          <?php _e('Edit item', OSCLASSWIZARDS_THEME_FOLDER); ?>
-          </a> <span>|</span> <a class="delete" onclick="javascript:return confirm('<?php echo osc_esc_js(__('This action can not be undone. Are you sure you want to continue?', OSCLASSWIZARDS_THEME_FOLDER)); ?>')" href="<?php echo osc_premium_delete_url();?>" >
-          <?php _e('Delete', OSCLASSWIZARDS_THEME_FOLDER); ?>
+          <?php _e('Edit item', 'osclasswizards_child'); ?>
+          </a> <span>|</span> <a class="delete" onclick="javascript:return confirm('<?php echo osc_esc_js(__('This action can not be undone. Are you sure you want to continue?', 'osclasswizards_child')); ?>')" href="<?php echo osc_premium_delete_url();?>" >
+          <?php _e('Delete', 'osclasswizards_child'); ?>
           </a>
           <?php if(osc_premium_is_inactive()) {?>
           <span>|</span> <a href="<?php echo osc_premium_activate_url();?>" >
-          <?php _e('Activate', OSCLASSWIZARDS_THEME_FOLDER); ?>
+          <?php _e('Activate', 'osclasswizards_child'); ?>
           </a>
           <?php } ?>
           </span>
@@ -105,13 +105,13 @@
 <div class="content">
   <div class="title">
     <h1>
-      <?php _e('Latest Listings', OSCLASSWIZARDS_THEME_FOLDER) ; ?>
+      <?php _e('Latest Listings', 'osclasswizards_child') ; ?>
       <span class="sorting"> <a href="<?php echo osc_base_url(true); ?>?sShowAs=list" class="list-button <?php if(osclasswizards_show_as()=='list')echo "active"; ?>" data-class-toggle="listing-grid" data-destination="#listing-card-list"><span> <i class="fa fa-th-list"></i> </span></a> <a href="<?php echo osc_base_url(true); ?>?sShowAs=gallery" class="grid-button <?php if(osclasswizards_show_as()=='gallery') echo "active"; ?>" data-class-toggle="listing-grid" data-destination="#listing-card-list"><span> <i class="fa fa-th-large"></i></span></a> </span> </h1>
   </div>
   <div class="latest_ads">
     <?php if( osc_count_latest_items() == 0) { ?>
     <p class="empty">
-      <?php _e("There aren't listings available at this moment", OSCLASSWIZARDS_THEME_FOLDER); ?>
+      <?php _e("There aren't listings available at this moment", 'osclasswizards_child'); ?>
     </p>
     <?php } else { ?>
     <?php
@@ -121,14 +121,14 @@
     ?>
     <?php if( osc_count_latest_items() == osc_max_latest_items() ) { ?>
     <p class="see_more_link"><a href="<?php echo osc_search_show_all_url() ; ?>"> <strong>
-      <?php _e('See all listings', OSCLASSWIZARDS_THEME_FOLDER) ; ?>
+      <?php _e('See all listings', 'osclasswizards_child') ; ?>
       &raquo;</strong></a> </p>
     <?php } ?>
     <?php } ?>
   </div>
   <?php if(osc_get_preference('show_popular', 'osclasswizards_theme') == '1'){?>
   <div id="tab_filter">
-    <h2 class="title"> <?php echo sprintf(__('Popular in %s', OSCLASSWIZARDS_THEME_FOLDER), osc_page_title()) ; ?> </h2>
+    <h2 class="title"> <?php echo sprintf(__('Popular in %s', 'osclasswizards_child'), osc_page_title()) ; ?> </h2>
     <?php if(osclasswizards_show_popular_searches() ){ ?>
     <section id='Searches'>
       <div class="popular_cities">
