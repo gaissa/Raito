@@ -2,7 +2,7 @@
 /*
 Theme Name: Raito
 Theme URI: #
-Description: OsclassWizards Theme CHILD
+Description: OsclassWizards Child Theme
 Version: 0.0.1
 Author: #
 Author URI: #
