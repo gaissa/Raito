@@ -8,4 +8,5 @@ oc-content/themes/*.php
 oc-content/languages/*.php
 favicon.ico
 robots.txt
+.htaccess
 /*.php
