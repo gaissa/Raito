@@ -35,7 +35,7 @@
         <?php if ( osc_count_web_enabled_locales() > 1) { ?>
         <?php osc_goto_first_locale(); ?>
         <strong>
-        <?php _e('Language:', OSCLASSWIZARDS_THEME_FOLDER); ?>
+        <?php _e('Language:', 'osclasswizards_child'); ?>
         </strong> <span>
         <?php $local = osc_get_current_user_locale(); echo $local['s_name']; ?>
         <i class="fa fa-caret-down"></i></span>
@@ -59,18 +59,18 @@
         <?php } ?>
         <?php if( osc_users_enabled() ) { ?>
         <?php if( osc_is_web_user_logged_in() ) { ?>
-        <li class="first logged"> <span><?php echo sprintf(__('Hi %s', OSCLASSWIZARDS_THEME_FOLDER), osc_logged_user_name() . '!'); ?> </span> &#10072; <strong><a href="<?php echo osc_user_dashboard_url(); ?>">
-          <?php _e('My account', OSCLASSWIZARDS_THEME_FOLDER); ?>
+        <li class="first logged"> <span><?php echo sprintf(__('Hi %s', 'osclasswizards_child'), osc_logged_user_name() . '!'); ?> </span> &#10072; <strong><a href="<?php echo osc_user_dashboard_url(); ?>">
+          <?php _e('My account', 'osclasswizards_child'); ?>
           </a></strong> &#10072; <a href="<?php echo osc_user_logout_url(); ?>">
-          <?php _e('Logout', OSCLASSWIZARDS_THEME_FOLDER); ?>
+          <?php _e('Logout', 'osclasswizards_child'); ?>
           </a> </li>
         <?php } else { ?>
         <li><a id="login_open" href="<?php echo osc_user_login_url(); ?>">
-          <?php _e('Login', OSCLASSWIZARDS_THEME_FOLDER) ; ?>
+          <?php _e('Login', 'osclasswizards_child') ; ?>
           </a></li>
         <?php if(osc_user_registration_enabled()) { ?>
         <li><a href="<?php echo osc_register_account_url() ; ?>">
-          <?php _e('Register for a free account', OSCLASSWIZARDS_THEME_FOLDER); ?>
+          <?php _e('Register for a free account', 'osclasswizards_child'); ?>
           </a></li>
         <?php }; ?>
         <?php } ?>
@@ -92,13 +92,13 @@
 		osc_reset_static_pages();
         ?>
         <li> <a href="<?php echo osc_contact_url(); ?>">
-          <?php _e('Contact', OSCLASSWIZARDS_THEME_FOLDER); ?>
+          <?php _e('Contact', 'osclasswizards_child'); ?>
           </a> </li>
       </ul>
       <div class="publish">
         <?php if( osc_users_enabled() || ( !osc_users_enabled() && !osc_reg_user_post() )) { ?>
         <a class="btn btn-success" href="<?php echo osc_item_post_url_in_category() ; ?>">
-        <?php _e('Publish your ad for free', OSCLASSWIZARDS_THEME_FOLDER);?>
+        <?php _e('Publish your ad for free', 'osclasswizards_child');?>
         </a>
         <?php } ?>
       </div>
@@ -130,36 +130,36 @@
               <?php $showCountry  = (osc_get_preference('show_search_country', 'osclasswizards_theme') == '1') ? true : false; ?>
               <div class="col-md-<?php echo ($showCountry)? '3' : '4'; ?>">
                 <div class="cell">
-                  <input type="text" name="sPattern" id="query" class="input-text" value="" placeholder="<?php echo osc_esc_html(__(osc_get_preference('keyword_placeholder', 'osclasswizards_theme'), OSCLASSWIZARDS_THEME_FOLDER)); ?>" />
+                  <input type="text" name="sPattern" id="query" class="input-text" value="" placeholder="<?php echo osc_esc_html(__(osc_get_preference('keyword_placeholder', 'osclasswizards_theme'), 'osclasswizards_child')); ?>" />
                 </div>
               </div>
               <div class="col-md-2">
                 <?php  if ( osc_count_categories() ) { ?>
                 <div class="cell selector">
-                  <?php osc_categories_select('sCategory', null, osc_esc_html(__('Select a category', OSCLASSWIZARDS_THEME_FOLDER))) ; ?>
+                  <?php osc_categories_select('sCategory', null, osc_esc_html(__('Select a category', 'osclasswizards_child'))) ; ?>
                 </div>
                 <?php  } ?>
               </div>
               <?php if($showCountry) { ?>
               <div class="col-md-2">
                 <div class="cell selector">
-                  <?php osclasswizards_countries_select('sCountry', 'sCountry', __('Select a country', OSCLASSWIZARDS_THEME_FOLDER));?>
+                  <?php osclasswizards_countries_select('sCountry', 'sCountry', __('Select a country', 'osclasswizards_child'));?>
                 </div>
               </div>
               <?php } ?>
               <div class="col-md-2">
                 <div class="cell selector">
-                  <?php osclasswizards_regions_select('sRegion', 'sRegion', __('Select a region', OSCLASSWIZARDS_THEME_FOLDER)) ; ?>
+                  <?php osclasswizards_regions_select('sRegion', 'sRegion', __('Select a region', 'osclasswizards_child')) ; ?>
                 </div>
               </div>
               <div class="col-md-2">
                 <div class="cell selector">
-                  <?php osclasswizards_cities_select('sCity', 'sCity', __('Select a city', OSCLASSWIZARDS_THEME_FOLDER)) ; ?>
+                  <?php osclasswizards_cities_select('sCity', 'sCity', __('Select a city', 'osclasswizards_child')) ; ?>
                 </div>
               </div>
               <div class="col-md-<?php echo ($showCountry)? '1' : '2'; ?>">
                 <div class="cell reset-padding">
-                  <button  class="btn btn-success btn_search"><i class="fa fa-search"></i> <span <?php echo ($showCountry)? '' : 'class="showLabel"'; ?>><?php echo osc_esc_html(__("Search", OSCLASSWIZARDS_THEME_FOLDER));?></span> </button>
+                  <button  class="btn btn-success btn_search"><i class="fa fa-search"></i> <span <?php echo ($showCountry)? '' : 'class="showLabel"'; ?>><?php echo osc_esc_html(__("Search", 'osclasswizards_child'));?></span> </button>
                 </div>
               </div>
             </div>
