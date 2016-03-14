@@ -126,43 +126,35 @@
           <?php } ?>
         </div>
         <?php osc_run_hook('item_detail', osc_item() ); ?>
-		<!-- SHARE BUTTONS -->
-
-
-
         <?php osc_run_hook('location'); ?>
       </div>
-	          <ul class="contact_button">
-<!-- Email
-<a href="mailto:?Subject=EDIT THIS PART&Body=EDIT THIS PART <?php echo osc_item_url() ; ?>" target="_blank"><img src="/oc-content/themes/repurpose/images/email.png" alt="Share by email" title="Share by email" /></a>-->
-<!-- Facebook -->
-<style>
-#fag {
-    
 
-    display: block;
-    vertical-align: middle;
-    font-size: 15px;
-    font-weight: 700;
-    text-transform: uppercase;
-    height: 35px;
-    line-height: 35px;
-    padding: 0 0px;
+	  	  <!-- SHARE BUTTONS -->
+	      <ul class="contact_button">
 
+		  <!-- Email
+		  <a href="mailto:?Subject=EDIT THIS PART&Body=EDIT THIS PART #<?php echo osc_item_url() ; ?>" target="_blank"><img src="/oc-content/themes/repurpose/images/email.png" alt="Share by email" title="Share by email" /></a>-->
+		  <!-- Facebook -->
+		  <style>
+		  #fa-custom {
+			  display: block;
+			  vertical-align: middle;
+			  font-size: 15px;
+			  font-weight: 700;
+			  text-transform: uppercase;
+			  height: 35px;
+			  line-height: 35px;
+			  padding: 0 0px;
+		  }
+		  </style>
 
-  
-}
-</style>
-
-<!-- SHARE BUTTONS -->	
-<li><a href="http://www.facebook.com/sharer.php?u=<?php echo osc_item_url() ; ?>" target="_blank"><i id="fag" class="fa fa-facebook"></i></a></li>
-<li><a href="https://plus.google.com/share?url=<?php echo osc_item_url() ; ?>" target="_blank"><i id="fag" class="fa fa-google"></i></a></li>
-<li><a href="http://twitter.com/share?url=<?php echo osc_item_url() ; ?>" target="_blank"><i id="fag" class="fa fa-twitter"></i></a></li>
-
-	
+		  <!-- SHARE BUTTONS -->	
+		  <li><a href="http://www.facebook.com/sharer.php?u=<?php echo osc_item_url() ; ?>" target="_blank"><i id="fa-custom" class="fa fa-facebook"></i></a></li>
+		  <li><a href="https://plus.google.com/share?url=<?php echo osc_item_url() ; ?>" target="_blank"><i id="fa-custom" class="fa fa-google"></i></a></li>
+		  <li><a href="http://twitter.com/share?url=<?php echo osc_item_url() ; ?>" target="_blank"><i id="fa-custom" class="fa fa-twitter"></i></a></li>	
 		
           <li><a href="<?php echo osc_item_send_friend_url(); ?>" rel="nofollow">
-            <i id="fag" class="fa fa-envelope"></i>
+            <i id="fa-custom" class="fa fa-envelope"></i>
             </a></li>
           <?php if(function_exists('watchlist')) {?>
           <li>
