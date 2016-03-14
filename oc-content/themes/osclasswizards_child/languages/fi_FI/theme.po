@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OsclassWizards Child Theme\n"
 "POT-Creation-Date: 2016-01-21 13:14+0545\n"
-"PO-Revision-Date: 2016-03-14 23:02+0200\n"
+"PO-Revision-Date: 2016-03-14 23:25+0200\n"
 "Last-Translator: Janne Kähkönen <jannekahkonen@gmail.com>\n"
 "Language-Team: Janne Kähkönen <jannekahkonen@gmail.com>\n"
 "Language: fi_FI\n"
@@ -871,11 +871,11 @@ msgstr "Hinta"
 
 #: item-post.php:125
 msgid "Listing Location"
-msgstr "Notering Läge"
+msgstr "Sijainti"
 
 #: item-post.php:129 search-sidebar.php:58 user-profile.php:88
 msgid "Country"
-msgstr "land"
+msgstr "Maa"
 
 #: item-post.php:137 search-sidebar.php:67 user-profile.php:96
 msgid "Region"
@@ -887,11 +887,11 @@ msgstr "Alue"
 
 #: item-post.php:165
 msgid "City Area"
-msgstr "City Area"
+msgstr "Kaupunginosa"
 
 #: item-post.php:173 user-profile.php:120 user-public-profile.php:79
 msgid "Address"
-msgstr "Address"
+msgstr "Katuosoite"
 
 #: item-post.php:184
 msgid "Seller's information"
