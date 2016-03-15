@@ -21,40 +21,7 @@
 ?>
 <?php if ( (!defined('ABS_PATH')) ) exit('ABS_PATH is not loaded. Direct access is not allowed.'); ?>
 <?php if ( !OC_ADMIN ) exit('User access is not allowed.'); ?>
-<link rel="stylesheet" href="<?php echo osc_current_web_theme_url('admin/css/jquery.switchButton.css');?>">
 <link rel="stylesheet" href="<?php echo osc_current_web_theme_url('admin/css/admin.main.css');?>">
-
-<div class="credit-osclasswizards log_main_head"> <a href="http://www.osclasswizards.com/" target="_blank" class="wizard_logo"> <img src="<?php echo osc_current_web_theme_url('admin/img/logo.png');?>" alt="Premium osclass themes" title="Premium osclass themes" /> </a>
-  <div class="follow">
-    <ul>
-      <li>Follow us:</li>
-      <li><a href="https://www.facebook.com/osclasswizards" target="_blank" title="facebook"><i class="fa fa-facebook"></i></a></li>
-      <li><a href="https://twitter.com/osclasswizards" target="_blank" title="twitter"><i class="fa fa-twitter"></i></a></li>
-      <li><a href="https://plus.google.com/112391938966018193484" target="_blank" title="google plus"><i class="fa fa-google-plus"></i></a></li>
-    </ul>
-  </div>
-  <div class="donate">
-    <form name="_xclick" action="https://www.paypal.com/in/cgi-bin/webscr" method="post" class="nocsrf">
-      <input type="hidden" name="cmd" value="_donations">
-      <input type="hidden" name="business" value="webgig.sagar@gmail.com">
-      <input type="hidden" name="item_name" value="OsclassWizards Theme">
-      <input type="hidden" name="currency_code" value="USD">
-      <input type="hidden" name="lc" value="US" />
-      <div id="flashmessage" >
-        <p>
-          <select name="amount" class="select-box-medium">
-            <option value="10" selected>10$</option>
-            <option value="5">5$</option>
-            <option value="">
-            <?php _e('Custom', OSCLASSWIZARDS_THEME_FOLDER); ?>
-            </option>
-          </select>
-          <input type="submit" class="btn btn-mini" name="submit" value="<?php echo osc_esc_html(__('Donate', OSCLASSWIZARDS_THEME_FOLDER)); ?>">
-        </p>
-      </div>
-    </form>
-  </div>
-</div>
 <div id="tabs" class="wizards_tab wiz_main_tabs">
   <ul>
     <li><a href="#general"><?php _e('General',OSCLASSWIZARDS_THEME_FOLDER);?></a></li>
@@ -65,7 +32,6 @@
     <li><a href="#banner"><?php _e('Banner',OSCLASSWIZARDS_THEME_FOLDER);?></a></li>
     <li><a href="#category-icons"><?php _e('Category Icons',OSCLASSWIZARDS_THEME_FOLDER);?></a></li>
     <li><a href="#ads"><?php _e('Ads Management',OSCLASSWIZARDS_THEME_FOLDER);?></a></li>
-    <li><a href="#facebook"><?php _e('Facebook Page',OSCLASSWIZARDS_THEME_FOLDER);?></a></li>
     <li><a href="#documentation"><?php _e('Documentation',OSCLASSWIZARDS_THEME_FOLDER);?></a></li>
   </ul>
   <div id="general">
@@ -127,16 +93,10 @@
   <div id="ads">
     <?php include 'ads.php'; ?>
   </div>
-  <div id="facebook">
-    <?php include 'facebook.php'; ?>
-  </div> 
   <div id="documentation">
     <?php include 'documentation.php'; ?>
   </div>
-  <address class="wizards_address">
-	<span>&copy; 2016 <a target="_blank" title="osclasswizards" href="http://www.osclasswizards.com/">OsclassWizards</a>. All rights reserved.</span>
-  </p>
-  </address>
+  
 </div>
-<script src="<?php echo osc_current_web_theme_url('admin/js/jquery.switchButton.js');?>"></script>
+
 <script src="<?php echo osc_current_web_theme_url('admin/js/jquery.admin.js');?>"></script>
