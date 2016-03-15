@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OsclassWizards Child Theme\n"
 "POT-Creation-Date: 2016-01-21 13:14+0545\n"
-"PO-Revision-Date: 2016-03-14 23:25+0200\n"
+"PO-Revision-Date: 2016-03-15 14:26+0200\n"
 "Last-Translator: Janne Kähkönen <jannekahkonen@gmail.com>\n"
 "Language-Team: Janne Kähkönen <jannekahkonen@gmail.com>\n"
 "Language: fi_FI\n"
@@ -498,11 +498,11 @@ msgstr "Väärä sähköpostiosoite"
 
 #: alert-form.php:63 search-sidebar.php:152
 msgid "Subscribe to this search"
-msgstr "Prenumerera på denna sökning"
+msgstr "Tilaa tämä haku"
 
 #: alert-form.php:82
 msgid "Subscribe now"
-msgstr "Prenumerera nu"
+msgstr "Tilaa nyt"
 
 #: common/head.php:24 item.php:200 loop-grid.php:67 loop-list.php:73
 #: loop-search-grid.php:72 loop-search-grid.php:130 loop-search-grid.php:183
@@ -524,15 +524,15 @@ msgstr "avboka"
 
 #: common/head.php:68
 msgid "Previous image"
-msgstr "Föregående bild"
+msgstr "Edellinen kuva"
 
 #: common/head.php:69
 msgid "Next image"
-msgstr "nästa bild"
+msgstr "Seuraava kuva"
 
 #: common/head.php:70
 msgid "Close"
-msgstr "stänga"
+msgstr "Sulje"
 
 #: contact.php:36
 msgid "Contact us"
@@ -623,11 +623,11 @@ msgstr "Julkaise"
 
 #: functions.php:427
 msgid "Edit your listing"
-msgstr "Ändra ditt objekt i listan"
+msgstr "Muokkaa ilmoitustasi"
 
 #: functions.php:428 item-send-friend.php:35
 msgid "Send to a friend"
-msgstr "Skicka till en vän"
+msgstr "Lähetä ystävälle"
 
 #: functions.php:429 item-sidebar.php:28
 msgid "Contact publisher"
@@ -775,7 +775,7 @@ msgstr ""
 
 #: functions.php:919
 msgid "Description too short"
-msgstr "Beskrivning för kort"
+msgstr "Kuvaus on liian lyhyt"
 
 #: functions.php:922
 msgid "Price: no more than 50 characters"
@@ -807,7 +807,7 @@ msgstr ""
 
 #: functions.php:938
 msgid "Please select a country"
-msgstr "Välj ett land"
+msgstr "Valitse maa"
 
 #: functions.php:941 functions.php:953
 msgid "Region: this field is required"
@@ -932,7 +932,7 @@ msgstr "Din väns e-postadress"
 
 #: item-send-friend.php:85
 msgid "Subject (optional)"
-msgstr "Ämne (tillval)"
+msgstr "Otsikko (valinnainen)"
 
 #: item-sidebar.php:33
 msgid "The listing is expired. You can't contact the publisher."
@@ -951,7 +951,7 @@ msgstr ""
 #: item-sidebar.php:60
 #, php-format
 msgid "E-mail: %s"
-msgstr "E-post: %s"
+msgstr "E-mail: %s"
 
 #: item-sidebar.php:82
 msgid "Your e-mail address"
@@ -963,7 +963,7 @@ msgstr "Puhelinnumero"
 
 #: item-sidebar.php:109
 msgid "Attachment"
-msgstr "fastsättning"
+msgstr "Liite"
 
 #: item-sidebar.php:132 user-public-sidebar.php:86
 msgid "Enter the words above"
@@ -1003,7 +1003,7 @@ msgstr ""
 
 #: item.php:97 item.php:101 item.php:106 item.php:108
 msgid "Image"
-msgstr "bild"
+msgstr "Kuva"
 
 #: item.php:135
 msgid "Contact seller"
