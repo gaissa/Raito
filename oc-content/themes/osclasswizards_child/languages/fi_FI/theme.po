@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OsclassWizards Child Theme\n"
 "POT-Creation-Date: 2016-01-21 13:14+0545\n"
-"PO-Revision-Date: 2016-03-15 14:26+0200\n"
+"PO-Revision-Date: 2016-03-15 16:53+0200\n"
 "Last-Translator: Janne Kähkönen <jannekahkonen@gmail.com>\n"
 "Language-Team: Janne Kähkönen <jannekahkonen@gmail.com>\n"
 "Language: fi_FI\n"
@@ -1185,7 +1185,7 @@ msgstr "förfina kategori"
 
 #: search.php:60
 msgid "Selected"
-msgstr "vald"
+msgstr "Valittu"
 
 #: search.php:61
 msgid "Nothing selected, input was"
@@ -1227,11 +1227,11 @@ msgstr "Ta bort den här varningen"
 
 #: user-change_email.php:33 user-change_email.php:47
 msgid "Change e-mail"
-msgstr "Ändra e-post"
+msgstr "Vaihda sähköpostiosoite"
 
 #: user-change_email.php:58
 msgid "Current e-mail"
-msgstr "nuvarande e-post"
+msgstr "Nykyinen sähköpostiosoite"
 
 #: user-change_email.php:64
 msgid "New e-mail"
@@ -1239,15 +1239,15 @@ msgstr "New e-mail"
 
 #: user-change_password.php:58
 msgid "Current password"
-msgstr "nuvarande lösenord"
+msgstr "Nykyinen salasana"
 
 #: user-change_password.php:66 user-forgot_password.php:39
 msgid "New password"
-msgstr "nytt lösenord"
+msgstr "Uusi salasana"
 
 #: user-change_password.php:74 user-forgot_password.php:45
 msgid "Repeat new password"
-msgstr "Upprepa nytt lösenord"
+msgstr "Toista uusi salasana"
 
 #: user-change_username.php:49
 msgid "Username: this field is required"
@@ -1263,23 +1263,23 @@ msgstr "Användarnamnet är inte tillgängligt"
 
 #: user-change_username.php:96
 msgid "Change Username"
-msgstr "Ändra Användarnamn"
+msgstr "Vaihda käyttäjänimi"
 
 #: user-change_username.php:109
 msgid "Username"
-msgstr "Användarnamn"
+msgstr "Käyttäjänimi"
 
 #: user-forgot_password.php:30 user-recover.php:34
 msgid "Recover your password"
-msgstr "Återskapa lösenord"
+msgstr "Palauta salasana"
 
 #: user-items.php:58
 msgid "My listings"
-msgstr "Mina listor"
+msgstr "Minun Ilmoitukseni"
 
 #: user-items.php:62
 msgid "No listings have been added yet"
-msgstr "Inga listor har ännu lagts"
+msgstr "Ilmoituksia ei ole vielä lisätty"
 
 #: user-login.php:35
 msgid "Please Login"
@@ -1303,23 +1303,23 @@ msgstr "Unohditko salasanan?"
 
 #: user-profile.php:64
 msgid "User type"
-msgstr "användartyp"
+msgstr "Käyttäjätyyppi"
 
 #: user-profile.php:72
 msgid "Cell phone"
-msgstr "mobil"
+msgstr "Matkapuhelin"
 
 #: user-profile.php:80
 msgid "Phone"
-msgstr "telefon"
+msgstr "Puhelin"
 
 #: user-profile.php:112
 msgid "City area"
-msgstr "City"
+msgstr "Kaupunki"
 
 #: user-profile.php:128
 msgid "Website"
-msgstr "Webbplats"
+msgstr "Kotisivu"
 
 #: user-public-profile.php:82
 msgid "Location"
@@ -1327,35 +1327,35 @@ msgstr ""
 
 #: user-public-profile.php:90
 msgid "User description"
-msgstr "Användarbeskrivning"
+msgstr "Käyttäjän kuvaus"
 
 #: user-public-profile.php:101
 msgid "Latest listings"
-msgstr "Senaste listor"
+msgstr "Viimeisimmät ilmoitukset"
 
 #: user-recover.php:55
 msgid "Send me a new password"
-msgstr "Skicka mig ett nytt lösenord"
+msgstr "Lähetä uusi salasana"
 
 #: user-register.php:35
 msgid "Register an account for free"
-msgstr "Registrera ett konto gratis"
+msgstr "Rekisteröi uusi käyttäjätili"
 
 #: user-register.php:69
 msgid "Repeat password"
-msgstr "Repetera lösenord"
+msgstr "Toista salasana"
 
 #: user-register.php:74
 msgid "Passwords don't match"
-msgstr "Lösenorden matchar inte"
+msgstr "Salasanat eivät täsmää"
 
 #: user-register.php:87
 msgid "Create An Account"
-msgstr "Skapa Ett Konto"
+msgstr "Luo uusi käyttäjätili"
 
 #: user-sidebar.php:26
 msgid "Are you sure you want to delete your account?"
-msgstr "Är du säker på att du vill radera ditt konto?"
+msgstr "Oletko varma että haluat tuhota käyttäjätilisi?"
 
 #~ msgid "<strong>Address:</strong> %1$s"
 #~ msgstr "<strong>Adress:</strong> %1$s"
