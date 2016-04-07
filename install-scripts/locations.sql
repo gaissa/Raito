@@ -18,10 +18,10 @@ REPLACE INTO /*TABLE_PREFIX*/t_region (pk_i_id, fk_c_country_code, s_name, b_act
 (0006663, 'fi', 'Yläounasjoki', 1, 'ylaounasjoki');
 
 REPLACE INTO /*TABLE_PREFIX*/t_region (pk_i_id, fk_c_country_code, s_name, b_active, s_slug) VALUES 
-(0006664, 'fi', 'Alaounasjoki', 1, 'alaounasjoki');
+(0006664, 'fi', 'Alakemijoki', 1, 'alakemijoki');
 
 REPLACE INTO /*TABLE_PREFIX*/t_region (pk_i_id, fk_c_country_code, s_name, b_active, s_slug) VALUES 
-(0006665, 'fi', 'Yläounasjoki', 1, 'ylaounasjoki');
+(0006665, 'fi', 'Yläkemijoki', 1, 'ylakemijoki');
 
 REPLACE INTO /*TABLE_PREFIX*/t_region (pk_i_id, fk_c_country_code, s_name, b_active, s_slug) VALUES 
 (0006666, 'fi', 'Sodankyläntien suunta', 1, 'sodankylantien-suunta');
