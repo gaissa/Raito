@@ -21,9 +21,9 @@
 ?>
 <script type="text/javascript">
 $(document).ready(function(){
-	
-	$('input[name=alert_email]').val('<?php echo osc_esc_js(__('Enter your email address.', raito_teema_THEME_FOLDER)); ?>');
-	
+
+    $('input[name=alert_email]').val('<?php echo osc_esc_js(__('Enter your email address.', raito_teema_THEME_FOLDER)); ?>');
+
     $(".sub_button").click(function(){
         $.post('<?php echo osc_base_url(true); ?>', {email:$("#alert_email").val(), userid:$("#alert_userId").val(), alert:$("#alert").val(), page:"ajax", action:"alerts"},
             function(data){
@@ -34,7 +34,7 @@ $(document).ready(function(){
         });
         return false;
     });
-	
+
     var sQuery = '<?php echo osc_esc_js(__('Enter your email address.', raito_teema_THEME_FOLDER)); ?>';
 
     if($('input[name=alert_email]').val() == sQuery) {
@@ -63,8 +63,8 @@ $(document).ready(function(){
         <strong><?php _e('Subscribe to this search', raito_teema_THEME_FOLDER); ?></strong>
     </h3>
     <form action="<?php echo osc_base_url(true); ?>" method="post" name="sub_alert" id="sub_alert" class="nocsrf">
-    
-    
+
+
     <p><?php AlertForm::page_hidden(); ?>
             <?php AlertForm::alert_hidden(); ?>
 
@@ -77,8 +77,8 @@ $(document).ready(function(){
                 <?php AlertForm::email_text(); ?>
 
             <?php } ?></p>
-            
+
             <button type="submit" class="btn btn-success sub_button">
-			<?php echo osc_esc_html(__('Subscribe now', raito_teema_THEME_FOLDER)); ?>!</button>
+            <?php echo osc_esc_html(__('Subscribe now', raito_teema_THEME_FOLDER)); ?>!</button>
     </form>
 </div>
