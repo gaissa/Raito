@@ -1,8 +1,14 @@
-# Raito
----
-#### CORE
->-OSCLASS
-#### THEMES
->-RAITO
-#### PLUGINS
->-MAP PLUGIN
+### CORE
+```sh
+OSCLASS
+```
+
+### THEMES
+```sh
+RAITO
+```
+
+### PLUGINS
+```sh
+MAP PLUGIN
+```
