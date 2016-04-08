@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Raito\n"
 "POT-Creation-Date: 2016-01-21 13:14+0545\n"
-"PO-Revision-Date: 2016-04-07 18:39+0300\n"
+"PO-Revision-Date: 2016-04-08 19:25+0300\n"
 "Last-Translator: Janne Kähkönen <jannekahkonen@gmail.com>\n"
 "Language-Team: Janne Kähkönen <jannekahkonen@gmail.com>\n"
 "Language: fi_FI\n"
@@ -34,7 +34,7 @@ msgstr "<strong> Etsi </ strong> suosituimmista kategorioista."
 
 #: admin/ads.php:29
 msgid "Ads management"
-msgstr ""
+msgstr "Mainosten hallinta"
 
 #: admin/ads.php:33
 msgid ""
@@ -97,11 +97,11 @@ msgstr ""
 #: admin/templates-item-post.php:68 admin/templates-search.php:39
 #: admin/theme-style.php:381
 msgid "Save changes"
-msgstr ""
+msgstr "Tallenna muutokset"
 
 #: admin/category-icons.php:15
 msgid "Categories Icons"
-msgstr ""
+msgstr "Kategoria kuvakkeet"
 
 #: admin/category-icons.php:21
 msgid ""
@@ -119,7 +119,7 @@ msgstr ""
 
 #: admin/documentation.php:26
 msgid "OsclassWizards Documentation"
-msgstr ""
+msgstr "OsclassWizards Dokumentaatio"
 
 #: admin/facebook.php:28
 msgid "Facebook Page Like Box Settings"
@@ -131,15 +131,15 @@ msgstr ""
 
 #: admin/facebook.php:40
 msgid "Width"
-msgstr ""
+msgstr "Leveys"
 
 #: admin/facebook.php:44
 msgid "Height"
-msgstr ""
+msgstr "Korkeus"
 
 #: admin/facebook.php:49
 msgid "Hide Cover Photo"
-msgstr ""
+msgstr "Piilota kansikuva"
 
 #: admin/facebook.php:58
 msgid "Show Friend's Faces"
@@ -167,19 +167,19 @@ msgstr ""
 
 #: admin/favicon.php:37 admin/header.php:35 admin/homeimage.php:35
 msgid "Preview"
-msgstr ""
+msgstr "Esikatselu"
 
 #: admin/favicon.php:44 admin/homeimage.php:42
 msgid "Remove image"
-msgstr ""
+msgstr "Poista kuva"
 
 #: admin/favicon.php:51 admin/homeimage.php:49
 msgid "No image has been uploaded yet"
-msgstr ""
+msgstr "Kuvaa ei ole vielä ladattu"
 
 #: admin/favicon.php:54 admin/homeimage.php:52
 msgid "Upload image"
-msgstr ""
+msgstr "Lataa kuva"
 
 #: admin/favicon.php:56 admin/homeimage.php:54
 msgid ""
@@ -189,11 +189,11 @@ msgstr ""
 
 #: admin/favicon.php:64 admin/homeimage.php:62
 msgid "Accepted image (png,gif,jpg)"
-msgstr ""
+msgstr "Tuetut kuvatiedostot (png,gif,jpg)"
 
 #: admin/favicon.php:70 admin/header.php:69 admin/homeimage.php:68
 msgid "Upload"
-msgstr ""
+msgstr "Lataa"
 
 #: admin/favicon.php:79 admin/header.php:78 admin/homeimage.php:77
 #, php-format
@@ -285,7 +285,7 @@ msgstr ""
 
 #: admin/settings.php:66
 msgid "Category Icons"
-msgstr ""
+msgstr "Kategoria kuvake"
 
 #: admin/settings.php:67
 msgid "Ads Management"
@@ -293,19 +293,19 @@ msgstr ""
 
 #: admin/settings.php:68
 msgid "Facebook Page"
-msgstr ""
+msgstr "Facebook sivu"
 
 #: admin/settings.php:69
 msgid "Documentation"
-msgstr ""
+msgstr "Dokumentaatio"
 
 #: admin/settings.php:73
 msgid "Theme settings"
-msgstr ""
+msgstr "Teeman asetukset"
 
 #: admin/settings.php:81
 msgid "Welcome message"
-msgstr ""
+msgstr "Tervetuloviesti"
 
 #: admin/settings.php:89
 msgid "Show lists as"
@@ -321,7 +321,7 @@ msgstr ""
 
 #: admin/templates-home.php:26
 msgid "Home page settings"
-msgstr ""
+msgstr "Kotisivun asetukset"
 
 #: admin/templates-home.php:34
 msgid "Show banner"
@@ -345,11 +345,11 @@ msgstr ""
 
 #: admin/templates-home.php:78
 msgid "Show popular"
-msgstr ""
+msgstr "Näytä suositut"
 
 #: admin/templates-home.php:88
 msgid "Popular searches"
-msgstr ""
+msgstr "Suositut haut"
 
 #: admin/templates-home.php:98
 msgid "Popular regions"
@@ -739,7 +739,7 @@ msgstr ""
 
 #: functions.php:692 functions.php:706 functions.php:738
 msgid "Image not found"
-msgstr ""
+msgstr "Kuvaa ei löydy"
 
 #: functions.php:704
 msgid "The logo image has been removed"
@@ -767,11 +767,11 @@ msgstr "Valitse yksi kategoria"
 
 #: functions.php:915
 msgid "Title: this field is required"
-msgstr ""
+msgstr "Otsikko: Tämä kenttä on tarpeellinen"
 
 #: functions.php:916
 msgid "Title too short"
-msgstr ""
+msgstr "Otsikko on liian lyhyt"
 
 #: functions.php:919
 msgid "Description too short"
@@ -779,23 +779,23 @@ msgstr "Kuvaus on liian lyhyt"
 
 #: functions.php:922
 msgid "Price: no more than 50 characters"
-msgstr ""
+msgstr "Hinta: korkeintaan 50 merkkiä"
 
 #: functions.php:924
 msgid "Currency: make your selection"
-msgstr ""
+msgstr "Valitse valuutta"
 
 #: functions.php:926
 msgid "Photo: must be png,gif,jpg,jpeg"
-msgstr ""
+msgstr "Valokuva: kelvolliset formaatit png,gif,jpg,jpeg"
 
 #: functions.php:929
 msgid "Name: this field is required"
-msgstr ""
+msgstr "Nimi: tämä kenttä on tarpeellinen"
 
 #: functions.php:930
 msgid "Name: enter at least 3 characters"
-msgstr ""
+msgstr "Nimi: vähintään kolme merkkiä"
 
 #: functions.php:931
 msgid "Name: no more than 35 characters"
@@ -803,7 +803,7 @@ msgstr ""
 
 #: functions.php:934 user-change_email.php:92
 msgid "Email: this field is required"
-msgstr ""
+msgstr "Sähkopostiosoite: tämä kenttä on tarpeellinen"
 
 #: functions.php:938
 msgid "Please select a country"
@@ -839,7 +839,7 @@ msgstr "VALITSE KATEGORIA"
 
 #: header.php:144 search-sidebar.php:61
 msgid "Select a country"
-msgstr ""
+msgstr "Valitse maa"
 
 #: header.php:150 search-sidebar.php:70
 msgid "Select a region"
@@ -1323,7 +1323,7 @@ msgstr "Kotisivu"
 
 #: user-public-profile.php:82
 msgid "Location"
-msgstr ""
+msgstr "Sijainti"
 
 #: user-public-profile.php:90
 msgid "User description"
