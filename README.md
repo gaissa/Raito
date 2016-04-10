@@ -10,5 +10,8 @@ RAITO
 
 ### PLUGINS
 ```sh
-MAP PLUGIN
+GOOGLE MAPS
+```
+```sh
+USER PROFILE IMAGE
 ```
