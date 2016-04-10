@@ -72,7 +72,7 @@
         <li> <a href="<?php echo osc_contact_url(); ?>">
           <?php _e('Contact', raito_teema_THEME_FOLDER); ?>
           </a> </li>
-        <?php if( osc_users_enabled() || ( !osc_users_enabled() && !osc_reg_user_post() )) { ?>
+        <?php if( osc_is_web_user_logged_in() && osc_users_enabled() || ( !osc_users_enabled() && !osc_reg_user_post() )) { ?>
         <li class="publish"> <a href="<?php echo osc_item_post_url_in_category(); ?>">
           <?php _e("Publish your ad for free", raito_teema_THEME_FOLDER);?>
           </a> </li>
