@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Raito\n"
-"POT-Creation-Date: 2016-01-21 13:14+0545\n"
-"PO-Revision-Date: 2016-04-12 00:46+0300\n"
+"POT-Creation-Date: 2016-04-12 00:57+0300\n"
+"PO-Revision-Date: 2016-04-12 00:58+0300\n"
 "Last-Translator: Janne Kähkönen <jannekahkonen@gmail.com>\n"
 "Language-Team: Janne Kähkönen <jannekahkonen@gmail.com>\n"
 "Language: fi_FI\n"
@@ -24,7 +24,7 @@ msgstr "Sivua ei löydy"
 msgid "Let us help you, we have got a few tips for you to find it. "
 msgstr "Låt oss hjälpa dig, har vi fått några tips för dig att hitta det."
 
-#: 404.php:46 admin/templates.php:35 header.php:160
+#: 404.php:46 admin/templates.php:35 header.php:145
 msgid "Search"
 msgstr "Etsi"
 
@@ -92,10 +92,9 @@ msgid ""
 "detail page."
 msgstr ""
 
-#: admin/ads.php:79 admin/category-icons.php:56 admin/facebook.php:93
-#: admin/settings.php:105 admin/templates-home.php:145
-#: admin/templates-item-post.php:68 admin/templates-search.php:39
-#: admin/theme-style.php:381
+#: admin/ads.php:79 admin/category-icons.php:56 admin/settings.php:75
+#: admin/templates-home.php:145 admin/templates-item-post.php:68
+#: admin/templates-search.php:39 admin/theme-style.php:381
 msgid "Save changes"
 msgstr "Tallenna muutokset"
 
@@ -120,42 +119,6 @@ msgstr ""
 #: admin/documentation.php:26
 msgid "OsclassWizards Documentation"
 msgstr "OsclassWizards Dokumentaatio"
-
-#: admin/facebook.php:28
-msgid "Facebook Page Like Box Settings"
-msgstr ""
-
-#: admin/facebook.php:33
-msgid "Facebook Page URL"
-msgstr "Facebook sivun osoite"
-
-#: admin/facebook.php:40
-msgid "Width"
-msgstr "Leveys"
-
-#: admin/facebook.php:44
-msgid "Height"
-msgstr "Korkeus"
-
-#: admin/facebook.php:49
-msgid "Hide Cover Photo"
-msgstr "Piilota kansikuva"
-
-#: admin/facebook.php:58
-msgid "Show Friend's Faces"
-msgstr ""
-
-#: admin/facebook.php:66
-msgid "Show Page Posts"
-msgstr ""
-
-#: admin/facebook.php:75
-msgid "Show On Item Sidebar"
-msgstr ""
-
-#: admin/facebook.php:84
-msgid "Show On Search Sidebar"
-msgstr ""
 
 #: admin/favicon.php:29
 msgid "Favicon Image"
@@ -251,71 +214,59 @@ msgstr ""
 msgid "Banner Image"
 msgstr ""
 
-#: admin/settings.php:49
-msgid "Custom"
-msgstr ""
-
-#: admin/settings.php:52
-msgid "Donate"
-msgstr ""
-
-#: admin/settings.php:60
+#: admin/settings.php:30
 msgid "General"
 msgstr ""
 
-#: admin/settings.php:61 admin/theme-style.php:13
+#: admin/settings.php:31 admin/theme-style.php:13
 msgid "Theme Style"
 msgstr ""
 
-#: admin/settings.php:62
+#: admin/settings.php:32
 msgid "Templates"
 msgstr ""
 
-#: admin/settings.php:63
+#: admin/settings.php:33
 msgid "Header Logo"
 msgstr ""
 
-#: admin/settings.php:64
+#: admin/settings.php:34
 msgid "Favicon"
 msgstr ""
 
-#: admin/settings.php:65
+#: admin/settings.php:35
 msgid "Banner"
 msgstr ""
 
-#: admin/settings.php:66
+#: admin/settings.php:36
 msgid "Category Icons"
 msgstr "Kategoria kuvakkeet"
 
-#: admin/settings.php:67
+#: admin/settings.php:37
 msgid "Ads Management"
 msgstr ""
 
-#: admin/settings.php:68
-msgid "Facebook Page"
-msgstr "Facebook sivu"
-
-#: admin/settings.php:69
+#: admin/settings.php:38
 msgid "Documentation"
 msgstr "Dokumentaatio"
 
-#: admin/settings.php:73
+#: admin/settings.php:42
 msgid "Theme settings"
 msgstr "Teeman asetukset"
 
-#: admin/settings.php:81
+#: admin/settings.php:50
 msgid "Welcome message"
 msgstr "Tervetuloviesti"
 
-#: admin/settings.php:89
+#: admin/settings.php:58
 msgid "Show lists as"
 msgstr "Näytä listaukset muodossa"
 
-#: admin/settings.php:94
+#: admin/settings.php:63
 msgid "Grid"
 msgstr ""
 
-#: admin/settings.php:97
+#: admin/settings.php:66
 msgid "List"
 msgstr "Lista"
 
@@ -491,12 +442,12 @@ msgstr "Syötä sähköpostiosoitteesi"
 msgid "You have sucessfully subscribed to the alert"
 msgstr "Tilaus onnistui!"
 
-#: alert-form.php:31 alert-form.php:32 functions.php:935
+#: alert-form.php:31 alert-form.php:32 functions.php:938
 #: user-change_email.php:93
 msgid "Invalid email address"
 msgstr "Väärä sähköpostiosoite"
 
-#: alert-form.php:63 search-sidebar.php:152
+#: alert-form.php:63
 msgid "Subscribe to this search"
 msgstr "Tilaa tämä haku"
 
@@ -504,17 +455,15 @@ msgstr "Tilaa tämä haku"
 msgid "Subscribe now"
 msgstr "Tilaa nyt"
 
-#: common/head.php:24 item.php:200 loop-grid.php:67 loop-list.php:73
+#: common/head.php:24 item.php:201 loop-grid.php:67 loop-list.php:73
 #: loop-search-grid.php:72 loop-search-grid.php:130 loop-search-grid.php:183
 #: loop-search-list.php:74 loop-search-list.php:133 loop-search-list.php:193
 #: loop-user-alerts-grid.php:73 loop-user-alerts-grid.php:131
 #: loop-user-alerts-grid.php:190 loop-user-alerts-list.php:80
-#: loop-user-alerts-list.php:143 loop-user-alerts-list.php:207
-#: loop-user-grid.php:73 loop-user-grid.php:131 loop-user-grid.php:190
-#: loop-user-list.php:75 loop-user-list.php:133 loop-user-list.php:192
-#: loop-user-public-grid.php:82 loop-user-public-grid.php:141
-#: loop-user-public-grid.php:200 loop-user-public-list.php:75
-#: loop-user-public-list.php:133 loop-user-public-list.php:192 main.php:83
+#: loop-user-alerts-list.php:143 loop-user-alerts-list.php:216
+#: loop-user-grid.php:73 loop-user-grid.php:131 loop-user-grid.php:201
+#: loop-user-list.php:78 loop-user-list.php:137 loop-user-list.php:211
+#: main.php:83
 msgid "Delete"
 msgstr "Poista"
 
@@ -522,90 +471,50 @@ msgstr "Poista"
 msgid "Cancel"
 msgstr "Peruuta"
 
-#: common/head.php:68
+#: common/head.php:80
 msgid "Previous image"
 msgstr "Edellinen kuva"
 
-#: common/head.php:69
+#: common/head.php:81
 msgid "Next image"
 msgstr "Seuraava kuva"
 
-#: common/head.php:70
+#: common/head.php:82
 msgid "Close"
 msgstr "Sulje"
 
-#: contact.php:36
+#: contact.php:48
 msgid "Contact us"
 msgstr "Ota yhteyttä"
 
-#: contact.php:47 item-send-friend.php:51 item-sidebar.php:74 item.php:226
-#: user-public-sidebar.php:38
+#: contact.php:59 item-send-friend.php:51 item-sidebar.php:79 item.php:227
+#: user-public-sidebar.php:36
 msgid "Your name"
 msgstr "Nimi"
 
-#: contact.php:49 contact.php:67 item-sidebar.php:92 user-public-sidebar.php:56
+#: contact.php:61 contact.php:79 item-sidebar.php:97 user-public-sidebar.php:54
 msgid "optional"
 msgstr "valinnainen"
 
-#: contact.php:57 user-public-sidebar.php:46
+#: contact.php:69 user-public-sidebar.php:44
 msgid "Your email address"
 msgstr "Sähköpostisi"
 
-#: contact.php:65
+#: contact.php:77
 msgid "Subject"
 msgstr "Aihe"
 
-#: contact.php:75 item-send-friend.php:93 item-sidebar.php:100
-#: user-public-sidebar.php:64
+#: contact.php:87 item-send-friend.php:93 item-sidebar.php:105
+#: user-public-sidebar.php:62
 msgid "Message"
 msgstr "Viesti"
 
-#: contact.php:93 item-send-friend.php:110 item-sidebar.php:142 item.php:259
-#: user-public-sidebar.php:96
+#: contact.php:105 item-send-friend.php:110 item-sidebar.php:147 item.php:260
+#: user-public-sidebar.php:97
 msgid "Send"
 msgstr "Lähetä"
 
-#: footer.php:35 header.php:38
-msgid "Language:"
-msgstr "kieli:"
-
-#: footer.php:49 header.php:62
-#, php-format
-msgid "Hi %s"
-msgstr "Hei %s"
-
-#: footer.php:50 header.php:63
-msgid "My account"
-msgstr "Tilini"
-
-#: footer.php:52 header.php:65
-msgid "Logout"
-msgstr "kirjaudu ulos"
-
-#: footer.php:56 functions.php:441 header.php:69 item-sidebar.php:44
-msgid "Login"
-msgstr "kirjaudu sisään"
-
-#: footer.php:60 header.php:73 item-sidebar.php:46 user-login.php:73
-msgid "Register for a free account"
-msgstr "uusi käyttäjä"
-
-#: footer.php:73 functions.php:445 header.php:95 user-public-sidebar.php:28
-msgid "Contact"
-msgstr "tietoa osuuskunnasta"
-
-#: footer.php:77 header.php:101
-msgid "Publish your ad for free"
-msgstr "julkaise"
-
-#: footer.php:82
-#, php-format
-msgid ""
-"Free responsive Osclass theme by <a target=\"_blank\" title=\"osclasswizards"
-"\" href=\"%s\">OsclassWizards</a>"
-msgstr ""
-
-#: functions.php:30
+#: functions.php:31
 msgid "ie. PHP Programmer"
 msgstr "hakusana"
 
@@ -617,7 +526,7 @@ msgstr "Kategoriat"
 msgid "See more listings..."
 msgstr "Lisää . . ."
 
-#: functions.php:426 item-post.php:56
+#: functions.php:426 item-post.php:60
 msgid "Publish a listing"
 msgstr "Julkaise"
 
@@ -651,19 +560,19 @@ msgstr "instrumentbräda"
 msgid "%s's profile"
 msgstr "%sn profiili"
 
-#: functions.php:434 functions.php:483
+#: functions.php:434 functions.php:473
 msgid "Account"
 msgstr "Käyttäjätili"
 
-#: functions.php:435 functions.php:473 search.php:136 user-alerts.php:73
+#: functions.php:435 functions.php:478 user-alerts.php:73
 msgid "Listings"
 msgstr "Ilmoitukset"
 
-#: functions.php:436 functions.php:478 user-alerts.php:32 user-alerts.php:52
+#: functions.php:436 user-alerts.php:32 user-alerts.php:52
 msgid "Alerts"
 msgstr "varningar"
 
-#: functions.php:437 user-profile.php:32 user-profile.php:45
+#: functions.php:437 user-profile.php:29 user-profile.php:41
 msgid "Update account"
 msgstr "Päivitä käyttäjätili"
 
@@ -681,6 +590,10 @@ msgstr "Vaihda käyttäjänimi"
 msgid "Change password"
 msgstr "Vaihda salasana"
 
+#: functions.php:441 header.php:68 item-sidebar.php:44
+msgid "Login"
+msgstr "kirjaudu sisään"
+
 #: functions.php:442
 msgid "Recover password"
 msgstr "Palauta salasana"
@@ -688,6 +601,10 @@ msgstr "Palauta salasana"
 #: functions.php:444
 msgid "Create a new account"
 msgstr "Luo uusi käyttäjätili"
+
+#: functions.php:445 header.php:95
+msgid "Contact"
+msgstr "tietoa osuuskunnasta"
 
 #: functions.php:468
 msgid "Public Profile"
@@ -697,228 +614,241 @@ msgstr "Julkinen Profiili"
 msgid "Delete account"
 msgstr "Poista käyttäjätili"
 
-#: functions.php:562
+#: functions.php:579
 msgid "Theme settings updated correctly"
 msgstr "Teeman asetukset päivitetty"
 
-#: functions.php:579 functions.php:584 functions.php:596
+#: functions.php:596 functions.php:601 functions.php:613
 msgid "Templates settings updated correctly"
 msgstr ""
 
-#: functions.php:606
+#: functions.php:623
 msgid "Ads management updated correctly"
 msgstr ""
 
-#: functions.php:615
+#: functions.php:632
 msgid "Category icons settings updated correctly"
 msgstr "Kategoriakuvake päivitetty"
 
-#: functions.php:627
+#: functions.php:644
 msgid "Theme color settings updated correctly"
 msgstr "Teeman väriasetus päivitetty"
 
-#: functions.php:642
-msgid "Facebook Page settings updated correctly"
-msgstr ""
-
-#: functions.php:658
+#: functions.php:660
 msgid "The favicon image has been uploaded correctly"
 msgstr ""
 
-#: functions.php:660 functions.php:678 functions.php:725
+#: functions.php:662 functions.php:680 functions.php:727
 msgid "An error has occurred, please try again"
 msgstr "Tapahtui virhe, yritä uudelleen"
 
-#: functions.php:676
+#: functions.php:678
 msgid "The logo image has been uploaded correctly"
 msgstr ""
 
-#: functions.php:690
+#: functions.php:692
 msgid "The favicon image has been removed"
 msgstr ""
 
-#: functions.php:692 functions.php:706 functions.php:738
+#: functions.php:694 functions.php:708 functions.php:740
 msgid "Image not found"
 msgstr "Kuvaa ei löydy"
 
-#: functions.php:704
+#: functions.php:706
 msgid "The logo image has been removed"
 msgstr ""
 
-#: functions.php:723
+#: functions.php:725
 msgid "The banner image has been uploaded correctly"
 msgstr ""
 
-#: functions.php:736
+#: functions.php:738
 msgid "The banner image has been removed"
 msgstr ""
 
-#: functions.php:761
-msgid "OsclassWizards"
+#: functions.php:764
+msgid "raito_teema"
 msgstr ""
 
-#: functions.php:813 functions.php:833
+#: functions.php:816 functions.php:836
 msgid "All categories"
 msgstr "Kaikki kategoriat"
 
-#: functions.php:912
+#: functions.php:915
 msgid "Choose one category"
 msgstr "Valitse yksi kategoria"
 
-#: functions.php:915
+#: functions.php:918
 msgid "Title: this field is required"
 msgstr "Otsikko: Tämä kenttä on tarpeellinen"
 
-#: functions.php:916
+#: functions.php:919
 msgid "Title too short"
 msgstr "Otsikko on liian lyhyt"
 
-#: functions.php:919
+#: functions.php:922
 msgid "Description too short"
 msgstr "Kuvaus on liian lyhyt"
 
-#: functions.php:922
+#: functions.php:925
 msgid "Price: no more than 50 characters"
 msgstr "Hinta: korkeintaan 50 merkkiä"
 
-#: functions.php:924
+#: functions.php:927
 msgid "Currency: make your selection"
 msgstr "Valitse valuutta"
 
-#: functions.php:926
+#: functions.php:929
 msgid "Photo: must be png,gif,jpg,jpeg"
 msgstr "Valokuva: kelvolliset formaatit png,gif,jpg,jpeg"
 
-#: functions.php:929
+#: functions.php:932
 msgid "Name: this field is required"
 msgstr "Nimi: tämä kenttä on tarpeellinen"
 
-#: functions.php:930
+#: functions.php:933
 msgid "Name: enter at least 3 characters"
 msgstr "Nimi: vähintään kolme merkkiä"
 
-#: functions.php:931
+#: functions.php:934
 msgid "Name: no more than 35 characters"
 msgstr "Nimi: korkeintaan 35 merkkiä"
 
-#: functions.php:934 user-change_email.php:92
+#: functions.php:937 user-change_email.php:92
 msgid "Email: this field is required"
 msgstr "Sähkopostiosoite: tämä kenttä on tarpeellinen"
 
-#: functions.php:938
+#: functions.php:941
 msgid "Please select a country"
 msgstr "Valitse maa"
 
-#: functions.php:941 functions.php:953
+#: functions.php:944 functions.php:956
 msgid "Region: this field is required"
 msgstr "Alue: tämä kenttä on tarpeellinen"
 
-#: functions.php:942
+#: functions.php:945
 msgid "Region: enter at least 3 characters"
 msgstr "Alue: vähintään kolme merkkiä"
 
-#: functions.php:943
+#: functions.php:946
 msgid "Region: no more than 100 characters"
 msgstr "Alue: Ei enempää kuin 100 merkkiä"
 
-#: functions.php:946 functions.php:956
+#: functions.php:949 functions.php:959
 msgid "City: this field is required"
 msgstr "Kylä: tämä kenttä on tarpeellinen"
 
-#: functions.php:947
+#: functions.php:950
 msgid "City: enter at least 3 characters"
 msgstr "Kylä: vähintään kolme merkkiä"
 
-#: functions.php:948
+#: functions.php:951
 msgid "City: no more than 100 characters"
 msgstr "Kylä: ei enempää kuin 100 merkkiä"
 
-#: header.php:137 item-post.php:79 item-post.php:81
+#: header.php:38
+msgid "Language:"
+msgstr "kieli:"
+
+#: header.php:60
+#, php-format
+msgid "Hi %s"
+msgstr "Hei %s"
+
+#: header.php:61
+msgid "My account"
+msgstr "Tilini"
+
+#: header.php:63
+msgid "Logout"
+msgstr "kirjaudu ulos"
+
+#: header.php:72 item-sidebar.php:46 user-login.php:73
+msgid "Register for a free account"
+msgstr "uusi käyttäjä"
+
+#: header.php:101
+msgid "Publish your ad for free"
+msgstr "julkaise"
+
+#: header.php:126 item-post.php:83 item-post.php:85
 msgid "Select a category"
 msgstr "TYÖ TAI PALVELU"
 
-#: header.php:144 search-sidebar.php:61
+#: header.php:133
 msgid "Select a country"
 msgstr "Valitse maa"
 
-#: header.php:150 search-sidebar.php:70
+#: header.php:139
 msgid "Select a region"
-msgstr "VALITSE ALUE"
+msgstr "ALUE"
 
-#: header.php:155 search-sidebar.php:78
-msgid "Select a city"
-msgstr "VALITSE KYLÄ"
-
-#: item-post.php:70
+#: item-post.php:74
 msgid "General Information"
 msgstr "Yleistä Tietoa"
 
-#: item-post.php:74
+#: item-post.php:78
 msgid "Category"
 msgstr "työ tai palvelu"
 
-#: item-post.php:88 item.php:243
+#: item-post.php:92 item.php:244
 msgid "Title"
 msgstr "Otsikko"
 
-#: item-post.php:96 user-profile.php:136
+#: item-post.php:100 user-profile.php:133
 msgid "Description"
 msgstr "Kuvaus"
 
-#: item-post.php:105 search-sidebar.php:99
+#: item-post.php:109 search-sidebar.php:63
 msgid "Price"
 msgstr "Hinta"
 
-#: item-post.php:125
+#: item-post.php:131
 msgid "Listing Location"
 msgstr "Sijainti"
 
-#: item-post.php:129 search-sidebar.php:58 user-profile.php:88
-msgid "Country"
-msgstr "Maa"
-
-#: item-post.php:137 search-sidebar.php:67 user-profile.php:96
+#: item-post.php:136 user-profile.php:93
 msgid "Region"
 msgstr "Alue"
 
-#: item-post.php:151 search-sidebar.php:75 user-profile.php:104
+#: item-post.php:157 user-profile.php:101
 msgid "City"
 msgstr "Kylä"
 
-#: item-post.php:165
-msgid "City Area"
-msgstr "Kaupunginosa"
-
-#: item-post.php:173 user-profile.php:120 user-public-profile.php:79
+#: item-post.php:176 user-profile.php:117 user-public-profile.php:84
 msgid "Address"
 msgstr "Katuosoite"
 
-#: item-post.php:184
+#: item-post.php:186
+msgid "City Area"
+msgstr "Kaupunginosa"
+
+#: item-post.php:197
 msgid "Seller's information"
 msgstr "Myyjän tiedot"
 
-#: item-post.php:188 user-profile.php:56 user-register.php:45
+#: item-post.php:201 user-profile.php:53 user-register.php:45
 msgid "Name"
 msgstr "Nimi"
 
-#: item-post.php:196 user-login.php:43 user-recover.php:43 user-register.php:53
+#: item-post.php:209 user-login.php:43 user-recover.php:43 user-register.php:53
 msgid "E-mail"
 msgstr "E-mail"
 
-#: item-post.php:206
+#: item-post.php:219
 msgid "Show e-mail on the listing page"
 msgstr "Näytä sähköpostini listausnäkymässä"
 
-#: item-post.php:228 user-change_email.php:73 user-change_password.php:83
-#: user-change_username.php:119 user-profile.php:146
+#: item-post.php:241 user-change_email.php:73 user-change_password.php:83
+#: user-change_username.php:119 user-profile.php:143
 msgid "Update"
 msgstr "Päivitä"
 
-#: item-post.php:228
+#: item-post.php:241
 msgid "Publish"
 msgstr "Julkaise"
 
-#: item-send-friend.php:59 item.php:234
+#: item-send-friend.php:59 item.php:235
 msgid "Your e-mail"
 msgstr "Sähköposti"
 
@@ -948,51 +878,49 @@ msgid ""
 msgstr ""
 "Du måste logga in eller registrera ett nytt konto för att kontakta annonsören"
 
-#: item-sidebar.php:60
+#: item-sidebar.php:65
 #, php-format
 msgid "E-mail: %s"
 msgstr "E-mail: %s"
 
-#: item-sidebar.php:82
+#: item-sidebar.php:87
 msgid "Your e-mail address"
 msgstr "Sähköposti"
 
-#: item-sidebar.php:90 user-public-sidebar.php:54
+#: item-sidebar.php:95 user-public-sidebar.php:52
 msgid "Phone number"
 msgstr "Puhelinnumero"
 
-#: item-sidebar.php:109
+#: item-sidebar.php:114
 msgid "Attachment"
 msgstr "Liite"
 
-#: item-sidebar.php:132 user-public-sidebar.php:86
+#: item-sidebar.php:137 user-public-sidebar.php:86
 msgid "Enter the words above"
 msgstr "Kirjoita ylläolevat sanat"
 
-#: item-sidebar.php:136 user-public-sidebar.php:90
+#: item-sidebar.php:141 user-public-sidebar.php:91
 msgid "Help"
 msgstr "Apua"
 
-#: item.php:66 loop-grid.php:65 loop-list.php:71 loop-search-grid.php:70
+#: item.php:74 loop-grid.php:65 loop-list.php:71 loop-search-grid.php:70
 #: loop-search-grid.php:128 loop-search-grid.php:181 loop-search-list.php:72
 #: loop-search-list.php:131 loop-search-list.php:191
 #: loop-user-alerts-grid.php:71 loop-user-alerts-grid.php:129
 #: loop-user-alerts-grid.php:188 loop-user-alerts-list.php:78
-#: loop-user-alerts-list.php:141 loop-user-alerts-list.php:205
-#: loop-user-grid.php:71 loop-user-grid.php:129 loop-user-grid.php:188
-#: loop-user-list.php:73 loop-user-list.php:131 loop-user-list.php:190
-#: loop-user-public-grid.php:80 loop-user-public-grid.php:139
-#: loop-user-public-grid.php:198 loop-user-public-list.php:73
-#: loop-user-public-list.php:131 loop-user-public-list.php:190 main.php:81
+#: loop-user-alerts-list.php:141 loop-user-alerts-list.php:204
+#: loop-user-grid.php:71 loop-user-grid.php:129 loop-user-grid.php:189
+#: loop-user-list.php:73 loop-user-list.php:135 loop-user-list.php:199
+#: main.php:81
 msgid "Edit item"
 msgstr "muokkaa objektia"
 
-#: item.php:77
+#: item.php:85
 #, php-format
 msgid "<i class=\"fa fa-calendar-o\"></i> Published date: %1$s"
 msgstr "<i class=\"fa fa-calendar-o\"></i> Julkaisupäivä: %1$s"
 
-#: item.php:80
+#: item.php:88
 #, php-format
 msgid ""
 "<span class=\"update\"><i class=\"fa fa-calendar\"></i> Modified date:</"
@@ -1001,100 +929,59 @@ msgstr ""
 "<span class=\"update\"><i class=\"fa fa-calendar\"></i> Ändrat datum:</span> "
 "%1$s"
 
-#: item.php:97 item.php:101 item.php:106 item.php:108
+#: item.php:105 item.php:109 item.php:114 item.php:116
 msgid "Image"
 msgstr "Kuva"
 
-#: item.php:135
-msgid "Contact seller"
-msgstr "Ota yhteyttä"
-
-#: item.php:142
-msgid "Share"
-msgstr "Jaa"
-
-#: item.php:150
+#: item.php:173
 msgid "See all ads from this advertiser"
 msgstr "Lisää ilmoituksia julkaisijalta"
 
-#: item.php:159
-msgid "Useful information"
-msgstr "Käytännön tietoa"
-
-#: item.php:163
-msgid "Avoid scams by acting locally or paying with PayPal"
-msgstr "Undvik bedrägerier genom att handla lokalt eller betala med PayPal"
-
-#: item.php:166
-msgid ""
-"Never pay with Western Union, Moneygram or other anonymous payment services"
-msgstr ""
-"Inte KOPA Eller sälja Utanför Prob mark. Acceptera Inte checkar kassör from "
-"Utanför släkt mark"
-
-#: item.php:169
-msgid ""
-"Don't buy or sell outside of your country. Don't accept cashier cheques from "
-"outside your country"
-msgstr ""
-"Inte köpa eller sälja utanför ditt land. Acceptera inte checkar kassör från "
-"utanför ditt land"
-
-#: item.php:172
-msgid ""
-"This site is never involved in any transaction, and does not handle "
-"payments, shipping, guarantee transactions, provide escrow services, or "
-"offer \"buyer protection\" or \"seller certification\""
-msgstr ""
-"Den här webbplatsen är aldrig inblandad i någon transaktion, och inte "
-"hantera betalningar, sjöfart, transaktioner garanti ger escrow tjänster, "
-"eller erbjudande \"köparen skydd\" eller \"säljare certifiering\""
-
-#: item.php:182
+#: item.php:183
 msgid "Comments"
 msgstr "Kommentit"
 
-#: item.php:195
+#: item.php:196
 msgid "by"
 msgstr "av"
 
-#: item.php:199
+#: item.php:200
 msgid "Delete your comment"
 msgstr "Poista kommenttisi"
 
-#: item.php:211
+#: item.php:212
 msgid "Leave your comment (spam and offensive messages will be removed)"
 msgstr "Jätä kommentti"
 
-#: item.php:251
+#: item.php:252
 msgid "Comment"
 msgstr "Kommentti"
 
-#: item.php:288
+#: item.php:289
 msgid "Mark as..."
 msgstr "Merkitse..."
 
-#: item.php:291
+#: item.php:292
 msgid "Mark as spam"
 msgstr "Merkitse roskapostiksi"
 
-#: item.php:294
+#: item.php:295
 msgid "Mark as misclassified"
 msgstr "Merkitse luokittelemattomaksi"
 
-#: item.php:297
+#: item.php:298
 msgid "Mark as duplicated"
 msgstr "Merkitse duplikaatiksi"
 
-#: item.php:300
+#: item.php:301
 msgid "Mark as expired"
 msgstr "Merkitse sulkeutuneeksi"
 
-#: item.php:303
+#: item.php:304
 msgid "Mark as offensive"
 msgstr "Merkitse loukkaavaksi"
 
-#: item.php:316
+#: item.php:317
 msgid "Related listings"
 msgstr "aiheeseen liittyvät listat"
 
@@ -1103,12 +990,8 @@ msgstr "aiheeseen liittyvät listat"
 #: loop-search-list.php:132 loop-search-list.php:192
 #: loop-user-alerts-grid.php:72 loop-user-alerts-grid.php:130
 #: loop-user-alerts-grid.php:189 loop-user-alerts-list.php:79
-#: loop-user-alerts-list.php:142 loop-user-alerts-list.php:206
-#: loop-user-grid.php:72 loop-user-grid.php:130 loop-user-grid.php:189
-#: loop-user-list.php:74 loop-user-list.php:132 loop-user-list.php:191
-#: loop-user-public-grid.php:81 loop-user-public-grid.php:140
-#: loop-user-public-grid.php:199 loop-user-public-list.php:74
-#: loop-user-public-list.php:132 loop-user-public-list.php:191 main.php:82
+#: loop-user-alerts-list.php:142 loop-user-grid.php:72 loop-user-grid.php:130
+#: loop-user-list.php:77 loop-user-list.php:136 main.php:82
 msgid "This action can not be undone. Are you sure you want to continue?"
 msgstr "Tätä toimintoa ei voi peruuttaa, haluatko varmasti jatkaa?"
 
@@ -1117,14 +1000,20 @@ msgstr "Tätä toimintoa ei voi peruuttaa, haluatko varmasti jatkaa?"
 #: loop-search-list.php:137 loop-search-list.php:197
 #: loop-user-alerts-grid.php:77 loop-user-alerts-grid.php:135
 #: loop-user-alerts-grid.php:194 loop-user-alerts-list.php:84
-#: loop-user-alerts-list.php:147 loop-user-alerts-list.php:211
-#: loop-user-grid.php:77 loop-user-grid.php:135 loop-user-grid.php:194
-#: loop-user-list.php:79 loop-user-list.php:137 loop-user-list.php:196
-#: loop-user-public-grid.php:86 loop-user-public-grid.php:145
-#: loop-user-public-grid.php:204 loop-user-public-list.php:79
-#: loop-user-public-list.php:137 loop-user-public-list.php:196 main.php:87
+#: loop-user-alerts-list.php:147 loop-user-alerts-list.php:222
+#: loop-user-grid.php:77 loop-user-grid.php:135 loop-user-grid.php:207
+#: loop-user-list.php:83 loop-user-list.php:141 loop-user-list.php:217
+#: main.php:87
 msgid "Activate"
 msgstr "Aktivoi"
+
+#: loop-user-alerts-list.php:212 loop-user-grid.php:193 loop-user-list.php:207
+msgid "Delete item"
+msgstr "Poista ilmoitus"
+
+#: loop-user-alerts-list.php:212 loop-user-grid.php:194 loop-user-list.php:207
+msgid "Are you sure?"
+msgstr "Oletko varma?"
 
 #: main.php:46
 msgid "Premium Listings"
@@ -1151,37 +1040,25 @@ msgstr "%s - suosituimmat"
 msgid "Show Filters"
 msgstr "näytä suotimet"
 
-#: search-sidebar.php:36
-msgid "Advanced Search"
-msgstr "Tarkennettu haku"
-
 #: search-sidebar.php:49
-msgid "Your search"
-msgstr "Hakusana"
-
-#: search-sidebar.php:85
 msgid "Show only"
 msgstr "Näytä ainoastaan"
 
-#: search-sidebar.php:90
+#: search-sidebar.php:54
 msgid "listings with pictures"
 msgstr "kuvalliset listaukset"
 
-#: search-sidebar.php:103
+#: search-sidebar.php:67
 msgid "Min"
 msgstr "Min"
 
-#: search-sidebar.php:108
+#: search-sidebar.php:72
 msgid "Max"
 msgstr "Max"
 
-#: search-sidebar.php:132
+#: search-sidebar.php:99
 msgid "Apply"
 msgstr "ETSI"
-
-#: search-sidebar.php:141
-msgid "Refine category"
-msgstr "tarkenna kategoriaa"
 
 #: search.php:60
 msgid "Selected"
@@ -1204,10 +1081,6 @@ msgstr "%1$d - %2$d / %3$d ilmoituksesta"
 #: search.php:123
 msgid "Premium listings"
 msgstr "Parhaimmat listat"
-
-#: search.php:151
-msgid "Other searches that may interest you"
-msgstr "Muut haut jotka voisivat kiinnostaa sinua"
 
 #: user-alerts.php:56
 msgid "You do not have any alerts yet"
@@ -1235,7 +1108,7 @@ msgstr "Nykyinen sähköpostiosoite"
 
 #: user-change_email.php:64
 msgid "New e-mail"
-msgstr "Uusi säköpostiosoite"
+msgstr "Uusi sähköpostiosoite"
 
 #: user-change_password.php:58
 msgid "Current password"
@@ -1273,11 +1146,11 @@ msgstr "Käyttäjänimi"
 msgid "Recover your password"
 msgstr "Palauta salasana"
 
-#: user-items.php:58
+#: user-items.php:51
 msgid "My listings"
 msgstr "Minun Ilmoitukseni"
 
-#: user-items.php:62
+#: user-items.php:55
 msgid "No listings have been added yet"
 msgstr "Ilmoituksia ei ole vielä lisätty"
 
@@ -1301,35 +1174,35 @@ msgstr "Kirjaudu sisään"
 msgid "Forgot password?"
 msgstr "Unohditko salasanan?"
 
-#: user-profile.php:64
+#: user-profile.php:61
 msgid "User type"
 msgstr "Käyttäjätyyppi"
 
-#: user-profile.php:72
+#: user-profile.php:69
 msgid "Cell phone"
 msgstr "Matkapuhelin"
 
-#: user-profile.php:80
+#: user-profile.php:77
 msgid "Phone"
 msgstr "Puhelin"
 
-#: user-profile.php:112
+#: user-profile.php:85
+msgid "Country"
+msgstr "Maa"
+
+#: user-profile.php:109
 msgid "City area"
 msgstr "Kaupunki"
 
-#: user-profile.php:128
+#: user-profile.php:125
 msgid "Website"
 msgstr "Kotisivu"
 
-#: user-public-profile.php:82
+#: user-public-profile.php:87
 msgid "Location"
 msgstr "Sijainti"
 
-#: user-public-profile.php:90
-msgid "User description"
-msgstr "Käyttäjän kuvaus"
-
-#: user-public-profile.php:101
+#: user-public-profile.php:105
 msgid "Latest listings"
 msgstr "Viimeisimmät ilmoitukset"
 
@@ -1356,6 +1229,74 @@ msgstr "Luo uusi käyttäjätili"
 #: user-sidebar.php:26
 msgid "Are you sure you want to delete your account?"
 msgstr "Oletko varma että haluat poistaa käyttäjätilisi?"
+
+#~ msgid "Facebook Page URL"
+#~ msgstr "Facebook sivun osoite"
+
+#~ msgid "Width"
+#~ msgstr "Leveys"
+
+#~ msgid "Height"
+#~ msgstr "Korkeus"
+
+#~ msgid "Hide Cover Photo"
+#~ msgstr "Piilota kansikuva"
+
+#~ msgid "Facebook Page"
+#~ msgstr "Facebook sivu"
+
+#~ msgid "Select a city"
+#~ msgstr "VALITSE KYLÄ"
+
+#~ msgid "Contact seller"
+#~ msgstr "Ota yhteyttä"
+
+#~ msgid "Share"
+#~ msgstr "Jaa"
+
+#~ msgid "Useful information"
+#~ msgstr "Käytännön tietoa"
+
+#~ msgid "Avoid scams by acting locally or paying with PayPal"
+#~ msgstr "Undvik bedrägerier genom att handla lokalt eller betala med PayPal"
+
+#~ msgid ""
+#~ "Never pay with Western Union, Moneygram or other anonymous payment "
+#~ "services"
+#~ msgstr ""
+#~ "Inte KOPA Eller sälja Utanför Prob mark. Acceptera Inte checkar kassör "
+#~ "from Utanför släkt mark"
+
+#~ msgid ""
+#~ "Don't buy or sell outside of your country. Don't accept cashier cheques "
+#~ "from outside your country"
+#~ msgstr ""
+#~ "Inte köpa eller sälja utanför ditt land. Acceptera inte checkar kassör "
+#~ "från utanför ditt land"
+
+#~ msgid ""
+#~ "This site is never involved in any transaction, and does not handle "
+#~ "payments, shipping, guarantee transactions, provide escrow services, or "
+#~ "offer \"buyer protection\" or \"seller certification\""
+#~ msgstr ""
+#~ "Den här webbplatsen är aldrig inblandad i någon transaktion, och inte "
+#~ "hantera betalningar, sjöfart, transaktioner garanti ger escrow tjänster, "
+#~ "eller erbjudande \"köparen skydd\" eller \"säljare certifiering\""
+
+#~ msgid "Advanced Search"
+#~ msgstr "Tarkennettu haku"
+
+#~ msgid "Your search"
+#~ msgstr "Hakusana"
+
+#~ msgid "Refine category"
+#~ msgstr "tarkenna kategoriaa"
+
+#~ msgid "Other searches that may interest you"
+#~ msgstr "Muut haut jotka voisivat kiinnostaa sinua"
+
+#~ msgid "User description"
+#~ msgstr "Käyttäjän kuvaus"
 
 #~ msgid "<strong>Address:</strong> %1$s"
 #~ msgstr "<strong>Adress:</strong> %1$s"
