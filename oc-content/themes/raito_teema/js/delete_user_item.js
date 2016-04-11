@@ -1,28 +1,21 @@
-$(function()
-{
-    $("#dialog").dialog({
-		autoOpen: false,
+//Shows delete user item dialog
+function delete_user_item(userItemData) {
+
+    $('<div id="dialogs" title="' + userItemData[1] + '">' + userItemData[2] + '</div>').dialog({         
 		modal: true,
 		buttons: [
 			{
 				text: raito_teema.langs.delete,
-				click: function() {
-					
-					var a = $("#dialog").data('delete_url');			
-					window.location = a;
+				click: function() {					
+					window.location = userItemData[0];
 				}
 			},
 			{
 				text: raito_teema.langs.cancel,
-				click: function() {
+				click: function() {					
 					$(this).dialog("close");
 				}
 			}
-		]});
-});
-  
-function test(delete_item_url)
-{
-	$('#dialog').data('delete_url', delete_item_url); //assign the ID for later use	
-	$("#dialog").dialog('open');		
-}	
+		]
+    });
+}
