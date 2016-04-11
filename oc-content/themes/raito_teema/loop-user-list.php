@@ -71,9 +71,13 @@ if(View::newInstance()->_exists('listType')){
             <?php if($admin){ ?>
             <span class="admin-options"> <a href="<?php echo osc_item_edit_url(); ?>" rel="nofollow">
             <?php _e('Edit item', raito_teema_THEME_FOLDER); ?>
-            </a> <span>|</span> <a class="delete" onclick="javascript:return confirm('<?php echo osc_esc_js(__('This action can not be undone. Are you sure you want to continue?', raito_teema_THEME_FOLDER)); ?>')" href="<?php echo osc_item_delete_url();?>" >
+			
+            </a>
+
+			<span>|</span> <a class="delete" onclick="javascript:return confirm('<?php echo osc_esc_js(__('This action can not be undone. Are you sure you want to continue?', raito_teema_THEME_FOLDER)); ?>')" href="<?php echo osc_item_delete_url();?>" >
             <?php _e('Delete', raito_teema_THEME_FOLDER); ?>
             </a>
+			
             <?php if(osc_item_is_inactive()) {?>
             <span>|</span> <a href="<?php echo osc_item_activate_url();?>" >
             <?php _e('Activate', raito_teema_THEME_FOLDER); ?>
@@ -159,6 +163,7 @@ if(View::newInstance()->_exists('listType')){
   <li class="listings_list listing-card<?php if(osc_item_is_premium()){ echo ' premium'; } ?>">
     <div class="list_space"> <span class="ribbon"> <i class="fa fa-star"></i> </span>
       <div class="row">
+	  
         <div class="col-sm-4 col-md-4">
           <figure>
             <?php if( osc_images_enabled_at_items() ) { ?>
@@ -170,6 +175,7 @@ if(View::newInstance()->_exists('listType')){
             <?php } ?>
           </figure>
         </div>
+		
         <div class="col-sm-8 col-md-8">
           <div class="info">
             <div class="detail_info">
@@ -185,12 +191,27 @@ if(View::newInstance()->_exists('listType')){
               </div>
               <p><?php echo osc_highlight( osc_item_description() ,250) ; ?></p>
             </div>
+			
             <?php if($admin){ ?>
+			
+			<!-- ITEM EDIT -->			
             <span class="admin-options"> <a href="<?php echo osc_item_edit_url(); ?>" rel="nofollow">
             <?php _e('Edit item', raito_teema_THEME_FOLDER); ?>
-            </a> <span>|</span> <a class="delete" onclick="javascript:return confirm('<?php echo osc_esc_js(__('This action can not be undone. Are you sure you want to continue?', raito_teema_THEME_FOLDER)); ?>')" href="<?php echo osc_item_delete_url();?>" >
+            </a>
+			<!-- ITEM EDIT ENDS -->	
+			
+			<span>|</span>			
+			
+			<!-- ITEM DELETION -->			
+			<?php
+			$item_data = Array(osc_item_delete_url(), __('Delete item', raito_teema_THEME_FOLDER), __('Are you sure?', raito_teema_THEME_FOLDER));
+			?>
+			<a class="delete" onclick='delete_user_item(<?php echo json_encode($item_data); ?>); return false;' href="#" >
+			
             <?php _e('Delete', raito_teema_THEME_FOLDER); ?>
             </a>
+			<!-- ITEM DELETION ENDS -->			
+			
             <?php if(osc_item_is_inactive()) {?>
             <span>|</span> <a href="<?php echo osc_item_activate_url();?>" >
             <?php _e('Activate', raito_teema_THEME_FOLDER); ?>
@@ -198,6 +219,7 @@ if(View::newInstance()->_exists('listType')){
             <?php } ?>
             </span>
             <?php } ?>
+			
           </div>
         </div>
       </div>

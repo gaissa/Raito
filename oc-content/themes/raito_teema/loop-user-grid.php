@@ -183,12 +183,25 @@ echo'</ul>';
     <?php if( osc_price_enabled_at_items() ) { ?>
     <span class="currency-value"><?php echo osc_format_price(osc_item_price()); ?></span>
     <?php } ?>
+	
     <?php if($admin){ ?>
     <span class="admin-options"> <a href="<?php echo osc_item_edit_url(); ?>" rel="nofollow">
     <?php _e('Edit item', raito_teema_THEME_FOLDER); ?>
-    </a> <span>|</span> <a class="delete" onclick="javascript:return confirm('<?php echo osc_esc_js(__('This action can not be undone. Are you sure you want to continue?', raito_teema_THEME_FOLDER)); ?>')" href="<?php echo osc_item_delete_url();?>" >
-    <?php _e('Delete', raito_teema_THEME_FOLDER); ?>
-    </a>
+    </a> <span>|</span>
+
+	<!-- ITEM DELETION -->
+	<div id="class" title="<?php _e('Delete item', raito_teema_THEME_FOLDER); ?>">
+		<p><?php _e('Are you sure?', raito_teema_THEME_FOLDER); ?></p>
+	</div>
+
+	<?php
+	$node = osc_item_delete_url();
+	echo '<a class="delete" onclick=test("'.$node.'") href="#" >'
+	?>
+	<?php _e('Delete', raito_teema_THEME_FOLDER); ?>
+	</a>
+	<!-- ITEM DELETION ENDS -->	
+	
     <?php if(osc_item_is_inactive()) {?>
     <span>|</span> <a href="<?php echo osc_item_activate_url();?>" >
     <?php _e('Activate', raito_teema_THEME_FOLDER); ?>
