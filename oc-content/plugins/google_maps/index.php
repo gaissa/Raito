@@ -1,12 +1,12 @@
 <?php
 /*
-Plugin Name: Google Maps
-Plugin URI: http://www.osclass.org/
-Description: This plugin shows a Google Map on the location space of every item.
-Version: 2.1.6
-Author: Osclass & kingsult
-Author URI: http://www.osclass.org/
-Plugin update URI: http://www.osclass.org/files/plugins/google_maps/update.php
+Plugin Name: Google Maps for Raito
+Plugin URI: #
+Description: Customized Google Maps plugin for the items. Based on the Google Maps plugin by Osclass & kingsult
+Version: 0.0.1
+Author: Osclass & kingsult & Janne Kähkönen
+Author URI: #
+Plugin update URI: #
 */
 
     function google_maps_location() {
