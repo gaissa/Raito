@@ -31,12 +31,16 @@
 
 <div class="row">
 
-    <?php if(raito_teema_site_info_text()){ ?>
-      <?php echo raito_teema_site_info_text(); ?>
-    <?php } ?>
+    <?php
+	
+	if(raito_teema_site_info_text()) {
+		echo raito_teema_site_info_text(); 
+    }
+	
+	?>
 
-    <br>
-    <br>
+	<br>
+	<br>
 
     <div class="wraps">
       <div class="title">
@@ -86,13 +90,13 @@
               <?php ContactForm::your_message(); ?>
             </div>
           </div>
-           <?php if( osc_recaptcha_items_enabled() ) { ?>
-          <div class="form-group">
+		   <?php if( osc_recaptcha_items_enabled() ) { ?>
+		  <div class="form-group">
             <div class="recap">
-            <?php osc_show_recaptcha(); ?>
-            </div>
-         </div>
-           <?php } ?>
+			<?php osc_show_recaptcha(); ?>
+			</div>
+		 </div>
+		   <?php } ?>
           <div class="form-group">
             <div class="controls">
               <?php osc_run_hook('contact_form'); ?>
