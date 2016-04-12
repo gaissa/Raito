@@ -8,7 +8,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2016-04-07 15:48+0300\n"
+"PO-Revision-Date: 2016-04-12 19:12+0300\n"
 "Last-Translator: Janne Kähkönen <jannekahkonen@gmail.com>\n"
 "Language-Team: Translations <translations@osclass.org>\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
@@ -2599,7 +2599,7 @@ msgstr ""
 #: oc-includes/osclass/frm/User.form.class.php:192
 #: oc-includes/osclass/frm/User.form.class.php:302
 msgid "Invalid email address"
-msgstr ""
+msgstr "Sähköpostiosoitteesi on virheellinen"
 
 #: oc-admin/themes/modern/settings/index.php:65
 msgid "Listings shown in RSS feed: this field is required"
@@ -5234,7 +5234,7 @@ msgstr ""
 #: oc-includes/osclass/frm/User.form.class.php:382
 #: oc-includes/osclass/frm/User.form.class.php:384
 msgid "Select a region..."
-msgstr ""
+msgstr "Valitse alue..."
 
 #: oc-includes/osclass/frm/Item.form.class.php:553
 #: oc-includes/osclass/frm/Item.form.class.php:889
@@ -5519,15 +5519,15 @@ msgstr ""
 
 #: oc-includes/osclass/helpers/hSearch.php:51
 msgid "Newly listed"
-msgstr ""
+msgstr "Uudet ensin"
 
 #: oc-includes/osclass/helpers/hSearch.php:52
 msgid "Lower price first"
-msgstr ""
+msgstr "Halvimmat ensin"
 
 #: oc-includes/osclass/helpers/hSearch.php:53
 msgid "Higher price first"
-msgstr ""
+msgstr "Kalliimmat ensin"
 
 #: oc-includes/osclass/helpers/hUtils.php:133
 msgid "AM"
@@ -6473,4 +6473,4 @@ msgstr ""
 
 #: oc-load.php:206
 msgid "The website is currently undergoing maintenance"
-msgstr ""
+msgstr "Palvelu on ylläpitotilassa"
