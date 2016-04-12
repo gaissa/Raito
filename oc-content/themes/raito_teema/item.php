@@ -107,10 +107,17 @@ $(document).ready(function() {
         ?>
           <div class="col-md-10"> <a href="<?php echo osc_resource_url(); ?>" class="main-photo" title="<?php echo osc_esc_html(__('Image', raito_teema_THEME_FOLDER)); ?> <?php echo $i+1;?> / <?php echo osc_count_item_resources();?>"> <img class="img-responsive" src="<?php echo osc_resource_url(); ?>" alt="<?php echo osc_item_title(); ?>" title="<?php echo osc_item_title(); ?>" /> </a></div>
           <div class="col-md-2">
+		  
             <div class="thumbs">
-              <?php for ( $i = 0; osc_has_item_resources(); $i++ ) { ?>
+              <?php
+			  for ( $i = 0; osc_has_item_resources(); $i++ ) {
+				if($i != 0){ // except 1st image				  ?>
               <a href="<?php echo osc_resource_url(); ?>" class="fancybox" data-fancybox-group="group" title="<?php echo osc_esc_html(__('Image', raito_teema_THEME_FOLDER)); ?> <?php echo $i+1;?> / <?php echo osc_count_item_resources();?>"> <img src="<?php echo osc_resource_thumbnail_url(); ?>" width="100%" alt="<?php echo osc_item_title(); ?>" title="<?php echo osc_item_title(); ?>" class="img-responsive"/> </a>
-              <?php } ?>
+              <?php
+			    }
+			  } 
+			  ?>
+
             </div>
           </div>
           <?php } else{?>
@@ -122,6 +129,7 @@ $(document).ready(function() {
         </div>
       </div>
       <?php } ?>
+	  
       <div id="description">
         <p><?php echo osc_item_description(); ?></p>
         <div id="custom_fields">
