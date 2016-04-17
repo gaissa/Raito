@@ -73,6 +73,7 @@
       <p id="edit_item_view"> <strong> <a href="<?php echo osc_item_edit_url(); ?>" rel="nofollow">
         <?php _e('Edit item', raito_teema_THEME_FOLDER); ?>
         </a> </strong> </p>
+		
       <?php } ?>
 	  
       <h1 class="title title_code"> <strong><?php echo osc_item_title(); ?></strong> </h1>
@@ -111,41 +112,37 @@
 				</div>
       </ul> 
 	 
-		<?php osc_run_hook('item_detail', osc_item() ); ?>      
-
+		<?php osc_run_hook('item_detail', osc_item() ); ?>
 	  
       <?php if( osc_images_enabled_at_items() ) { ?>
 	  
       <div class="item-photos">
 	  
         <div class="row">
-        <?php		  
-		  
-        if( osc_count_item_resources() > 0 ) {
-            $i = 0;
-        ?>
+        
            
             <div class="col-md-10">
 		  
 				   <p><?php echo osc_item_description(); ?></p>
 				   
-					 <div class="main-image">
-					 
-						<?php if( osc_images_enabled_at_items() ) { ?>
-							<?php if( osc_count_item_resources() > 0 ) { ?>
-							
-								 <a href="<?php echo osc_resource_url(); ?>" class="fancybox" data-fancybox-group="group" title="<?php echo osc_esc_html(__('Image', raito_teema_THEME_FOLDER)); ?> <?php echo $i+1;?> / <?php echo osc_count_item_resources();?>"> <img src="<?php echo osc_resource_thumbnail_url(); ?>" width="95%" alt="<?php echo osc_item_title(); ?>" title="<?php echo osc_item_title(); ?>" class="img-responsive"/> </a>
-							<?php } ?>
-						<?php } ?>
+					 <div class="main-image">					 
+						
+						<?php if( osc_count_item_resources() > 0 ) { ?>
+						
+							 <a href="<?php echo osc_resource_url(); ?>" class="fancybox" data-fancybox-group="group" title="<?php echo osc_esc_html(__('Image', raito_teema_THEME_FOLDER)); ?> <?php echo $i+1;?> / <?php echo osc_count_item_resources();?>"> <img src="<?php echo osc_resource_thumbnail_url(); ?>" width="95%" alt="<?php echo osc_item_title(); ?>" title="<?php echo osc_item_title(); ?>" class="img-responsive"/> </a>
+						<?php } ?>						
 						
 					</div>
 
 				<?php osc_reset_resources(); ?>
-				
-			
 		
-		    </div>
+		    </div>	
+			
+		<?php		  
 		  
+        if( osc_count_item_resources() > 0 ) {
+            $i = 0;
+        ?>			
 		  
           <div class="col-md-2">
             <div class="thumbs">
@@ -160,9 +157,8 @@
 
           <?php } else { ?>
 		  
-          <div class="col-md-10">
+          <div class="col-md-10">			  
 			  
-			   <p><?php echo osc_item_description(); ?></p>
 			<div id="custom_fields">
 			  <?php if( osc_count_item_meta() >= 1 ) { ?>
 			  <br />
