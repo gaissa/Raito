@@ -95,8 +95,23 @@
             <li><i class="fa fa-map-marker"></i> <?php echo implode(' &#8226 ', $location); ?></li>
           </ul>
         </li>
+			
         <?php }; ?>
-      </ul>  
+		 <div id="custom_fields">
+				  <?php if( osc_count_item_meta() >= 1 ) { ?>
+				  <br />
+				  <div class="meta_list">
+					<?php while ( osc_has_item_meta() ) { ?>
+					<?php if(osc_item_meta_value()!='') { ?>
+					<div class="meta"> <strong><?php echo osc_item_meta_name(); ?>:</strong> <?php echo osc_item_meta_value(); ?> </div>
+					<?php } ?>
+					<?php } ?>
+				  </div>
+				  <?php } ?>
+				</div>
+      </ul> 
+	 
+		<?php osc_run_hook('item_detail', osc_item() ); ?>      
 
 	  
       <?php if( osc_images_enabled_at_items() ) { ?>
@@ -127,19 +142,7 @@
 
 				<?php osc_reset_resources(); ?>
 				
-				<div id="custom_fields">
-				  <?php if( osc_count_item_meta() >= 1 ) { ?>
-				  <br />
-				  <div class="meta_list">
-					<?php while ( osc_has_item_meta() ) { ?>
-					<?php if(osc_item_meta_value()!='') { ?>
-					<div class="meta"> <strong><?php echo osc_item_meta_name(); ?>:</strong> <?php echo osc_item_meta_value(); ?> </div>
-					<?php } ?>
-					<?php } ?>
-				  </div>
-				  <?php } ?>
-				</div>
-				<?php osc_run_hook('item_detail', osc_item() ); ?>      
+			
 		
 		    </div>
 		  
@@ -152,7 +155,7 @@
               <?php }} ?>
             </div>
           </div>
-		    <?php osc_run_hook('location'); ?>
+		   
 			
 
           <?php } else { ?>
@@ -180,10 +183,9 @@
 		  
         </div>
       </div>
-      <?php } ?>
-	  
-	  
-      <div id="description"></div>
+      <?php } ?>	  
+     
+	   <?php osc_run_hook('location'); ?>
 
 	  	  <!-- SHARE BUTTONS -->
 	      <ul class="contact_button">
@@ -214,11 +216,7 @@
             <i id="fa-custom" class="fa fa-envelope"></i>
           </a>
 		  </li>
-          <?php if(function_exists('watchlist')) {?>
-          <li>
-            <?php watchlist(); ?>
-          </li>
-          <?php } ?>
+
           <li><a class="see_all" href="<?php echo osc_user_public_profile_url( osc_item_user_id() ); ?>">
             <?php _e('See all ads from this advertiser', raito_teema_THEME_FOLDER); ?>
             </a> </li>
