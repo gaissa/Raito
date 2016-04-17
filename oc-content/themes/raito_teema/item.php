@@ -19,25 +19,12 @@
      * License along with this program.  If not, see <http://www.gnu.org/licenses/>.
      */
 
+
     // meta tag robots
     if( osc_item_is_spam() || osc_premium_is_spam() ) {
         osc_add_hook('header','raito_teema_nofollow_construct');
     } else {
         osc_add_hook('header','raito_teema_follow_construct');
-    }
-
-    raito_teema_add_body_class('item');
-		
-	if(raito_teema_show_as() == 'gallery'){
-        $loop_template	=	'loop-search-grid.php';
-		$buttonClass = 'active';
-    }else{
-		$loop_template	=	'loop-search-list.php';
-		$buttonClass = '';
-	}
-	
-    function sidebar(){
-        osc_current_web_theme_path('item-sidebar.php');
     }
 
     $location = array();
@@ -55,29 +42,41 @@
     }
     if( osc_item_country() !== '' ) {
         $location[] = osc_item_country();
+    }	
+	
+    raito_teema_add_body_class('item');	
+	
+    function sidebar(){
+        osc_current_web_theme_path('item-sidebar.php');
     }
 	
     osc_current_web_theme_path('header.php') ;	
 	
 ?>
 
-<script>
-$(document).ready(function() {   
-	$( "#btn btn-success" ).click(function() {
-	  console.log("test");
+	<script>
+	$(document).ready(function() {   
+		$( "#btn btn-success" ).click(function() {
+		  console.log("test");
+		});
 	});
-});
-</script>
+	</script>
 
 <div class="row">
+
   <div class="col-sm-7 col-md-8">
+  
     <div id="item-content">
+	
       <?php if(osc_is_web_user_logged_in() && osc_logged_user_id()==osc_item_user_id()) { ?>
+	  
       <p id="edit_item_view"> <strong> <a href="<?php echo osc_item_edit_url(); ?>" rel="nofollow">
         <?php _e('Edit item', raito_teema_THEME_FOLDER); ?>
         </a> </strong> </p>
       <?php } ?>
+	  
       <h1 class="title title_code"> <strong><?php echo osc_item_title(); ?></strong> </h1>
+	  
       <ul class="item-header">
         <li>
           <?php if( osc_price_enabled_at_items() ) { ?>
@@ -97,8 +96,7 @@ $(document).ready(function() {
           </ul>
         </li>
         <?php }; ?>
-      </ul>
-	  
+      </ul>  
 
 	  
       <?php if( osc_images_enabled_at_items() ) { ?>
@@ -106,44 +104,44 @@ $(document).ready(function() {
       <div class="item-photos">
 	  
         <div class="row">
-          <?php
-		  
+        <?php		  
 		  
         if( osc_count_item_resources() > 0 ) {
             $i = 0;
         ?>
            
-          <div class="col-md-10">
+            <div class="col-md-10">
 		  
-		   <p><?php echo osc_item_description(); ?></p>
-		   
-		   	 <div class="image slider">
-				<?php if( osc_images_enabled_at_items() ) { ?>
-					<?php if( osc_count_item_resources() > 0 ) { ?>
-					
-						 <a href="<?php echo osc_resource_url(); ?>" class="fancybox" data-fancybox-group="group" title="<?php echo osc_esc_html(__('Image', raito_teema_THEME_FOLDER)); ?> <?php echo $i+1;?> / <?php echo osc_count_item_resources();?>"> <img src="<?php echo osc_resource_thumbnail_url(); ?>" width="95%" alt="<?php echo osc_item_title(); ?>" title="<?php echo osc_item_title(); ?>" class="img-responsive"/> </a>
-					<?php } ?>
-				<?php } ?>  
-			</div>
+				   <p><?php echo osc_item_description(); ?></p>
+				   
+					 <div class="main-image">
+					 
+						<?php if( osc_images_enabled_at_items() ) { ?>
+							<?php if( osc_count_item_resources() > 0 ) { ?>
+							
+								 <a href="<?php echo osc_resource_url(); ?>" class="fancybox" data-fancybox-group="group" title="<?php echo osc_esc_html(__('Image', raito_teema_THEME_FOLDER)); ?> <?php echo $i+1;?> / <?php echo osc_count_item_resources();?>"> <img src="<?php echo osc_resource_thumbnail_url(); ?>" width="95%" alt="<?php echo osc_item_title(); ?>" title="<?php echo osc_item_title(); ?>" class="img-responsive"/> </a>
+							<?php } ?>
+						<?php } ?>
+						
+					</div>
 
-		<?php osc_reset_resources(); ?>
+				<?php osc_reset_resources(); ?>
+				
+				<div id="custom_fields">
+				  <?php if( osc_count_item_meta() >= 1 ) { ?>
+				  <br />
+				  <div class="meta_list">
+					<?php while ( osc_has_item_meta() ) { ?>
+					<?php if(osc_item_meta_value()!='') { ?>
+					<div class="meta"> <strong><?php echo osc_item_meta_name(); ?>:</strong> <?php echo osc_item_meta_value(); ?> </div>
+					<?php } ?>
+					<?php } ?>
+				  </div>
+				  <?php } ?>
+				</div>
+				<?php osc_run_hook('item_detail', osc_item() ); ?>      
 		
-        <div id="custom_fields">
-          <?php if( osc_count_item_meta() >= 1 ) { ?>
-          <br />
-          <div class="meta_list">
-            <?php while ( osc_has_item_meta() ) { ?>
-            <?php if(osc_item_meta_value()!='') { ?>
-            <div class="meta"> <strong><?php echo osc_item_meta_name(); ?>:</strong> <?php echo osc_item_meta_value(); ?> </div>
-            <?php } ?>
-            <?php } ?>
-          </div>
-          <?php } ?>
-        </div>
-        <?php osc_run_hook('item_detail', osc_item() ); ?>
-      
-		
-		  </div>
+		    </div>
 		  
 		  
           <div class="col-md-2">
@@ -155,32 +153,31 @@ $(document).ready(function() {
             </div>
           </div>
 		    <?php osc_run_hook('location'); ?>
-          <?php } else{?>
+			
+
+          <?php } else { ?>
 		  
           <div class="col-md-10">
-		  
-		   <p><?php echo osc_item_description(); ?></p>
-        <div id="custom_fields">
-          <?php if( osc_count_item_meta() >= 1 ) { ?>
-          <br />
-          <div class="meta_list">
-            <?php while ( osc_has_item_meta() ) { ?>
-            <?php if(osc_item_meta_value()!='') { ?>
-            <div class="meta"> <strong><?php echo osc_item_meta_name(); ?>:</strong> <?php echo osc_item_meta_value(); ?> </div>
-            <?php } ?>
-            <?php } ?>
-          </div>
-          <?php } ?>
-        </div>
-        <?php osc_run_hook('item_detail', osc_item() ); ?>
-      
+			  
+			   <p><?php echo osc_item_description(); ?></p>
+			<div id="custom_fields">
+			  <?php if( osc_count_item_meta() >= 1 ) { ?>
+			  <br />
+			  <div class="meta_list">
+				<?php while ( osc_has_item_meta() ) { ?>
+				<?php if(osc_item_meta_value()!='') { ?>
+				<div class="meta"> <strong><?php echo osc_item_meta_name(); ?>:</strong> <?php echo osc_item_meta_value(); ?> </div>
+				<?php } ?>
+				<?php } ?>
+			  </div>
+			  <?php } ?>
+			</div>
+			<?php osc_run_hook('item_detail', osc_item() ); ?>      
 		
 		  </div>
-		  
-          <div class="col-md-2">
-            <div class="thumbs"> <a href="<?php echo osc_current_web_theme_url('images/no_photo.gif'); ?>" class="fancybox" data-fancybox-group="group" title="<?php echo osc_esc_html(__('Image', raito_teema_THEME_FOLDER)); ?> 1 / 1"> <img src="<?php echo osc_current_web_theme_url('images/no_photo.gif'); ?>" width="95%" alt="<?php echo osc_item_title(); ?>" title="<?php echo osc_item_title(); ?>" class="img-responsive"/> </a> </div>
-          </div>
+		
           <?php } ?>
+		  
         </div>
       </div>
       <?php } ?>
@@ -212,9 +209,11 @@ $(document).ready(function() {
 		  <li><a href="https://plus.google.com/share?url=<?php echo osc_item_url() ; ?>" target="_blank"><i id="fa-custom" class="fa fa-google"></i></a></li>
 		  <li><a href="http://twitter.com/share?url=<?php echo osc_item_url() ; ?>" target="_blank"><i id="fa-custom" class="fa fa-twitter"></i></a></li>	
 		
-          <li><a href="<?php echo osc_item_send_friend_url(); ?>" rel="nofollow">
+          <li>
+		  <a href="<?php echo osc_item_send_friend_url(); ?>" rel="nofollow">
             <i id="fa-custom" class="fa fa-envelope"></i>
-            </a></li>
+          </a>
+		  </li>
           <?php if(function_exists('watchlist')) {?>
           <li>
             <?php watchlist(); ?>
