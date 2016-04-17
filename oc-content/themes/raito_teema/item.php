@@ -98,40 +98,36 @@ $(document).ready(function() {
         </li>
         <?php }; ?>
       </ul>
+	  
+
+	  
       <?php if( osc_images_enabled_at_items() ) { ?>
+	  
       <div class="item-photos">
+	  
         <div class="row">
           <?php
+		  
+		  
         if( osc_count_item_resources() > 0 ) {
             $i = 0;
         ?>
-          <div class="col-md-10"> <a href="<?php echo osc_resource_url(); ?>" class="main-photo" title="<?php echo osc_esc_html(__('Image', raito_teema_THEME_FOLDER)); ?> <?php echo $i+1;?> / <?php echo osc_count_item_resources();?>"> <img class="img-responsive" src="<?php echo osc_resource_url(); ?>" alt="<?php echo osc_item_title(); ?>" title="<?php echo osc_item_title(); ?>" /> </a></div>
-          <div class="col-md-2">
+           
+          <div class="col-md-10">
 		  
-            <div class="thumbs">
-              <?php
-			  for ( $i = 0; osc_has_item_resources(); $i++ ) {
-				if($i != 0){ // except 1st image				  ?>
-              <a href="<?php echo osc_resource_url(); ?>" class="fancybox" data-fancybox-group="group" title="<?php echo osc_esc_html(__('Image', raito_teema_THEME_FOLDER)); ?> <?php echo $i+1;?> / <?php echo osc_count_item_resources();?>"> <img src="<?php echo osc_resource_thumbnail_url(); ?>" width="100%" alt="<?php echo osc_item_title(); ?>" title="<?php echo osc_item_title(); ?>" class="img-responsive"/> </a>
-              <?php
-			    }
-			  } 
-			  ?>
+		   <p><?php echo osc_item_description(); ?></p>
+		   
+		   	 <div class="image slider">
+				<?php if( osc_images_enabled_at_items() ) { ?>
+					<?php if( osc_count_item_resources() > 0 ) { ?>
+					
+						 <a href="<?php echo osc_resource_url(); ?>" class="fancybox" data-fancybox-group="group" title="<?php echo osc_esc_html(__('Image', raito_teema_THEME_FOLDER)); ?> <?php echo $i+1;?> / <?php echo osc_count_item_resources();?>"> <img src="<?php echo osc_resource_thumbnail_url(); ?>" width="95%" alt="<?php echo osc_item_title(); ?>" title="<?php echo osc_item_title(); ?>" class="img-responsive"/> </a>
+					<?php } ?>
+				<?php } ?>  
+			</div>
 
-            </div>
-          </div>
-          <?php } else{?>
-          <div class="col-md-10"> <a href="<?php echo osc_current_web_theme_url('images/no_photo.gif'); ?>" class="main-photo" title="<?php echo osc_esc_html(__('Image', raito_teema_THEME_FOLDER)); ?> 1 / 1"> <img class="img-responsive" src="<?php echo osc_current_web_theme_url('images/no_photo.gif'); ?>" alt="<?php echo osc_item_title(); ?>" title="<?php echo osc_item_title(); ?>" /> </a></div>
-          <div class="col-md-2">
-            <div class="thumbs"> <a href="<?php echo osc_current_web_theme_url('images/no_photo.gif'); ?>" class="fancybox" data-fancybox-group="group" title="<?php echo osc_esc_html(__('Image', raito_teema_THEME_FOLDER)); ?> 1 / 1"> <img src="<?php echo osc_current_web_theme_url('images/no_photo.gif'); ?>" width="100%" alt="<?php echo osc_item_title(); ?>" title="<?php echo osc_item_title(); ?>" class="img-responsive"/> </a> </div>
-          </div>
-          <?php } ?>
-        </div>
-      </div>
-      <?php } ?>
-	  
-      <div id="description">
-        <p><?php echo osc_item_description(); ?></p>
+		<?php osc_reset_resources(); ?>
+		
         <div id="custom_fields">
           <?php if( osc_count_item_meta() >= 1 ) { ?>
           <br />
@@ -145,8 +141,52 @@ $(document).ready(function() {
           <?php } ?>
         </div>
         <?php osc_run_hook('item_detail', osc_item() ); ?>
-        <?php osc_run_hook('location'); ?>
+      
+		
+		  </div>
+		  
+		  
+          <div class="col-md-2">
+            <div class="thumbs">
+              <?php for ( $i = 0; osc_has_item_resources(); $i++ ) { 
+			  if ($i != 0) {?>
+              <a href="<?php echo osc_resource_url(); ?>" class="fancybox" data-fancybox-group="group" title="<?php echo osc_esc_html(__('Image', raito_teema_THEME_FOLDER)); ?> <?php echo $i+1;?> / <?php echo osc_count_item_resources();?>"> <img src="<?php echo osc_resource_thumbnail_url(); ?>" width="95%" alt="<?php echo osc_item_title(); ?>" title="<?php echo osc_item_title(); ?>" class="img-responsive"/> </a>
+              <?php }} ?>
+            </div>
+          </div>
+		    <?php osc_run_hook('location'); ?>
+          <?php } else{?>
+		  
+          <div class="col-md-10">
+		  
+		   <p><?php echo osc_item_description(); ?></p>
+        <div id="custom_fields">
+          <?php if( osc_count_item_meta() >= 1 ) { ?>
+          <br />
+          <div class="meta_list">
+            <?php while ( osc_has_item_meta() ) { ?>
+            <?php if(osc_item_meta_value()!='') { ?>
+            <div class="meta"> <strong><?php echo osc_item_meta_name(); ?>:</strong> <?php echo osc_item_meta_value(); ?> </div>
+            <?php } ?>
+            <?php } ?>
+          </div>
+          <?php } ?>
+        </div>
+        <?php osc_run_hook('item_detail', osc_item() ); ?>
+      
+		
+		  </div>
+		  
+          <div class="col-md-2">
+            <div class="thumbs"> <a href="<?php echo osc_current_web_theme_url('images/no_photo.gif'); ?>" class="fancybox" data-fancybox-group="group" title="<?php echo osc_esc_html(__('Image', raito_teema_THEME_FOLDER)); ?> 1 / 1"> <img src="<?php echo osc_current_web_theme_url('images/no_photo.gif'); ?>" width="95%" alt="<?php echo osc_item_title(); ?>" title="<?php echo osc_item_title(); ?>" class="img-responsive"/> </a> </div>
+          </div>
+          <?php } ?>
+        </div>
       </div>
+      <?php } ?>
+	  
+	  
+      <div id="description"></div>
 
 	  	  <!-- SHARE BUTTONS -->
 	      <ul class="contact_button">
