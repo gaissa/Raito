@@ -378,6 +378,36 @@ li.premium .ribbon {display: block;
 }
 
 /*comment*/
+
+.comment_author {
+/* background-color: #fff;
+margin-left: 4px;
+margin-bottom: 4px;
+padding-right: 14px;
+text-align: right;
+font-size: 75%; */
+}
+
+.comment_title {
+padding-left: 8px;
+margin-left: 4px;
+border: solid;
+text-decoration: underline;
+border-color: #fff;
+background-color: #fff;
+font-size: 125%;
+}
+
+.comment_content {
+
+padding-left: 8px;
+margin-left: 4px;
+border: solid;
+border-color: #fff;
+background-color: #fff;
+
+}
+
 #comment_form, .comments_list, #contact, #mask_as_form, .dashboard_form form {padding: 15px;
 }
 #mask_as_form {margin-bottom: 20px;

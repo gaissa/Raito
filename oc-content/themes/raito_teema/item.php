@@ -26,6 +26,14 @@
     } else {
         osc_add_hook('header','raito_teema_follow_construct');
     }
+	
+	if(raito_teema_show_as() == 'gallery'){
+        $loop_template	=	'loop-search-grid.php';
+		$buttonClass = 'active';
+    }else{
+		$loop_template	=	'loop-search-list.php';
+		$buttonClass = '';
+	}
 
     $location = array();
 	if( osc_item_address() !== '' ) {
@@ -44,11 +52,7 @@
         $location[] = osc_item_country();
     }	
 	
-    raito_teema_add_body_class('item');	
-	
-    function sidebar(){
-        osc_current_web_theme_path('item-sidebar.php');
-    }
+    raito_teema_add_body_class('item');
 	
     osc_current_web_theme_path('header.php') ;	
 	
@@ -79,18 +83,21 @@
       <h1 class="title title_code"> <strong><?php echo osc_item_title(); ?></strong> </h1>
 	  
       <ul class="item-header">
+	  
         <li>
           <?php if( osc_price_enabled_at_items() ) { ?>
           <i class="fa fa-money"></i><?php echo osc_item_formated_price(); ?>
           <?php } ?>
         </li>
+		
         <li>
           <?php if ( osc_item_pub_date() !== '' ) { printf( __('<i class="fa fa-calendar-o"></i> Published date: %1$s', raito_teema_THEME_FOLDER), osc_format_date( osc_item_pub_date() ) ); } ?>
         </li>
         <li>
           <?php if ( osc_item_mod_date() !== '' ) { printf( __('<span class="update"><i class="fa fa-calendar"></i> Modified date:</span> %1$s', raito_teema_THEME_FOLDER), osc_format_date( osc_item_mod_date() ) ); } ?>
         </li>
-        <?php if (count($location)>0) { ?>
+		
+        <?php if (count($location) > 0) { ?>
         <li>
           <ul id="item_location">
             <li><i class="fa fa-map-marker"></i> <?php echo implode(' &#8226 ', $location); ?></li>
@@ -112,14 +119,13 @@
 				</div>
       </ul> 
 	 
-		<?php osc_run_hook('item_detail', osc_item() ); ?>
+	  <?php osc_run_hook('item_detail', osc_item() ); ?>
 	  
       <?php if( osc_images_enabled_at_items() ) { ?>
 	  
       <div class="item-photos">
 	  
-        <div class="row">
-        
+        <div class="row">        
            
             <div class="col-md-10">
 		  
@@ -151,9 +157,7 @@
               <a href="<?php echo osc_resource_url(); ?>" class="fancybox" data-fancybox-group="group" title="<?php echo osc_esc_html(__('Image', raito_teema_THEME_FOLDER)); ?> <?php echo $i+1;?> / <?php echo osc_count_item_resources();?>"> <img src="<?php echo osc_resource_thumbnail_url(); ?>" width="95%" alt="<?php echo osc_item_title(); ?>" title="<?php echo osc_item_title(); ?>" class="img-responsive"/> </a>
               <?php }} ?>
             </div>
-          </div>
-		   
-			
+          </div>			
 
           <?php } else { ?>
 		  
@@ -180,8 +184,13 @@
         </div>
       </div>
       <?php } ?>	  
-     
-	   <?php osc_run_hook('location'); ?>
+        
+		 <?php if (count($location)>0) { ?>
+		 
+         <?php osc_run_hook('location'); ?>
+			
+        <?php }; ?>
+	 
 
 	  	  <!-- SHARE BUTTONS -->
 	      <ul class="contact_button">
@@ -235,11 +244,20 @@
       <?php if( osc_count_item_comments() >= 1 ) { ?>
       <div class="comments_list">
         <?php while ( osc_has_item_comments() ) { ?>
+		
         <div class="comment">
-          <h4><?php echo osc_comment_title(); ?> <em>
-            <?php _e("by", raito_teema_THEME_FOLDER); ?>
-            <?php echo osc_comment_author_name(); ?>:</em></h4>
+
+		<div class="comment_author"><?php echo osc_comment_pub_date(); ?>
+		
+		
+        <h4><?php echo osc_comment_author_name(); ?></h4>
+		</div>
+		<div class="comment_title"><?php echo osc_comment_title(); ?> </div>
+		<div class="comment_content">
+         
           <p><?php echo nl2br( osc_comment_body() ); ?> </p>
+		  
+		</div>
           <?php if ( osc_comment_user_id() && (osc_comment_user_id() == osc_logged_user_id()) ) { ?>
           <p> <a rel="nofollow" href="<?php echo osc_delete_comment_url(); ?>" title="<?php echo osc_esc_html(__('Delete your comment', raito_teema_THEME_FOLDER)); ?>">
             <?php _e('Delete', raito_teema_THEME_FOLDER); ?>
