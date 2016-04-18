@@ -241,10 +241,11 @@ h1 .sorting {float: right;margin: 2px 0 0;
 }
 figure {overflow: hidden;
 }
-figure img {-webkit-transition: opacity 1s ease-in-out;-moz-transition: opacity 1s ease-in-out;-o-transition: opacity 1s ease-in-out;transition: opacity 1s ease-in-out;opacity: 1;-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";filter: alpha(opacity=0);
+
+/* figure img {-webkit-transition: opacity 1s ease-in-out;-moz-transition: opacity 1s ease-in-out;-o-transition: opacity 1s ease-in-out;transition: opacity 1s ease-in-out;opacity: 1;-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";filter: alpha(opacity=0);
 }
 figure img:hover {opacity: 0.9;
-}
+} */
 
 /*list page*/
 .figure figure {position: relative;
