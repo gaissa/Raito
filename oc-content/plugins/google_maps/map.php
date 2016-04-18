@@ -1,29 +1,41 @@
 <div id="itemMap" style="width: 100%; height: 240px;"></div>
 
-<?php if($item['d_coord_lat'] != '' && $item['d_coord_long'] != '') {?>
-    <script type="text/javascript">
-        var latlng = new google.maps.LatLng(<?php echo $item['d_coord_lat']; ?>, <?php echo $item['d_coord_long']; ?>);
-        var myOptions = {
-            zoom: 13,
-            center: latlng,
-            mapTypeId: google.maps.MapTypeId.ROADMAP,
-            size: new google.maps.Size(480,240)
-        }
+<?php
 
-        map = new google.maps.Map(document.getElementById("itemMap"), myOptions);
-        var marker = new google.maps.Marker({
-            map: map,
-            position: latlng
-        });
-    </script>
-<?php } else { ?>
+if($item['d_coord_lat'] != '' && $item['d_coord_long'] != '') {
+
+?>
+	<script type="text/javascript">
+	
+		var latlng = new google.maps.LatLng(<?php echo $item['d_coord_lat']; ?>, <?php echo $item['d_coord_long']; ?>);
+		var myOptions = {
+			zoom: 13,
+			center: latlng,
+			mapTypeId: google.maps.MapTypeId.ROADMAP,
+			size: new google.maps.Size(480,240)
+		}
+
+		map = new google.maps.Map(document.getElementById("itemMap"), myOptions);
+		var marker = new google.maps.Marker({
+			map: map,
+			position: latlng
+		});
+		
+	</script>
+	
+<?php
+
+} else {
+
+?>
+
     <script type="text/javascript"> 
+
         var map = null;
         var geocoder = null;
      
         var myOptions = {
-            zoom: 13,
-            center: new google.maps.LatLng(37.4419, -122.1419),
+            zoom: 15,            
             mapTypeId: google.maps.MapTypeId.ROADMAP,
             size: new google.maps.Size(480,240)
         }
@@ -50,17 +62,41 @@
 
         <?php
             $addr = array();
-            if( ( $item['s_address'] != '' ) && ( $item['s_address'] != null ) ) { $addr[] = $item['s_address']; }
-            if( ( $item['s_city'] != '' ) && ( $item['s_city'] != null ) ) { $addr[] = $item['s_city']; }
-            if( ( $item['s_zip'] != '' ) && ( $item['s_zip'] != null ) ) { $addr[] = $item['s_zip']; }
-            #if( ( $item['s_region'] != '' ) && ( $item['s_region'] != null ) ) { $addr[] = $item['s_region']; }
-            if( ( $item['s_country'] != '' ) && ( $item['s_country'] != null ) ) { $addr[] = $item['s_country']; }
+            if( ( $item['s_address'] != '' ) && ( $item['s_address'] != null ) ) {
+				$addr[] = $item['s_address'];
+			}			
+            
+			if( ( $item['s_city'] == '' ) ) {
+				$addr[] = "Rovaniemi";
+			}
+			else if( ( $item['s_city'] != '' ) && ( $item['s_city'] != null ) ) {
+				$addr[] = $item['s_city'];
+			}
+			
+            #if( ( $item['s_city_area'] != '' ) && ( $item['s_city_area'] != null ) ) {
+				#$addr[] = $item['s_city_area'];
+			#}
+			
+            #if( ( $item['s_region'] != '' ) && ( $item['s_region'] != null ) ) {
+				#$addr[] = $item['s_region'];
+			#}
+			
+            if( ( $item['s_country'] != '' ) && ( $item['s_country'] != null ) ) {
+				$addr[] = $item['s_country'];
+			}
+			
             $address = implode(", ", $addr);
         ?>
 
         $(document).ready(function(){
+			//console.log('<?php echo osc_esc_js($address); ?>');
             showAddress('<?php echo osc_esc_js($address); ?>');
         });
 
     </script>
-<?php } ?>
+	
+<?php
+
+}
+
+?>
