@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Raito\n"
-"POT-Creation-Date: 2016-04-18 23:55+0300\n"
-"PO-Revision-Date: 2016-04-18 23:56+0300\n"
+"POT-Creation-Date: 2016-04-19 02:20+0300\n"
+"PO-Revision-Date: 2016-04-19 02:30+0300\n"
 "Last-Translator: Janne Kähkönen <jannekahkonen@gmail.com>\n"
 "Language-Team: Janne Kähkönen <jannekahkonen@gmail.com>\n"
 "Language: fi_FI\n"
@@ -66,7 +66,7 @@ msgid "E-mail: %s"
 msgstr "E-mail: %s"
 
 #: TEMP/item-sidebar2.php:79 contact.php:59 item-send-friend.php:51
-#: item-sidebar.php:90 item.php:289 user-public-sidebar.php:36
+#: item-sidebar.php:90 item.php:286 user-public-sidebar.php:36
 msgid "Your name"
 msgstr "Nimi"
 
@@ -101,7 +101,7 @@ msgid "Help"
 msgstr "Apua"
 
 #: TEMP/item-sidebar2.php:147 contact.php:105 item-send-friend.php:110
-#: item-sidebar.php:158 item.php:322 user-public-sidebar.php:97
+#: item-sidebar.php:158 item.php:319 user-public-sidebar.php:97
 msgid "Send"
 msgstr "Lähetä"
 
@@ -128,7 +128,7 @@ msgstr "Tätä toimintoa ei voi peruuttaa, haluatko varmasti jatkaa?"
 #: TEMP/loop-user-alerts-grid.php:73 TEMP/loop-user-alerts-grid.php:131
 #: TEMP/loop-user-alerts-grid.php:190 TEMP/loop-user-alerts-list.php:80
 #: TEMP/loop-user-alerts-list.php:143 TEMP/loop-user-alerts-list.php:216
-#: common/head.php:24 item.php:263 loop-grid.php:67 loop-list.php:73
+#: common/head.php:24 item.php:260 loop-grid.php:67 loop-list.php:73
 #: loop-search-grid.php:72 loop-search-grid.php:130 loop-search-list.php:74
 #: loop-search-list.php:136 loop-user-grid.php:73 loop-user-grid.php:131
 #: loop-user-grid.php:201 loop-user-list.php:78 loop-user-list.php:137
@@ -869,7 +869,7 @@ msgstr "VALITSE ALUE"
 msgid "Category"
 msgstr "työ tai palvelu"
 
-#: item-post.php:90 item.php:306
+#: item-post.php:90 item.php:303
 msgid "Title"
 msgstr "Otsikko"
 
@@ -922,7 +922,7 @@ msgstr "Päivitä"
 msgid "Publish"
 msgstr "Julkaise"
 
-#: item-send-friend.php:59 item.php:297
+#: item-send-friend.php:59 item.php:294
 msgid "Your e-mail"
 msgstr "Sähköposti"
 
@@ -960,53 +960,49 @@ msgstr ""
 msgid "Image"
 msgstr "Kuva"
 
-#: item.php:226
-msgid "See all ads from this advertiser"
-msgstr "Lisää ilmoituksia julkaisijalta"
-
-#: item.php:236
+#: item.php:233
 msgid "Comments"
 msgstr "Kommentit"
 
-#: item.php:262
+#: item.php:259
 msgid "Delete your comment"
 msgstr "Poista kommenttisi"
 
-#: item.php:274
+#: item.php:271
 msgid "Leave your comment (spam and offensive messages will be removed)"
 msgstr "Jätä kommentti"
 
-#: item.php:314
+#: item.php:311
 msgid "Comment"
 msgstr "Kommentti"
 
-#: item.php:351
+#: item.php:348
 msgid "Mark as..."
 msgstr "Merkitse..."
 
-#: item.php:354
+#: item.php:351
 msgid "Mark as spam"
 msgstr "Merkitse roskapostiksi"
 
-#: item.php:357
+#: item.php:354
 msgid "Mark as misclassified"
 msgstr "Merkitse luokittelemattomaksi"
 
-#: item.php:360
+#: item.php:357
 msgid "Mark as duplicated"
 msgstr "Merkitse duplikaatiksi"
 
-#: item.php:363
+#: item.php:360
 msgid "Mark as expired"
 msgstr "Merkitse sulkeutuneeksi"
 
-#: item.php:366
+#: item.php:363
 msgid "Mark as offensive"
 msgstr "Merkitse loukkaavaksi"
 
-#: item.php:379
+#: item.php:376
 msgid "Related listings"
-msgstr "aiheeseen liittyvät listat"
+msgstr "Samankaltaiset ilmoitukset"
 
 #: main.php:46
 msgid "Premium Listings"
@@ -1218,6 +1214,9 @@ msgstr "Luo uusi käyttäjätili"
 #: user-sidebar.php:26
 msgid "Are you sure you want to delete your account?"
 msgstr "Oletko varma että haluat poistaa käyttäjätilisi?"
+
+#~ msgid "See all ads from this advertiser"
+#~ msgstr "Lisää ilmoituksia julkaisijalta"
 
 #~ msgid "Premium listings"
 #~ msgstr "Parhaimmat listat"
