@@ -69,9 +69,10 @@
             </button>
           </div>
         </div>
-        <div class="actions"> <a href="<?php echo osc_register_account_url(); ?>">
+        <div class="actions">
+		  <!--<a href="<?php echo osc_register_account_url(); ?>">
           <?php _e("Register for a free account", raito_teema_THEME_FOLDER); ?>
-          </a><br />
+          </a><br /> -->
           <a href="<?php echo osc_recover_user_password_url(); ?>">
           <?php _e("Forgot password?", raito_teema_THEME_FOLDER); ?>
           </a> </div>
