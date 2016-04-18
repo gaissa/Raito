@@ -12,3 +12,4 @@ robots.txt
 .htaccess
 /*.php
 oc-content/themes/raito_teema/sass
+oc-content/plugins/profile_picture/images

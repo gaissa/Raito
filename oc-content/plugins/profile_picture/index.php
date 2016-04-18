@@ -47,10 +47,10 @@ function profile_picture_upload(){
    // Configuration - Your Options ///////////////////////////////////////////////////////
 
     // Specify display width of picture (height will be automatically calculated proprotionally)
-    $maxwidth = '120';
+    $maxwidth = '240';
 
     $allowed_filetypes = array('.jpg','.gif','.bmp','.png'); // These will be the types of file that will pass the validation.
-    $max_filesize = 524288; // Maximum filesize in BYTES (currently 0.5MB).
+    $max_filesize = 10485760; // Maximum filesize in BYTES (currently 0.5MB).
     $upload_path = osc_plugins_path().'profile_picture/images/';
 
     $button_text = 'Upload Profile Picture';
@@ -150,7 +150,7 @@ function profile_picture_show(){
    // Configuration - Your Options ///////////////////////////////////////////////////////
 
     // Specify display width of picture (height will be automatically calculated proprotionally)
-    $maxwidth = '120';
+    $maxwidth = '240';
 
 
     ////// ***** No modifications below here should be needed ***** /////////////////////
