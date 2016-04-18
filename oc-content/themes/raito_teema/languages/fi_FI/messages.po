@@ -8,7 +8,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2016-04-18 20:02+0300\n"
+"PO-Revision-Date: 2016-04-18 23:30+0300\n"
 "Last-Translator: Janne Kähkönen <jannekahkonen@gmail.com>\n"
 "Language-Team: Translations <translations@osclass.org>\n"
 "Language: fi_FI\n"
@@ -772,11 +772,11 @@ msgstr ""
 
 #: oc-admin/login.php:47
 msgid "The username field is empty"
-msgstr ""
+msgstr "Käyttäjänimi on tythjä"
 
 #: oc-admin/login.php:52
 msgid "The password field is empty"
-msgstr ""
+msgstr "Salasana on tyhjä"
 
 #: oc-admin/login.php:60
 msgid ""
@@ -981,7 +981,7 @@ msgstr ""
 
 #: oc-admin/tools.php:110 oc-admin/tools.php:139
 msgid "Path is empty"
-msgstr ""
+msgstr "Osoite on tyhjä"
 
 #: oc-admin/tools.php:113 oc-admin/tools.php:142
 msgid "Could not connect with the database. Error: %s"
@@ -1049,7 +1049,7 @@ msgstr ""
 
 #: oc-admin/users.php:80
 msgid "Sorry, the password cannot be empty"
-msgstr ""
+msgstr "Salasana ei voi olla tyhjä"
 
 #: oc-admin/users.php:82
 msgid "Sorry, passwords don't match"
@@ -1068,7 +1068,7 @@ msgstr ""
 #: oc-includes/osclass/controller/register.php:103
 #: oc-includes/osclass/controller/user.php:76
 msgid "The name cannot be empty"
-msgstr ""
+msgstr "Nimi ei voi olla tyhjä"
 
 #: oc-admin/users.php:90
 msgid "There was some error"
@@ -1200,7 +1200,7 @@ msgstr ""
 #: oc-includes/osclass/ItemActions.php:91
 #: oc-includes/osclass/ItemActions.php:304
 msgid "Image with an incorrect extension."
-msgstr "Kuvatiedostossa väärä pääte"
+msgstr "Kuvatiedostossa on väärä pääte"
 
 #: oc-includes/osclass/ItemActions.php:94
 #: oc-includes/osclass/ItemActions.php:307
@@ -1602,8 +1602,7 @@ msgstr "Virheellinen sähköpostiosoite"
 
 #: oc-includes/osclass/controller/login.php:181
 msgid "We have sent you an email with the instructions to reset your password"
-msgstr ""
-"olemme lähettäneet sinulle sähköpostin jossa on ohjeet salasanasi uusimiseen"
+msgstr "olemme lähettäneet sinulle sähköpostiin ohjeet salasanasi uusimiseen"
 
 #: oc-includes/osclass/controller/login.php:185
 msgid "We were not able to identify you given the information provided"
@@ -1769,3 +1768,11 @@ msgid ""
 "Osclass has been updated successfully. <a href=\"http://forums.osclass.org/"
 "\">Need more help?</a>"
 msgstr ""
+
+#: oc-includes/osclass/controller/login.php:47
+msgid "Please provide an email address"
+msgstr "Käyttäjänimi/E-Mail ei voi olla tyhjä"
+
+#: oc-includes/osclass/controller/login.php:51
+msgid "Empty passwords are not allowed. Please provide a password"
+msgstr "Salasana ei voi olla tyhjä"
