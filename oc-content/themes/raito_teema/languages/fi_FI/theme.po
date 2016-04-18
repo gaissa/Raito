@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Raito\n"
-"POT-Creation-Date: 2016-04-18 22:45+0300\n"
-"PO-Revision-Date: 2016-04-18 22:45+0300\n"
+"POT-Creation-Date: 2016-04-18 23:55+0300\n"
+"PO-Revision-Date: 2016-04-18 23:56+0300\n"
 "Last-Translator: Janne Kähkönen <jannekahkonen@gmail.com>\n"
 "Language-Team: Janne Kähkönen <jannekahkonen@gmail.com>\n"
 "Language: fi_FI\n"
@@ -32,76 +32,76 @@ msgstr "Etsi"
 msgid "<strong>Look</strong> for it in the most popular categories."
 msgstr "<strong> Etsi </ strong> suosituista"
 
-#: TEMP/item-sidebar2.php:28 functions.php:429 item-sidebar.php:28
+#: TEMP/item-sidebar2.php:28 functions.php:429 item-sidebar.php:73
 msgid "Contact publisher"
 msgstr "Ota yhteyttä ilmoittajaan"
 
-#: TEMP/item-sidebar2.php:33 item-sidebar.php:33
+#: TEMP/item-sidebar2.php:33 item-sidebar.php:32
 msgid "The listing is expired. You can't contact the publisher."
 msgstr "tämä ilmoitus on vanhentunut et voi ottaa yhteyttä julkaisijaan"
 
-#: TEMP/item-sidebar2.php:37 item-sidebar.php:37
+#: TEMP/item-sidebar2.php:37 item-sidebar.php:36
 msgid "It's your own listing, you can't contact the publisher."
 msgstr "Tämä on sinun ilmoituksesi. Kirjaudu ulos nähdäksesi asiakasversion."
 
-#: TEMP/item-sidebar2.php:41 item-sidebar.php:41
+#: TEMP/item-sidebar2.php:41 item-sidebar.php:40
 msgid ""
 "You must log in or register a new account in order to contact the advertiser"
 msgstr ""
 "Du måste logga in eller registrera ett nytt konto för att kontakta annonsören"
 
 #: TEMP/item-sidebar2.php:44 functions.php:441 header.php:68
-#: item-sidebar.php:44
+#: item-sidebar.php:43
 msgid "Login"
 msgstr "kirjaudu sisään"
 
-#: TEMP/item-sidebar2.php:46 header.php:72 item-sidebar.php:46
+#: TEMP/item-sidebar2.php:46 header.php:72 item-sidebar.php:45
 #: user-login.php:74
 msgid "Register for a free account"
 msgstr "uusi käyttäjä"
 
-#: TEMP/item-sidebar2.php:65 item-sidebar.php:69
+#: TEMP/item-sidebar2.php:65 item-sidebar.php:76
 #, php-format
 msgid "E-mail: %s"
 msgstr "E-mail: %s"
 
 #: TEMP/item-sidebar2.php:79 contact.php:59 item-send-friend.php:51
-#: item-sidebar.php:83 item.php:289 user-public-sidebar.php:36
+#: item-sidebar.php:90 item.php:289 user-public-sidebar.php:36
 msgid "Your name"
 msgstr "Nimi"
 
-#: TEMP/item-sidebar2.php:87 item-sidebar.php:91
+#: TEMP/item-sidebar2.php:87 item-sidebar.php:98
 msgid "Your e-mail address"
 msgstr "Sähköposti"
 
-#: TEMP/item-sidebar2.php:95 item-sidebar.php:99 user-public-sidebar.php:52
+#: TEMP/item-sidebar2.php:95 item-sidebar.php:106 user-public-sidebar.php:52
 msgid "Phone number"
 msgstr "Puhelinnumero"
 
-#: TEMP/item-sidebar2.php:97 contact.php:61 contact.php:79 item-sidebar.php:101
+#: TEMP/item-sidebar2.php:97 contact.php:61 contact.php:79 item-sidebar.php:108
 #: user-public-sidebar.php:54
 msgid "optional"
 msgstr "valinnainen"
 
 #: TEMP/item-sidebar2.php:105 contact.php:87 item-send-friend.php:93
-#: item-sidebar.php:109 user-public-sidebar.php:62
+#: item-sidebar.php:116 user-public-sidebar.php:62
 msgid "Message"
 msgstr "Viesti"
 
-#: TEMP/item-sidebar2.php:114 item-sidebar.php:118
+#: TEMP/item-sidebar2.php:114 item-sidebar.php:125
 msgid "Attachment"
 msgstr "Liite"
 
-#: TEMP/item-sidebar2.php:137 item-sidebar.php:141 user-public-sidebar.php:86
+#: TEMP/item-sidebar2.php:137 item-sidebar.php:148 user-public-sidebar.php:86
 msgid "Enter the words above"
 msgstr "Kirjoita ylläolevat sanat"
 
-#: TEMP/item-sidebar2.php:141 item-sidebar.php:145 user-public-sidebar.php:91
+#: TEMP/item-sidebar2.php:141 item-sidebar.php:152 user-public-sidebar.php:91
 msgid "Help"
 msgstr "Apua"
 
 #: TEMP/item-sidebar2.php:147 contact.php:105 item-send-friend.php:110
-#: item-sidebar.php:151 item.php:322 user-public-sidebar.php:97
+#: item-sidebar.php:158 item.php:322 user-public-sidebar.php:97
 msgid "Send"
 msgstr "Lähetä"
 
@@ -937,6 +937,10 @@ msgstr "Ystäväsi sähköpostiosoite"
 #: item-send-friend.php:85
 msgid "Subject (optional)"
 msgstr "Otsikko (valinnainen)"
+
+#: item-sidebar.php:61
+msgid "Profile and other items"
+msgstr "Julkaisijan profiili ja ilmoitukset"
 
 #: item.php:94
 #, php-format
