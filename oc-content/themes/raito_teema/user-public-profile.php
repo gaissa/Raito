@@ -22,13 +22,16 @@
     // meta tag robots
     osc_add_hook('header','raito_teema_follow_construct');
 	
-    if(raito_teema_show_as() == 'gallery'){
-        $loop_template	=	'loop-user-public-grid.php';
-    }else{
-		$loop_template	=	'loop-user-public-list.php';
-	}
+	osc_enqueue_script('jquery-validate');
+
+    raito_teema_add_body_class('user-public-profile');
+	
+	osc_current_web_theme_path('header.php');
+	
+	$loop_template = 'loop-user-public-list.php';	
 	
     $address = '';
+	
     if(osc_user_address()!='') {
         if(osc_user_city_area()!='') {
             $address = osc_user_address().", ".osc_user_city_area();
@@ -51,30 +54,32 @@
     $location = implode(", ", $location_array);
     unset($location_array);
 
-    osc_enqueue_script('jquery-validate');
-
-    raito_teema_add_body_class('user-public-profile');
-	
-    osc_add_hook('before-main','sidebar');
-	
-    function sidebar(){
-        osc_current_web_theme_path('user-public-sidebar.php');
-    }
-
-    osc_current_web_theme_path('header.php');
 ?>
 
 <div class="row">
-  <div class="col-sm-4 col-md-3">
+<div class="col-sm-8 col-md-9">
+  
     <div class="user-card">
-      <figure><img class="img-responsive" src="http://www.gravatar.com/avatar/<?php echo md5( strtolower( trim( osc_user_email() ) ) ); ?>?s=400&d=<?php echo osc_current_web_theme_url('images/default.gif') ; ?>" /></figure>
+	
+	
+	  
       <ul id="user_data">
-        <li class="name">
-          <h3><i class="fa fa-user"></i> <?php echo osc_user_name(); ?></h3>
+        <li class="name">        
+		    
+			<h3>
+			<i class="fa fa-user"></i>
+			<?php echo osc_user_name(); ?>
+			</h3>
+			<?php profile_picture_show(); ?>
+			<p><?php echo nl2br(osc_user_info());?> </p>
+		
         </li>
+		
         <?php if( osc_user_website() !== '' ) { ?>
         <li class="website"><i class="fa fa-link"></i> <strong><a target="_blank" href="<?php echo osc_user_website(); ?>"><?php echo osc_user_website(); ?></a></strong></li>
         <?php } ?>
+		
+		<br>
         <?php if( $address !== '' ) { ?>
         <li class="adress"> <i class="fa fa-map-marker"></i> <strong><?php _e('Address', raito_teema_THEME_FOLDER);?>:</strong><br><?php echo $address; ?></li>
         <?php } ?>
@@ -82,18 +87,17 @@
         <li class="location"><i class="fa fa-location-arrow"></i> <strong><?php _e('Location', raito_teema_THEME_FOLDER);?>:</strong><br><?php echo  $location; ?></li>
         <?php } ?>
       </ul>
-    </div>
-    <section class="user_detail_info">
-      <?php if( osc_user_info() !== '' ) { ?>
-      <div class="title">
-        <h1>
-          <?php _e('User description', raito_teema_THEME_FOLDER); ?>
-        </h1>
-      </div>
-      <?php } ?>
-      <?php echo nl2br(osc_user_info()); ?> </section>
-  </div>
-  <div class="col-sm-8 col-md-9">
+    </div> 	  
+	
+      <?php     
+	  
+	  osc_current_web_theme_path('user-public-sidebar.php'); 
+	  
+	  ?>	
+	  
+  </div>  
+  
+  <div class="col-sm-4 col-md-3">
     <?php if( osc_count_items() > 0 ) { ?>
     <div class="similar_ad">
       <div class="title">

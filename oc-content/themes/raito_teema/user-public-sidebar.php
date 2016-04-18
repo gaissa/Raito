@@ -24,9 +24,7 @@
   <?php if(osc_logged_user_id() !=  osc_user_id()) { ?>
   <?php     if(osc_reg_user_can_contact() && osc_is_web_user_logged_in() || !osc_reg_user_can_contact() ) { ?>
   <div id="contact" class="widget-box form-container form-vertical">
-    <h2>
-      <?php _e("Contact", raito_teema_THEME_FOLDER); ?>
-    </h2>
+    
     <ul id="error_list">
     </ul>
     <form action="<?php echo osc_base_url(true); ?>" method="post" name="contact_form" id="contact_form">
@@ -83,9 +81,11 @@
 		  
           <div id="recaptcha_widget">
             <div id="recaptcha_image"><img /></div>
+			
             <span class="recaptcha_only_if_image">
             <?php _e('Enter the words above',raito_teema_THEME_FOLDER); ?>
             :</span>
+			
             <input type="text" id="recaptcha_response_field" name="recaptcha_response_field" />
             <div><a href="javascript:Recaptcha.showhelp()">
               <?php _e('Help', raito_teema_THEME_FOLDER); ?>
