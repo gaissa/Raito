@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Raito\n"
-"POT-Creation-Date: 2016-04-18 20:02+0300\n"
-"PO-Revision-Date: 2016-04-18 20:02+0300\n"
+"POT-Creation-Date: 2016-04-18 22:45+0300\n"
+"PO-Revision-Date: 2016-04-18 22:45+0300\n"
 "Last-Translator: Janne Kähkönen <jannekahkonen@gmail.com>\n"
 "Language-Team: Janne Kähkönen <jannekahkonen@gmail.com>\n"
 "Language: fi_FI\n"
@@ -22,7 +22,7 @@ msgstr "Sivua ei löydy"
 
 #: 404.php:37
 msgid "Let us help you, we have got a few tips for you to find it. "
-msgstr "Låt oss hjälpa dig, har vi fått några tips för dig att hitta det."
+msgstr "Hupsista, nyt ei löytynyt mitään. "
 
 #: 404.php:46 admin/templates.php:35 header.php:145
 msgid "Search"
@@ -30,7 +30,7 @@ msgstr "Etsi"
 
 #: 404.php:53
 msgid "<strong>Look</strong> for it in the most popular categories."
-msgstr "<strong> Etsi </ strong> suosituimmista kategorioista."
+msgstr "<strong> Etsi </ strong> suosituista"
 
 #: TEMP/item-sidebar2.php:28 functions.php:429 item-sidebar.php:28
 msgid "Contact publisher"
@@ -42,7 +42,7 @@ msgstr "tämä ilmoitus on vanhentunut et voi ottaa yhteyttä julkaisijaan"
 
 #: TEMP/item-sidebar2.php:37 item-sidebar.php:37
 msgid "It's your own listing, you can't contact the publisher."
-msgstr "Kirjaudu ulos saadaksesi asiakas näkymän. "
+msgstr "Tämä on sinun ilmoituksesi. Kirjaudu ulos nähdäksesi asiakasversion."
 
 #: TEMP/item-sidebar2.php:41 item-sidebar.php:41
 msgid ""
@@ -109,20 +109,19 @@ msgstr "Lähetä"
 #: TEMP/loop-user-alerts-grid.php:188 TEMP/loop-user-alerts-list.php:78
 #: TEMP/loop-user-alerts-list.php:141 TEMP/loop-user-alerts-list.php:204
 #: item.php:78 loop-grid.php:65 loop-list.php:71 loop-search-grid.php:70
-#: loop-search-grid.php:128 loop-search-grid.php:181 loop-search-list.php:72
-#: loop-search-list.php:131 loop-search-list.php:191 loop-user-grid.php:71
-#: loop-user-grid.php:129 loop-user-grid.php:189 loop-user-list.php:73
-#: loop-user-list.php:135 loop-user-list.php:199 main.php:81
+#: loop-search-grid.php:128 loop-search-list.php:72 loop-search-list.php:134
+#: loop-user-grid.php:71 loop-user-grid.php:129 loop-user-grid.php:189
+#: loop-user-list.php:73 loop-user-list.php:135 loop-user-list.php:199
+#: main.php:81
 msgid "Edit item"
 msgstr "muokkaa ilmoitusta"
 
 #: TEMP/loop-user-alerts-grid.php:72 TEMP/loop-user-alerts-grid.php:130
 #: TEMP/loop-user-alerts-grid.php:189 TEMP/loop-user-alerts-list.php:79
 #: TEMP/loop-user-alerts-list.php:142 loop-grid.php:66 loop-list.php:72
-#: loop-search-grid.php:71 loop-search-grid.php:129 loop-search-grid.php:182
-#: loop-search-list.php:73 loop-search-list.php:132 loop-search-list.php:192
-#: loop-user-grid.php:72 loop-user-grid.php:130 loop-user-list.php:77
-#: loop-user-list.php:136 main.php:82
+#: loop-search-grid.php:71 loop-search-grid.php:129 loop-search-list.php:73
+#: loop-search-list.php:135 loop-user-grid.php:72 loop-user-grid.php:130
+#: loop-user-list.php:77 loop-user-list.php:136 main.php:82
 msgid "This action can not be undone. Are you sure you want to continue?"
 msgstr "Tätä toimintoa ei voi peruuttaa, haluatko varmasti jatkaa?"
 
@@ -130,11 +129,10 @@ msgstr "Tätä toimintoa ei voi peruuttaa, haluatko varmasti jatkaa?"
 #: TEMP/loop-user-alerts-grid.php:190 TEMP/loop-user-alerts-list.php:80
 #: TEMP/loop-user-alerts-list.php:143 TEMP/loop-user-alerts-list.php:216
 #: common/head.php:24 item.php:263 loop-grid.php:67 loop-list.php:73
-#: loop-search-grid.php:72 loop-search-grid.php:130 loop-search-grid.php:183
-#: loop-search-list.php:74 loop-search-list.php:133 loop-search-list.php:193
-#: loop-user-grid.php:73 loop-user-grid.php:131 loop-user-grid.php:201
-#: loop-user-list.php:78 loop-user-list.php:137 loop-user-list.php:211
-#: main.php:83
+#: loop-search-grid.php:72 loop-search-grid.php:130 loop-search-list.php:74
+#: loop-search-list.php:136 loop-user-grid.php:73 loop-user-grid.php:131
+#: loop-user-grid.php:201 loop-user-list.php:78 loop-user-list.php:137
+#: loop-user-list.php:211 main.php:83
 msgid "Delete"
 msgstr "Poista"
 
@@ -142,10 +140,10 @@ msgstr "Poista"
 #: TEMP/loop-user-alerts-grid.php:194 TEMP/loop-user-alerts-list.php:84
 #: TEMP/loop-user-alerts-list.php:147 TEMP/loop-user-alerts-list.php:222
 #: loop-grid.php:71 loop-list.php:77 loop-search-grid.php:76
-#: loop-search-grid.php:134 loop-search-grid.php:187 loop-search-list.php:78
-#: loop-search-list.php:137 loop-search-list.php:197 loop-user-grid.php:77
-#: loop-user-grid.php:135 loop-user-grid.php:207 loop-user-list.php:83
-#: loop-user-list.php:141 loop-user-list.php:217 main.php:87
+#: loop-search-grid.php:134 loop-search-list.php:78 loop-search-list.php:140
+#: loop-user-grid.php:77 loop-user-grid.php:135 loop-user-grid.php:207
+#: loop-user-list.php:83 loop-user-list.php:141 loop-user-list.php:217
+#: main.php:87
 msgid "Activate"
 msgstr "Aktivoi"
 
@@ -387,7 +385,7 @@ msgstr "Tervetuloviesti"
 
 #: admin/settings.php:58
 msgid "Show lists as"
-msgstr "Näytä listaukset muodossa"
+msgstr "Näytä ilmoitukset muodossa"
 
 #: admin/settings.php:63
 msgid "Grid"
@@ -616,7 +614,7 @@ msgstr "hakusana"
 
 #: functions.php:280
 msgid "Categories"
-msgstr "Kategoriat"
+msgstr "Työt ja palvelut"
 
 #: functions.php:318
 msgid "See more listings..."
@@ -760,11 +758,11 @@ msgstr ""
 
 #: functions.php:816 functions.php:836
 msgid "All categories"
-msgstr "Kaikki kategoriat"
+msgstr "Kaikki ilmoitukset"
 
 #: functions.php:915
 msgid "Choose one category"
-msgstr "Valitse yksi kategoria"
+msgstr "Valitse yksi työ tai palvelu"
 
 #: functions.php:918
 msgid "Title: this field is required"
@@ -1008,7 +1006,7 @@ msgstr "aiheeseen liittyvät listat"
 
 #: main.php:46
 msgid "Premium Listings"
-msgstr "Parhaat listaukset"
+msgstr "Ajankohtaista"
 
 #: main.php:108
 msgid "Latest Listings"
@@ -1037,7 +1035,7 @@ msgstr "Näytä ainoastaan"
 
 #: search-sidebar.php:54
 msgid "listings with pictures"
-msgstr "kuvalliset listaukset"
+msgstr "kuvalliset ilmoitukset"
 
 #: search-sidebar.php:67
 msgid "Min"
@@ -1068,10 +1066,6 @@ msgstr "Ei hakutuloksia hakusanalle: \"%s\""
 #, php-format
 msgid "%1$d - %2$d of %3$d listings"
 msgstr "%1$d - %2$d / %3$d ilmoituksesta"
-
-#: search.php:123
-msgid "Premium listings"
-msgstr "Parhaimmat listat"
 
 #: user-alerts.php:56
 msgid "You do not have any alerts yet"
@@ -1220,6 +1214,9 @@ msgstr "Luo uusi käyttäjätili"
 #: user-sidebar.php:26
 msgid "Are you sure you want to delete your account?"
 msgstr "Oletko varma että haluat poistaa käyttäjätilisi?"
+
+#~ msgid "Premium listings"
+#~ msgstr "Parhaimmat listat"
 
 #~ msgid "Facebook Page URL"
 #~ msgstr "Facebook sivun osoite"
