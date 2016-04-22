@@ -130,7 +130,7 @@
 		$xml->formatOutput = true;
 		$xml->saveXML();
 		
-		$xml->save('outCategory.xml');
+		$xml->save('../install-scripts/categories.xml');
 		
 		global $message;
 		$message = "Successful Category export. '/oc-admin/outCategory.xml'";
@@ -256,12 +256,12 @@
 	{
 		if(Params::getParam('func') == 'import')
 		{
-			$uploaddir = getcwd().'/';
+			$uploaddir = '../install-scripts/temp/';
 			$uploadfile = $uploaddir . basename($_FILES['userfile']['name']);
 			
 			if (move_uploaded_file($_FILES['userfile']['tmp_name'], $uploadfile)) 
 			{
-			  ImportXML($_FILES['userfile']['name']);
+			  ImportXML($uploadfile);
 			} 
 			else 
 			{
