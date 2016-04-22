@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Categories>
+  <Category>
+    <Name>Toimisto ja kirjanpito</Name>
+    <SubCategory>
+      <Name>Itsensätyöllistäjille</Name>
+      <SubCategory>Yhdistyksille</SubCategory>
+    </SubCategory>
+    <SubCategory>Yhdistyksille</SubCategory>
+  </Category>
+  <Category>
+    <Name>Osto, myynti ja vaihto</Name>
+    <SubCategory>Osto</SubCategory>
+    <SubCategory>Myynti</SubCategory>
+    <SubCategory>Vaihto</SubCategory>
+  </Category>
+  <Category>
+    <Name>Tapahtumat</Name>
+    <SubCategory>Koulutus</SubCategory>
+    <SubCategory>Kulttuuri</SubCategory>
+    <SubCategory>Urheilu</SubCategory>
+  </Category>
+  <Category>
+    <Name>Kylämatkailu</Name>
+    <SubCategory>
+      <Name>Kotimajoitus</Name>
+      <SubCategory>Ohjattu päivätoiminta</SubCategory>
+    </SubCategory>
+  </Category>
+  <Category>
+    <Name>Palvelut ja työt</Name>
+    <SubCategory>Siivouspalvelut</SubCategory>
+    <SubCategory>Tietotekniikan kotipalvelu</SubCategory>
+    <SubCategory>Kylätalkkaripalvelut</SubCategory>
+    <SubCategory>Hoitoalan palvelut</SubCategory>
+    <SubCategory>Ohjattu päivätoiminta</SubCategory>
+  </Category>
+</Categories>
