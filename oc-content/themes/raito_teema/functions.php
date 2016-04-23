@@ -45,7 +45,7 @@ osc_enqueue_script('jquery-fineuploader');
  ** DEFAULT VALUES
  **/
 if (!osc_get_preference('site_info_text', 'raito_teema_theme')) {
-    osc_set_preference('site_info_text', 'Hello Guest, Welcome to raito_teema', 'raito_teema_theme');
+    osc_set_preference('site_info_text', 'Rovaniemen Raito', 'raito_teema_theme');
 }
 if (!osc_get_preference('sub_cat_limit', 'raito_teema_theme')) {
     osc_set_preference('sub_cat_limit', 5, 'raito_teema_theme');
@@ -112,7 +112,7 @@ if (!function_exists('raito_teema_theme_install')) {
         osc_set_preference('show_popular_searches', '1', 'raito_teema_theme');
         osc_set_preference('defaultShowAs@all', 'list', 'raito_teema_theme');
         osc_set_preference('defaultShowAs@search', 'list');
-        osc_set_preference('site_info_text', 'Hello Guest, Welcome to raito_teema', 'raito_teema_theme');
+        osc_set_preference('site_info_text', 'Rovaniemen Raito', 'raito_teema_theme');
         osc_set_preference('sub_cat_limit', 5, 'raito_teema_theme');
         osc_set_preference('google_fonts', 'Open Sans', 'raito_teema_theme');
         osc_reset_preferences();
@@ -889,17 +889,16 @@ function raito_teema_delete()
 osc_add_hook('init', 'raito_teema_redirect_user_dashboard', 2);
 osc_add_hook('init_admin', 'theme_raito_teema_actions_admin');
 osc_add_hook('theme_delete_raito_teema', 'raito_teema_delete');
-osc_admin_menu_appearance(__('raito_teema', raito_teema_THEME_FOLDER), osc_admin_render_theme_url('oc-content/themes/' . raito_teema_THEME_FOLDER . '/admin/settings.php'), 'settings_raito_teema');
+osc_admin_menu_appearance(__('Raito -theme settings', raito_teema_THEME_FOLDER), osc_admin_render_theme_url('oc-content/themes/' . raito_teema_THEME_FOLDER . '/admin/settings.php'), 'settings_raito_teema');
 
 check_install_raito_teema_theme();
 if (osc_is_home_page()) {
     osc_add_hook('inside-main', 'raito_teema_draw_categories_list');
 }
 
-if (osc_is_home_page() || osc_is_search_page()) {
+/* if (osc_is_home_page() || osc_is_search_page()) {
     raito_teema_add_body_class('has-searchbox');
-}
-
+} */
 
 function raito_teema_sidebar_category_search($catId = null)
 {
