@@ -107,7 +107,7 @@ DEFINES
 			osc_set_preference('show_popular', '1', 'raito_teema_theme');
 			osc_set_preference('show_popular_regions', '1', 'raito_teema_theme');
 			osc_set_preference('show_popular_cities', '1', 'raito_teema_theme');
-			osc_set_preference('show_search_country', '1', 'raito_teema_theme');
+			osc_set_preference('show_search_country', '0', 'raito_teema_theme');
 			osc_set_preference('show_popular_searches', '1', 'raito_teema_theme');
             osc_set_preference('defaultShowAs@all', 'list', 'raito_teema_theme');
             osc_set_preference('defaultShowAs@search', 'list');
@@ -1269,6 +1269,6 @@ osc_add_hook('header', 'raito_teema_footer_css');
 function raito_teema_footer_js(){
 	echo '<script type="text/javascript" src="'.osc_current_web_theme_js_url('main.js').'"></script>';
 }
-osc_add_hook('footer', 'raito_teema_footer_js');
+#osc_add_hook('footer', 'raito_teema_footer_js');
 
 ?>
