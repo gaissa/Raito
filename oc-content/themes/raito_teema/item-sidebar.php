@@ -24,9 +24,8 @@
   <?php if( osc_get_preference('sidebar-300x250', 'raito_teema_theme') != '') {?>
   <div class="ads_300"> <?php echo osc_get_preference('sidebar-300x250', 'raito_teema_theme'); ?> </div>
   <?php } ?>
-  <h1 class="title">
-    <?php _e("Contact publisher", raito_teema_THEME_FOLDER); ?>
-  </h1>
+  
+  
   <div id="contact" class="widget-box form-container form-vertical">
     <?php if( osc_item_is_expired () ) { ?>
     <p class="alert_user">
@@ -56,15 +55,23 @@
 	  
     </div>
 	
-    <h3 class="name">
+    <h1 class="name">
+	
+	<li><a class="see_all" href="<?php echo osc_user_public_profile_url( osc_item_user_id() ); ?>">
+            <?php _e('Profile and other items', raito_teema_THEME_FOLDER); ?>
+    </a> </li><hr>
+	
 	  <i class="fa fa-user"></i>
-      <a href="<?php echo osc_user_public_profile_url( osc_item_user_id() ); ?>" ><?php echo osc_item_contact_name(); ?></a></h3>
+      <a href="<?php echo osc_user_public_profile_url( osc_item_user_id() ); ?>" ><?php echo osc_item_contact_name(); ?></a></h1>
 	    <?php profile_picture_show(); ?>
 		<br><br>
 		
     <?php } else { ?>
     <h3 class="name"><i class="fa fa-user"></i><?php printf('%s', osc_item_contact_name()); ?></h3>
     <?php } ?>
+	<h5 class="name">
+    <?php _e("Contact publisher", raito_teema_THEME_FOLDER); ?>:
+  </h5>
     <?php if( osc_item_show_email() ) { ?>
     <p class="email"><?php printf(__('E-mail: %s', raito_teema_THEME_FOLDER), osc_item_contact_email()); ?></p>
     <?php } ?>
