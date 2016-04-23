@@ -49,11 +49,11 @@ function profile_picture_upload(){
     // Specify display width of picture (height will be automatically calculated proprotionally)
     $maxwidth = '240';
 
-    $allowed_filetypes = array('.jpg','.gif','.bmp','.png'); // These will be the types of file that will pass the validation.
+    $allowed_filetypes = array('.jpg','.JPG','.gif','.bmp','.png'); // These will be the types of file that will pass the validation.
     $max_filesize = 10485760; // Maximum filesize in BYTES (currently 0.5MB).
     $upload_path = osc_plugins_path().'profile_picture/images/';
 
-    $button_text = 'Upload Profile Picture';
+    $button_text = __('Save', 'profile_picture');
 
     ////// ***** No modifications below here should be needed ***** /////////////////////
 
@@ -83,13 +83,30 @@ function profile_picture_upload(){
 
     if( osc_is_web_user_logged_in()){
 	if($result>0){
-	    echo '<br><a href="javascript:ShowDiv();">Upload New Picture</a> - <a href="javascript:deletePhoto();">Delete Photo</a>';
+	    echo '<br><a href="javascript:ShowDiv();">'.__('Upload new picture', 'profile_picture') .'</a> - <a href="javascript:deletePhoto();">' . __('Delete', 'profile_picture') . '</a>';
 	    echo '<div id="HiddenDiv" style="display:none;">'; // hides form if user already has a profile picture and displays a link to form instead
 	}
 	$url = (!empty($_SERVER['HTTPS'])) ? "https://".$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'] : "http://".$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'];
+	
+	
+		echo "<script src=" . osc_base_url() . 'oc-content/plugins/profile_picture/js/test.js' . "></script>";
+	?>
+	
+	<script>
+
+
+$(document).ready(function() {
+    $('#file').inputFileText( { text: '<?php _e('Choose file', 'profile_picture'); ?>' } );
+});
+
+</script>
+	
+	<?php
+	
 	echo '
 	    <form name="newpic" method="post" enctype="multipart/form-data"  action="'.$url.'">
-	    <input type="file" name="userfile" id="file"><br>
+		
+	    <input type="file" name="userfile" id="file">
 	    <input name="Submit" type="submit" value="'.$button_text.'">
 	    </form>
 	    <form name="deleteForm" method="POST" action="'.$url.'"><input type="hidden" name="deletePhoto"></form>
