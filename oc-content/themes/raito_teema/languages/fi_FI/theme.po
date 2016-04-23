@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Raito\n"
-"POT-Creation-Date: 2016-04-23 19:43+0300\n"
-"PO-Revision-Date: 2016-04-23 19:44+0300\n"
+"POT-Creation-Date: 2016-04-23 21:40+0300\n"
+"PO-Revision-Date: 2016-04-23 21:40+0300\n"
 "Last-Translator: Janne Kähkönen <jannekahkonen@gmail.com>\n"
 "Language-Team: Janne Kähkönen <jannekahkonen@gmail.com>\n"
 "Language: fi_FI\n"
@@ -166,11 +166,11 @@ msgstr "%sn profiili"
 msgid "Account"
 msgstr "Käyttäjätili"
 
-#: functions.php:529 functions.php:574 user-alerts.php:73
+#: functions.php:529 functions.php:574
 msgid "Listings"
 msgstr "Ilmoitukset"
 
-#: functions.php:530 user-alerts.php:32 user-alerts.php:52
+#: functions.php:530
 msgid "Alerts"
 msgstr "varningar"
 
@@ -649,22 +649,6 @@ msgstr "Ei hakutuloksia hakusanalle: \"%s\""
 msgid "%1$d - %2$d of %3$d listings"
 msgstr "%1$d - %2$d / %3$d ilmoituksesta"
 
-#: user-alerts.php:56
-msgid "You do not have any alerts yet"
-msgstr "Sinulla ei ole vielä huomautuksia"
-
-#: user-alerts.php:65
-msgid "Alert"
-msgstr "Huomautus"
-
-#: user-alerts.php:66
-msgid "This action can't be undone. Are you sure you want to continue?"
-msgstr "Tätä toimintoa ei voi peruuttaa, haluatko varmasti jatkaa?"
-
-#: user-alerts.php:67
-msgid "Delete this alert"
-msgstr "Poista tämä huomautus"
-
 #: user-change_email.php:33 user-change_email.php:47
 msgid "Change e-mail"
 msgstr "Vaihda sähköpostiosoite"
@@ -796,6 +780,18 @@ msgstr "Luo uusi käyttäjätili"
 #: user-sidebar.php:26
 msgid "Are you sure you want to delete your account?"
 msgstr "Oletko varma että haluat poistaa käyttäjätilisi?"
+
+#~ msgid "You do not have any alerts yet"
+#~ msgstr "Sinulla ei ole vielä huomautuksia"
+
+#~ msgid "Alert"
+#~ msgstr "Huomautus"
+
+#~ msgid "This action can't be undone. Are you sure you want to continue?"
+#~ msgstr "Tätä toimintoa ei voi peruuttaa, haluatko varmasti jatkaa?"
+
+#~ msgid "Delete this alert"
+#~ msgstr "Poista tämä huomautus"
 
 #~ msgid "Ads management"
 #~ msgstr "Mainosten hallinta"
