@@ -10,10 +10,10 @@ RAITO
 
 ### PLUGINS
 ```sh
-GOOGLE MAPS
+Google Maps for Raito
 ```
 ```sh
-USER PROFILE IMAGE
+User Profile Image for Raito
 ```
 ```sh
 XML Import Export Category
