@@ -129,31 +129,14 @@
         </div>
       </div>
       <?php }; ?>
+	  
       <div class="form-group">
         <div class="controls">
-          <?php osc_run_hook('item_contact_form', osc_item_id()); ?>
-          <?php if( osc_recaptcha_public_key() ) { ?>
-          <script type="text/javascript">
-                            var RecaptchaOptions = {
-                                theme : 'custom',
-                                custom_theme_widget: 'recaptcha_widget'
-                            };
-                        </script>
-          <style type="text/css"> 
-div#recaptcha_widget, div#recaptcha_image > img { width:280px; } 
-</style>
-          <div id="recaptcha_widget">
-            <div id="recaptcha_image"><img /></div>
-            <span class="recaptcha_only_if_image">
-            <?php _e('Enter the words above',raito_teema_THEME_FOLDER); ?>
-            :</span>
-            <input type="text" id="recaptcha_response_field" name="recaptcha_response_field" />
-            <div><a href="javascript:Recaptcha.showhelp()">
-              <?php _e('Help', raito_teema_THEME_FOLDER); ?>
-              </a></div>
-          </div>
-          <?php } ?>
-          <?php osc_show_recaptcha(); ?>
+          <?php
+    		osc_run_hook('item_contact_form', osc_item_id());		  
+			osc_current_web_theme_path('google-recaptcha.php');
+		  ?>
+			
           <button type="submit" class="btn btn-success">
           <?php _e("Send", raito_teema_THEME_FOLDER);?>
           </button>

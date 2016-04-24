@@ -185,11 +185,13 @@
       </div>
       <?php } ?>	  
         
-		 <?php if (count($location)>0) { ?>
-		 
-         <?php osc_run_hook('location'); ?>
-			
-        <?php }; ?>
+		<?php
+		
+		if (count($location) > 0) {
+            osc_run_hook('location'); 			
+        };
+		
+		?>
 	 
 
 	  	  <!-- SHARE BUTTONS -->
@@ -221,10 +223,7 @@
             <i id="fa-custom" class="fa fa-envelope"></i>
           </a>
 		  </li>
-
-          <li><a class="see_all" href="<?php echo osc_user_public_profile_url( osc_item_user_id() ); ?>">
-            <?php _e('See all ads from this advertiser', raito_teema_THEME_FOLDER); ?>
-            </a> </li>
+          
         </ul>
     </div>
    

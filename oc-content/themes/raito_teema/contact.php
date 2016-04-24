@@ -90,16 +90,12 @@
               <?php ContactForm::your_message(); ?>
             </div>
           </div>
-		   <?php if( osc_recaptcha_items_enabled() ) { ?>
-		  <div class="form-group">
-            <div class="recap">
-			<?php osc_show_recaptcha(); ?>
-			</div>
-		 </div>
-		   <?php } ?>
+		   
           <div class="form-group">
             <div class="controls">
-              <?php osc_run_hook('contact_form'); ?>
+              <?php osc_run_hook('contact_form'); 
+				osc_current_web_theme_path('google-recaptcha.php');
+		      ?>
 
               <button type="submit" class="btn btn-success">
               <?php _e("Send", raito_teema_THEME_FOLDER);?>
