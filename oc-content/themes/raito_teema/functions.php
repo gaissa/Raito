@@ -1551,4 +1551,52 @@ function raito_teema_footer_js()
 }
 #osc_add_hook('footer', 'raito_teema_footer_js');
 
+function cust_search_keyword_wildcard_with_username($params) {
+
+    if (@$params['sPattern']) {
+        $mSearch =  Search::newInstance();
+        $query_elements = (array) json_decode($mSearch->toJson());
+        $pattern = $query_elements['sPattern'];
+
+
+        $query_elements['sPattern'] = str_replace(' ', '* ', $pattern) . '*';	
+
+        $mSearch->setJsonAlert($query_elements);
+
+        // Search by Username too
+        $aPattern = explode(' ', $pattern);
+        $userNameCond = '';
+
+        foreach ($aPattern as $word) {
+			
+            if ($word) $userNameCond .= sprintf(" || %st_item.s_contact_name LIKE '%s%%'", DB_TABLE_PREFIX, '%' . $word);
+			
+			#var_dump($userNameCond);
+			#die();
+        }
+
+        $mSearch->addConditions("1 = 1 " . $userNameCond);
+        $mSearch->addGroupBy(DB_TABLE_PREFIX.'t_item.pk_i_id'); 
+		
+		#var_dump($mSearch);		
+		
+		/* $conn = DBConnectionClass::newInstance();
+		$data = $conn->getOsclassDb();
+		$comm = new DBCommandClass($data);
+		$db_prefix = DB_TABLE_PREFIX;
+
+		$query = "SELECT * FROM `{$db_prefix}t_item_location`";
+
+		$result = $comm->query($query);
+
+		if ($result) {
+			$items = $result->result();
+			foreach ($items as $item) {
+			   var_dump($item);
+			}
+		} */
+    }
+}
+
+osc_add_hook('search_conditions', 'cust_search_keyword_wildcard_with_username', 10); 
 ?>
