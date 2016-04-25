@@ -77,9 +77,9 @@
         </div>
         <?php osc_run_hook('user_register_form'); ?>
         <div class="form-group">
-          <div class="recap">
-            <?php osc_show_recaptcha('register'); ?>
-          </div>
+          
+            <?php osc_current_web_theme_path('google-recaptcha.php'); ?>
+         
         </div>
         <div class="form-group">
           <div class="controls">
