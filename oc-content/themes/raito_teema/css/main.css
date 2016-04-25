@@ -49,7 +49,7 @@ input[type=text]:focus, input[type=password]:focus, textarea:focus {outline: non
 }
 textarea {height: 200px;
 }
-.form-group label, .meta label, .meta, .row label {font-weight: 700;
+.form-group label, .meta label, .meta, .row label {font-weight: 400;
 }
 
 .meta_list .meta .cf_date_interval {width: 150px;
@@ -120,8 +120,6 @@ textarea {height: 200px;
 }
 #plugin-hook .meta {margin-bottom: 15px;
 }
-.fb_box {overflow: hidden;
-}
 
 /*title*/
 
@@ -160,8 +158,10 @@ textarea {height: 200px;
 }
 .top_links li {display: inline-block;margin: 0 0 0 10px;
 }
-.main_header {padding: 15px 0;width: 100%;z-index: 999;-webkit-box-shadow: 0 0 5px 0 rgba(3, 3, 3, 0.25);-moz-box-shadow: 0 0 5px 0 rgba(3, 3, 3, 0.25);box-shadow: 0 0 5px 0 rgba(3, 3, 3, 0.25);
+
+.main_header {padding: 6px 0;width: 100%;z-index: 999;-webkit-box-shadow: 0 0 5px 0 rgba(3, 3, 3, 0.25);-moz-box-shadow: 0 0 5px 0 rgba(3, 3, 3, 0.25);box-shadow: 0 0 5px 0 rgba(3, 3, 3, 0.25);
 }
+
 #logo {float: left;margin: 0 20px 0 0;
 }
 #logo a {display: block;font-size: 20px;font-weight: bold;text-transform: uppercase;margin: 7px 0 0;
@@ -255,7 +255,7 @@ figure img:hover {opacity: 0.9;
 }
 .listing-attr article .fa {margin: 0 3px 0 0;
 }
-.listing-attr .currency-value {display: inline-block;padding: 5px 10px;font-weight: 700;margin-top: 10px;
+.listing-attr .currency-value {display: inline-block;padding: 5px 10px;font-weight: 400;margin-top: 10px;
 }
 .info_top .date {display: block;font-weight: 700;letter-spacing: 0.5px;
 }
@@ -573,9 +573,9 @@ select {-webkit-appearance: none;appearance: none;
 }
 
 /*fash messages*/
-.flashmessage-error, #error_list label, #comment_error_list label, .flashmessage-warning {background: #fed2d3;border: solid 1px #d8929c;color: #6a000c;display: block!important;
+.flashmessage-error, #error_list label, #comment_error_list label, .flashmessage-warning {background: #fed2d3;border: dotted 1px #d8929c;color: #6a000c;display: block!important;
 }
-.flashmessage-info, .flashmessage-ok {text-align: left;border: 1px solid #c9e8a9;background-color: #eff8e6;color: #427e38;
+.flashmessage-info, .flashmessage-ok {text-align: left;border: 1px dotted #c9e8a9;background-color: #eff8e6;color: #427e38;
 }
 
 
