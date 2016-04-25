@@ -61,7 +61,7 @@ msgstr "Madhouse Availability"
 
 #: /Users/romain/Sites/autroisieme/oc-content/plugins/madhouse_availability/views/admin/settings.php:6
 msgid "Availability settings"
-msgstr "Paramètres de disponibilité"
+msgstr "aikataulu"
 
 #: /Users/romain/Sites/autroisieme/oc-content/plugins/madhouse_availability/views/admin/settings.php:11
 msgid "End date"
@@ -131,7 +131,7 @@ msgstr "%d päivää"
 #: /Users/romain/Sites/autroisieme/oc-content/plugins/madhouse_availability/views/web/edit.php:12
 #: /Users/romain/Sites/autroisieme/oc-content/plugins/madhouse_availability/views/web/search.php:6
 msgid "Start"
-msgstr "Alkaa"
+msgstr "Alkamisaika"
 
 #: /Users/romain/Sites/autroisieme/oc-content/plugins/madhouse_availability/views/web/edit.php:27
 #: /Users/romain/Sites/autroisieme/oc-content/plugins/madhouse_availability/views/web/search.php:18
