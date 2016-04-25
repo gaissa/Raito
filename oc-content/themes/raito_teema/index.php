@@ -22,7 +22,7 @@
 /*
 Theme Name: Raito
 Theme URI: #
-Description: A simple and clean responsive theme. Based on OsclassWizards Free Responsive Theme
+Description: A simple and clean responsive theme. Based on OsclassWizards Free Responsive Theme 2.0.4
 Version: 0.0.1
 Author: Janne Kähkönen
 Author URI: #
