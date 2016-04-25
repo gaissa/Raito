@@ -49,8 +49,9 @@ input[type=text]:focus, input[type=password]:focus, textarea:focus {outline: non
 }
 textarea {height: 200px;
 }
-.form-group label, .meta label, .meta, .row label {font-weight: 700;text-transform: capitalize;
+.form-group label, .meta label, .meta, .row label {font-weight: 700;
 }
+
 .meta_list .meta .cf_date_interval {width: 150px;
 }
 /*custom checkbox*/
@@ -124,7 +125,7 @@ textarea {height: 200px;
 
 /*title*/
 
-.title, .block h2, .forgot .form-container-box .header {text-transform: capitalize;font-size: 24px;margin-bottom: 25px;padding-bottom: 12px;position: relative; word-wrap: break-word !important;;
+.title, .block h2, .forgot .form-container-box .header {font-size: 24px;margin-bottom: 25px;padding-bottom: 12px;position: relative; word-wrap: break-word !important;;
 }
 .titles {margin-top: 25px;
 }
