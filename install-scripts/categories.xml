@@ -2,11 +2,8 @@
 <Categories>
   <Category>
     <Name>Toimisto ja kirjanpito</Name>
-    <SubCategory>
-      <Name>Itsensätyöllistäjille</Name>
-      <SubCategory>Yhdistyksille</SubCategory>
-    </SubCategory>
     <SubCategory>Yhdistyksille</SubCategory>
+    <SubCategory>Itsensätyöllistäjille</SubCategory>
   </Category>
   <Category>
     <Name>Osto, myynti ja vaihto</Name>

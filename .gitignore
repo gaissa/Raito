@@ -7,6 +7,7 @@ oc-content/*.php
 oc-content/plugins/*.php
 oc-content/themes/*.php
 oc-content/themes/bender
+oc-content/themes/ossclasswizards
 oc-content/languages/*.php
 favicon.ico
 robots.txt
@@ -15,6 +16,7 @@ robots.txt
 oc-content/themes/raito_teema/sass
 oc-content/themes/raito_teema/TEMP
 oc-content/plugins/profile_picture/images
+
 
 # ALLOW
 !oc-admin/themes/
