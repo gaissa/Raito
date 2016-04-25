@@ -19,6 +19,9 @@ User Profile Image for Raito
 XML Import Export Category
 ```
 ```sh
-Madhouse Availability
+Madhouse Availability (translated fi_FI)
+```
+```sh
+Pre-resize images (translated fi_FI)
 ```
 
