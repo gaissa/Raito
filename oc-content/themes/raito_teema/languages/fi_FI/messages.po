@@ -8,7 +8,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2016-04-19 02:30+0300\n"
+"PO-Revision-Date: 2016-04-25 06:18+0300\n"
 "Last-Translator: Janne Kähkönen <jannekahkonen@gmail.com>\n"
 "Language-Team: Translations <translations@osclass.org>\n"
 "Language: fi_FI\n"
@@ -390,11 +390,11 @@ msgstr ""
 
 #: oc-admin/controller/settings/main.php:77
 msgid "Page title field is required"
-msgstr ""
+msgstr "Otsikko on pakollinen"
 
 #: oc-admin/controller/settings/main.php:80
 msgid "Contact email field is required"
-msgstr ""
+msgstr "Sähköpostiosoite on pakollinen"
 
 #: oc-admin/controller/settings/main.php:83
 msgid "Number of listings in the RSS has to be a numeric value"
@@ -543,59 +543,59 @@ msgstr ""
 
 #: oc-admin/items.php:63
 msgid "%d listing has been enabled"
-msgstr ""
+msgstr "%d ilmoitus on käytössä"
 
 #: oc-admin/items.php:75
 msgid "%d listing has been disabled"
-msgstr ""
+msgstr "%d ilmoitus on poistettu käytöstä"
 
 #: oc-admin/items.php:87
 msgid "%d listing has been activated"
-msgstr ""
+msgstr "%d ilmoitus on aktivoitu"
 
 #: oc-admin/items.php:99
 msgid "%d listing has been deactivated"
-msgstr ""
+msgstr "%d ilmoitus ei ole aktiivinen"
 
 #: oc-admin/items.php:111
 msgid "%d listing has been marked as premium"
-msgstr ""
+msgstr "%d ilmoitus on merkitty ajankohtaiseksi"
 
 #: oc-admin/items.php:123 oc-admin/items.php:148
 msgid "%d change has been made"
-msgstr ""
+msgstr "%d on muokattu"
 
 #: oc-admin/items.php:135
 msgid "%d listing has been marked as spam"
-msgstr ""
+msgstr "%d ilmoitus on merkitty roskapostiksi"
 
 #: oc-admin/items.php:166
 msgid "%d listing has been deleted"
-msgstr ""
+msgstr "%d ilmoitus on tuhottu"
 
 #: oc-admin/items.php:183
 msgid "%d listing has been unmarked as spam"
-msgstr ""
+msgstr "%d ilmoitus ei ole enää merkitty roskapostiksi"
 
 #: oc-admin/items.php:200
 msgid "%d listing has been unmarked as missclassified"
-msgstr ""
+msgstr "%d ilmitus on merkitty luokittelemattomaksi"
 
 #: oc-admin/items.php:217
 msgid "%d listing has been unmarked as duplicated"
-msgstr ""
+msgstr "%d listaus on merkitty kaksoiskappaleeksi"
 
 #: oc-admin/items.php:234
 msgid "%d listing has been unmarked as expired"
-msgstr ""
+msgstr "%d ilmoitus on merkattu vanhentuneeksi"
 
 #: oc-admin/items.php:251
 msgid "%d listing has been unmarked as offensive"
-msgstr ""
+msgstr "%d ilmoitus ei ole enää merkitty loukkaavaksi"
 
 #: oc-admin/items.php:268
 msgid "%d listing has been unmarked"
-msgstr ""
+msgstr "%d ilmituksen merkinnät on poistettu"
 
 #: oc-admin/items.php:293
 msgid "The listing has been deleted"
@@ -617,23 +617,23 @@ msgstr "Tapahtui virhe"
 
 #: oc-admin/items.php:328
 msgid "The listing can't be activated because it's blocked"
-msgstr ""
+msgstr "ilmoitusta ei voi aktivoida sillä se on lukittu"
 
 #: oc-admin/items.php:336
 msgid "The listing has been deactivated"
-msgstr ""
+msgstr "Ilmoitus ei ole aktviinen"
 
 #: oc-admin/items.php:346
 msgid "The listing has been enabled"
-msgstr ""
+msgstr "Ilmoitus on käytössä"
 
 #: oc-admin/items.php:356
 msgid "The listing has been disabled"
-msgstr ""
+msgstr "Ilmoitus on otettu pois käytöstä"
 
 #: oc-admin/items.php:385 oc-admin/items.php:411
 msgid "Changes have been applied"
-msgstr ""
+msgstr "Muutokset on tehty"
 
 #: oc-admin/items.php:437
 msgid "The listing has been unmarked as"
@@ -781,20 +781,20 @@ msgstr "Salasana on tyhjä"
 #: oc-admin/login.php:60
 msgid ""
 "Sorry, incorrect username. <a href=\"%s\">Have you lost your password?</a>"
-msgstr ""
+msgstr "Väärä käyttäjätunnus. <a href=\"%s\">Oletko unohtanut salasanasi?</a>"
 
 #: oc-admin/login.php:65
 msgid ""
 "Sorry, incorrect password. <a href=\"%s\">Have you lost your password?</a>"
-msgstr ""
+msgstr "Salasana väärin <a href=\"%s\">Oletko unohtanut salasanasi?</a>"
 
 #: oc-admin/login.php:111
 msgid "The reCAPTCHA code is wrong"
-msgstr ""
+msgstr "Kuvavarmennus on kirjoitettu väärin"
 
 #: oc-admin/login.php:129
 msgid "A new password has been sent to your e-mail"
-msgstr ""
+msgstr "Uusi salasana on lähetetty sähköpostiisi"
 
 #: oc-admin/login.php:135 oc-admin/login.php:145
 #: oc-includes/osclass/controller/login.php:199
@@ -802,11 +802,11 @@ msgstr ""
 #: oc-includes/osclass/controller/user-non-secure.php:55
 #: oc-includes/osclass/controller/user-non-secure.php:59
 msgid "Sorry, the link is not valid"
-msgstr ""
+msgstr "Virheellinen linkki"
 
 #: oc-admin/login.php:155 oc-includes/osclass/controller/login.php:220
 msgid "The password has been changed"
-msgstr ""
+msgstr "Salasana on vaihdettu"
 
 #: oc-admin/login.php:158
 msgid "Error, the passwords don't match"
@@ -819,7 +819,7 @@ msgstr ""
 
 #: oc-admin/main.php:75
 msgid "Entered an invalid email"
-msgstr ""
+msgstr "Virheellinen salasana"
 
 #: oc-admin/main.php:78
 msgid "You're already subscribed"
@@ -843,15 +843,15 @@ msgstr ""
 
 #: oc-admin/pages.php:103
 msgid "The page has been updated"
-msgstr ""
+msgstr "Sivu päivitetty onnistuneesti"
 
 #: oc-admin/pages.php:108
 msgid "The page couldn't be updated, at least one title should not be empty"
-msgstr ""
+msgstr "Sivua ei voitu päivittää, kaikki kentät tyhjiä"
 
 #: oc-admin/pages.php:162
 msgid "The page has been added"
-msgstr ""
+msgstr "Sivu lisätty"
 
 #: oc-admin/pages.php:165
 msgid "The page couldn't be added, at least one title should not be empty"
@@ -1085,11 +1085,11 @@ msgstr ""
 
 #: oc-admin/users.php:147
 msgid "E-mail is already in used by another user"
-msgstr ""
+msgstr "Sähköposti on jo käytössä toisella käyttäjällä"
 
 #: oc-admin/users.php:153
 msgid "The user has been updated"
-msgstr ""
+msgstr "Käyttäjätili on päivitetty"
 
 #: oc-admin/users.php:166 oc-admin/users.php:189 oc-admin/users.php:214
 #: oc-admin/users.php:238 oc-admin/users.php:262 oc-admin/users.php:286
@@ -1099,11 +1099,11 @@ msgstr ""
 
 #: oc-admin/users.php:176
 msgid "No users have been selected"
-msgstr ""
+msgstr "Käyttäjiä ei ole valittu"
 
 #: oc-admin/users.php:178
 msgid "Activation email sent to one user"
-msgstr ""
+msgstr "Aktivointisäköposti lähetetty käyttäjälle"
 
 #: oc-admin/users.php:199
 msgid "No users have been activated"
@@ -1209,19 +1209,19 @@ msgstr ""
 
 #: oc-includes/osclass/ItemActions.php:106
 msgid "Title too short (%s)."
-msgstr ""
+msgstr "Otsikko on liian lyhyt"
 
 #: oc-includes/osclass/ItemActions.php:107
 msgid "Title too long (%s)."
-msgstr ""
+msgstr "Otsikko on liian pitkä"
 
 #: oc-includes/osclass/ItemActions.php:119
 msgid "Description too short (%s)."
-msgstr ""
+msgstr "Kuvaus on liian lyhyt"
 
 #: oc-includes/osclass/ItemActions.php:120
 msgid "Description too long (%s)."
-msgstr "kuvaus on liian pitkä (%s). "
+msgstr "kuvaus on liian pitkä"
 
 #: oc-includes/osclass/ItemActions.php:130
 #: oc-includes/osclass/ItemActions.php:338
@@ -1535,6 +1535,8 @@ msgid ""
 "The listing hasn't been validated. Please validate it in order to make it "
 "public"
 msgstr ""
+"Ilmoitusta ei ole vielä hyväksytty eikä sitä voida julkaista. Hyväksy "
+"ilmoitus saadaksesi sen näkyville."
 
 #: oc-includes/osclass/controller/item.php:585
 msgid ""
@@ -1610,7 +1612,7 @@ msgstr ""
 
 #: oc-includes/osclass/controller/login.php:189
 msgid "The recaptcha code is wrong"
-msgstr ""
+msgstr "Kuvanvarmennus ei onnistunut, koeta uudestaan"
 
 #: oc-includes/osclass/controller/login.php:206
 #: oc-includes/osclass/controller/user.php:175
@@ -1640,7 +1642,7 @@ msgstr "Antamasi sähköpostiosoite on jo käytössä"
 
 #: oc-includes/osclass/controller/register.php:85
 msgid "The reCAPTCHA was not entered correctly"
-msgstr ""
+msgstr "Kuvavarmennuksessa virhe koeta uudestaan"
 
 #: oc-includes/osclass/controller/register.php:88
 msgid "The email is not valid"

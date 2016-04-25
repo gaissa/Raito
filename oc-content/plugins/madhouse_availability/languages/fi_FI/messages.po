@@ -49,11 +49,11 @@ msgstr "Disponibilité"
 
 #: /Users/romain/Sites/autroisieme/oc-content/plugins/madhouse_availability/index.php:356
 msgid "Categories"
-msgstr "Catégories "
+msgstr "palvelut ja työt"
 
 #: /Users/romain/Sites/autroisieme/oc-content/plugins/madhouse_availability/index.php:357
 msgid "Settings"
-msgstr "Paramètres"
+msgstr "asetukset"
 
 #: /Users/romain/Sites/autroisieme/oc-content/plugins/madhouse_availability/index.php:373
 msgid "Madhouse Availability"
@@ -65,19 +65,19 @@ msgstr "Paramètres de disponibilité"
 
 #: /Users/romain/Sites/autroisieme/oc-content/plugins/madhouse_availability/views/admin/settings.php:11
 msgid "End date"
-msgstr "Date de fin"
+msgstr "päättymis päivämäärä"
 
 #: /Users/romain/Sites/autroisieme/oc-content/plugins/madhouse_availability/views/admin/settings.php:14
 msgid "No"
-msgstr "Non"
+msgstr "ei"
 
 #: /Users/romain/Sites/autroisieme/oc-content/plugins/madhouse_availability/views/admin/settings.php:15
 msgid "Yes"
-msgstr "Oui"
+msgstr "kyllä"
 
 #: /Users/romain/Sites/autroisieme/oc-content/plugins/madhouse_availability/views/admin/settings.php:16
 msgid "Display a duration"
-msgstr "Afficher une durée"
+msgstr "näytä kesto"
 
 #: /Users/romain/Sites/autroisieme/oc-content/plugins/madhouse_availability/views/admin/settings.php:23
 msgid "Templates position"
@@ -85,18 +85,18 @@ msgstr "Position des modèles"
 
 #: /Users/romain/Sites/autroisieme/oc-content/plugins/madhouse_availability/views/admin/settings.php:28
 msgid "Post"
-msgstr "Publication"
+msgstr "ilmoitus"
 
 #: /Users/romain/Sites/autroisieme/oc-content/plugins/madhouse_availability/views/admin/settings.php:32
 #: /Users/romain/Sites/autroisieme/oc-content/plugins/madhouse_availability/views/admin/settings.php:44
 #: /Users/romain/Sites/autroisieme/oc-content/plugins/madhouse_availability/views/admin/settings.php:56
 #: /Users/romain/Sites/autroisieme/oc-content/plugins/madhouse_availability/views/admin/settings.php:68
 msgid "Don't display"
-msgstr "Ne pas afficher"
+msgstr "ei näytetä"
 
 #: /Users/romain/Sites/autroisieme/oc-content/plugins/madhouse_availability/views/admin/settings.php:40
 msgid "Edit"
-msgstr "Édition"
+msgstr "muokkaa"
 
 #: /Users/romain/Sites/autroisieme/oc-content/plugins/madhouse_availability/views/admin/settings.php:52
 msgid "Detail"
@@ -104,49 +104,49 @@ msgstr "Détail"
 
 #: /Users/romain/Sites/autroisieme/oc-content/plugins/madhouse_availability/views/admin/settings.php:64
 msgid "Search"
-msgstr "Recherche"
+msgstr "etsi"
 
 #: /Users/romain/Sites/autroisieme/oc-content/plugins/madhouse_availability/views/admin/settings.php:77
 msgid "Save changes"
-msgstr "Sauvegarder"
+msgstr "tallenna muutokset"
 
 #: /Users/romain/Sites/autroisieme/oc-content/plugins/madhouse_availability/views/web/detail.php:1
 msgid "Availability:"
-msgstr "Disponibilité :"
+msgstr "voimassa"
 
 #: /Users/romain/Sites/autroisieme/oc-content/plugins/madhouse_availability/views/web/detail.php:5
 msgid "until"
-msgstr "jusqu'au"
+msgstr "asti"
 
 #: /Users/romain/Sites/autroisieme/oc-content/plugins/madhouse_availability/views/web/detail.php:10
 #, php-format
 msgid "%d day"
-msgstr "%d jour"
+msgstr "%d päivä"
 
 #: /Users/romain/Sites/autroisieme/oc-content/plugins/madhouse_availability/views/web/detail.php:12
 #, php-format
 msgid "%d days"
-msgstr "%d jours"
+msgstr "%d päivää"
 
 #: /Users/romain/Sites/autroisieme/oc-content/plugins/madhouse_availability/views/web/edit.php:12
 #: /Users/romain/Sites/autroisieme/oc-content/plugins/madhouse_availability/views/web/search.php:6
 msgid "Start"
-msgstr "Début"
+msgstr "Alkaa"
 
 #: /Users/romain/Sites/autroisieme/oc-content/plugins/madhouse_availability/views/web/edit.php:27
 #: /Users/romain/Sites/autroisieme/oc-content/plugins/madhouse_availability/views/web/search.php:18
 msgid "End"
-msgstr "Fin"
+msgstr "Loppuu"
 
 #: /Users/romain/Sites/autroisieme/oc-content/plugins/madhouse_availability/views/web/edit.php:33
 #: /Users/romain/Sites/autroisieme/oc-content/plugins/madhouse_availability/views/web/search.php:24
 msgid "During"
-msgstr "Durée"
+msgstr "aikana"
 
 #: /Users/romain/Sites/autroisieme/oc-content/plugins/madhouse_availability/views/web/edit.php:38
 #: /Users/romain/Sites/autroisieme/oc-content/plugins/madhouse_availability/views/web/search.php:29
 msgid "Month"
-msgstr "Mois"
+msgstr "Kuukausi"
 
 #~ msgid "Display options"
 #~ msgstr "Options d'affichage"
