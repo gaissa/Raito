@@ -122,4 +122,4 @@ msgstr ""
 
 #: settings.php:32
 msgid "Save changes"
-msgstr ""
+msgstr "Tallenna"

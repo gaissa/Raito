@@ -45,7 +45,7 @@ msgstr ""
 #: /Users/romain/Sites/autroisieme/oc-content/plugins/madhouse_availability/views/web/edit.php:1
 #: /Users/romain/Sites/autroisieme/oc-content/plugins/madhouse_availability/views/web/search.php:2
 msgid "Availability"
-msgstr "Disponibilité"
+msgstr "Aikataulu"
 
 #: /Users/romain/Sites/autroisieme/oc-content/plugins/madhouse_availability/index.php:356
 msgid "Categories"
