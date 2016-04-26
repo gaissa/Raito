@@ -1600,4 +1600,35 @@ function cust_search_keyword_wildcard_with_username($params) {
 }
 
 osc_add_hook('search_conditions', 'cust_search_keyword_wildcard_with_username', 10); 
+
+
+if(osc_logged_admin_username() == 'test') {
+	//osc_is_moderator()
+    #var_dump(osc_get_plugins());
+  
+    osc_remove_admin_menu_page('users');
+    osc_remove_admin_menu_page('madhouse');
+    osc_remove_admin_menu_page('plugins');
+    osc_remove_admin_menu_page('settings');
+    osc_remove_admin_menu_page('market');
+    osc_remove_admin_menu_page('appearance');
+    osc_remove_admin_menu_page('tools');
+  
+    osc_add_admin_menu_page(
+		__('Users'),								// menu title
+		osc_admin_base_url(true).'?page=users',		// menu url
+		'users_manage',								// menu id
+		'moderator'									// capability
+	) ;  
+  
+    osc_remove_admin_submenu_page('items', 'items_settings');
+    osc_remove_admin_submenu_page('items', 'items_media');
+    osc_remove_admin_submenu_page('items', 'items_cfields');
+  
+    osc_remove_hook('admin_menu', 'compactmode');
+    osc_remove_hook('admin_menu', 'przi_admin_menu');
+    osc_remove_hook('admin_header','xml_import_export_category_admin_menu');
+
+}
+
 ?>
