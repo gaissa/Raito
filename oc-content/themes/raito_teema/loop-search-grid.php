@@ -89,60 +89,7 @@ if($listcount%3 == 0)
         }
 echo'</ul>';
     } 
-		
-	// premium items
-	elseif($type == 'premiums'){
-		$listcount = 1;
-?>
-<ul class="row premium_slider_grid">
-<?php
-		while ( osc_has_premiums() ) {
-	?>
-<?php $size = explode('x', osc_thumbnail_dimensions()); ?>
-<li class="col-md-4 listing-card premium">
-  <article class="loop_premium">
-    <div class="figure">
-      <figure>
-        <?php if( osc_images_enabled_at_items() ) { ?>
-        <?php if(osc_count_premium_resources()) { ?>
-        <a class="listing-thumb" href="<?php echo osc_premium_url() ; ?>" title="<?php echo osc_esc_html(osc_premium_title()) ; ?>"><img class="img-responsive" src="<?php echo osc_resource_thumbnail_url(); ?>" title="" alt="<?php echo osc_esc_html(osc_premium_title()) ; ?>" width="<?php echo $size[0]; ?>" height="<?php echo $size[1]; ?>"></a>
-        <?php } else { ?>
-        <a class="listing-thumb" href="<?php echo osc_premium_url() ; ?>" title="<?php echo osc_esc_html(osc_premium_title()) ; ?>"><img class="img-responsive" src="<?php echo osc_current_web_theme_url('images/no_photo.gif'); ?>" title="" alt="<?php echo osc_esc_html(osc_premium_title()) ; ?>" width="<?php echo $size[0]; ?>" height="<?php echo $size[1]; ?>"></a>
-        <?php } ?>
-        <?php } ?>
-        <span class="ribbon"> <i class="fa fa-star"></i> </span> </figure>
-    </div>
-    <div class="listing-attr">
-      <h4><a href="<?php echo osc_premium_url() ; ?>" title="<?php echo osc_esc_html(osc_premium_title()) ; ?>"><?php echo osc_highlight(strip_tags(osc_premium_title()),40) ; ?></a></h4>
-      <article> <span class="category"><i class="fa fa-<?php echo raito_teema_category_icon( osc_premium_category_id() ); ?>"></i><?php echo osc_premium_category() ; ?></span> <span class="location"><i class="fa fa-map-marker"></i><?php echo osc_premium_city(); ?>
-        <?php if(osc_premium_region()!='') { ?>
-        (<?php echo osc_premium_region(); ?>)
-        <?php } ?>
-        </span> <span class="date"> <i class="fa fa-clock-o"></i> <?php echo osc_format_date(osc_premium_pub_date()); ?> </span> </article>
-      <?php if( osc_price_enabled_at_items() ) { ?>
-      <span class="currency-value"><?php echo osc_format_price(osc_premium_price(), osc_premium_currency_symbol()); ?></span>
-      <?php } ?>
-      <?php $admin = false; ?>
-      <?php if($admin){ ?>
-      <span class="admin-options"> <a href="<?php echo osc_premium_edit_url(); ?>" rel="nofollow">
-      <?php _e('Edit item', raito_teema_THEME_FOLDER); ?>
-      </a> <span>|</span> <a class="delete" onclick="javascript:return confirm('<?php echo osc_esc_js(__('This action can not be undone. Are you sure you want to continue?', raito_teema_THEME_FOLDER)); ?>')" href="<?php echo osc_premium_delete_url();?>" >
-      <?php _e('Delete', raito_teema_THEME_FOLDER); ?>
-      </a>
-      <?php if(osc_premium_is_inactive()) {?>
-      <span>|</span> <a href="<?php echo osc_premium_activate_url();?>" >
-      <?php _e('Activate', raito_teema_THEME_FOLDER); ?>
-      </a>
-      <?php } ?>
-      </span>
-      <?php } ?>
-    </div>
-  </article>
-</li>
-<?php  	
-            }
-			echo '</ul>';
-        }
+
 		else {
 			echo '<ul class="row">';
 			$listcount = 1;

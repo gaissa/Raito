@@ -1551,6 +1551,7 @@ function raito_teema_footer_js()
 }
 #osc_add_hook('footer', 'raito_teema_footer_js');
 
+# Add to sarch...
 function cust_search_keyword_wildcard_with_username($params) {
 
     if (@$params['sPattern']) {

@@ -116,19 +116,7 @@
     <?php if( osc_get_preference('search-results-top-728x90', 'raito_teema_theme') != ""){ ?>
     <div class="ads_search_top"> <?php echo osc_get_preference('search-results-top-728x90', 'raito_teema_theme'); ?></div>
     <?php } ?>
-    <?php
-            $i = 0;
-            osc_get_premiums(raito_teema_premium_listings_shown());
-            if(osc_count_premiums() > 0) {
-            echo '<h5 class="title">'.__('Premium listings',raito_teema_THEME_FOLDER).'</h5>';
-			?>
-    <?php 
-			
-            View::newInstance()->_exportVariableToView("listType", 'premiums');
-            View::newInstance()->_exportVariableToView("listClass",$listClass.' premium-list');
-            osc_current_web_theme_path($loop_template);
-            }
-        ?>
+   
     <?php if( osc_get_preference('search-results-top-728x90', 'raito_teema_theme') != ""){ ?>
     <div class="ads_search_top"> <?php echo osc_get_preference('search-results-top-728x90', 'raito_teema_theme'); ?></div>
     <?php } ?>

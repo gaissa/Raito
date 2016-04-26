@@ -21,6 +21,7 @@
 ?>
 
 <div id="sidebar">
+
   <?php if(osc_logged_user_id() !=  osc_user_id()) { ?>
   <?php     if(osc_reg_user_can_contact() && osc_is_web_user_logged_in() || !osc_reg_user_can_contact() ) { ?>
   <div id="contact" class="widget-box form-container form-vertical">
@@ -65,35 +66,14 @@
           <?php ContactForm::your_message(); ?>
         </div>
       </div>
+	  
       <div class="control-group">
         <div class="controls">
-          <?php osc_run_hook('item_contact_form', osc_item_id()); ?>
-          <?php if( osc_recaptcha_public_key() ) { ?>
-          <script type="text/javascript">
-                                var RecaptchaOptions = {
-                                    theme : 'custom',
-                                    custom_theme_widget: 'recaptcha_widget'
-                                };
-                            </script>
-          <style type="text/css"> 
-			div#recaptcha_widget, div#recaptcha_image > img { width:280px; } 
-		  </style>
+          <?php osc_run_hook('item_contact_form', osc_item_id());
+			osc_current_web_theme_path('google-recaptcha.php');
+		  ?>
 		  
-          <div id="recaptcha_widget">
-            <div id="recaptcha_image"><img /></div>
-			
-            <span class="recaptcha_only_if_image">
-            <?php _e('Enter the words above',raito_teema_THEME_FOLDER); ?>
-            :</span>
-			
-            <input type="text" id="recaptcha_response_field" name="recaptcha_response_field" />
-            <div><a href="javascript:Recaptcha.showhelp()">
-              <?php _e('Help', raito_teema_THEME_FOLDER); ?>
-              </a></div>
-          </div>
-          <?php } ?>
-          <?php osc_show_recaptcha(); ?>
-          <button type="submit" class="ui-button ui-button-middle ui-button-main">
+          <button type="submit" class="btn btn-success">
           <?php _e("Send", raito_teema_THEME_FOLDER);?>
           </button>
         </div>
@@ -106,4 +86,5 @@
     }
     ?>
 </div>
+
 <!-- /sidebar -->

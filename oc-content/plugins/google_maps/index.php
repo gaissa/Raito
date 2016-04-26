@@ -18,7 +18,7 @@ Plugin update URI: #
     // HELPER
     function osc_google_maps_header() {
         echo '<script src="http://maps.google.com/maps/api/js" type="text/javascript"></script>';
-        echo '<style>#itemMap img { max-width: 140em; } </style>';
+        echo '<style> #itemMap img { max-width: 140em; } </style>';
     }
 
     osc_add_hook('location', 'google_maps_location');  

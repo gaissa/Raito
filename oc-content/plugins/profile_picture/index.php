@@ -43,18 +43,22 @@ function profile_picture_uninstall() {
 
 function profile_picture_upload(){
 
-
    // Configuration - Your Options ///////////////////////////////////////////////////////
 
     // Specify display width of picture (height will be automatically calculated proprotionally)
     $maxwidth = '240';
-
-    $allowed_filetypes = array('.jpg','.JPG','.gif','.bmp','.png'); // These will be the types of file that will pass the validation.
-    $max_filesize = 10485760; // Maximum filesize in BYTES (currently 0.5MB).
-    $upload_path = osc_plugins_path().'profile_picture/images/';
+	
+	// These will be the types of file that will pass the validation.
+    $allowed_filetypes = array('.jpg','.JPG','.jpeg','.JPEG',
+	                           '.gif','.GIF','.bmp','.BMP','.png','.PNG');
+		
+	// Maximum filesize in BYTES (currently 0.5MB).
+    $max_filesize = 10485760; 
+    $upload_path = osc_plugins_path().'profile_picture/images/';	
 
     $button_text = __('Save', 'profile_picture');
 
+	
     ////// ***** No modifications below here should be needed ***** /////////////////////
 
     // First, check to see if user has existing profile picture...

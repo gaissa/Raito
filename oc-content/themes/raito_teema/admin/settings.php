@@ -47,7 +47,7 @@
         <div class="form-horizontal">
           <div class="form-row">
             <div class="form-label">
-              <?php _e('Welcome message', raito_teema_THEME_FOLDER); ?>
+              <?php _e('Site info', raito_teema_THEME_FOLDER); ?>
             </div>
             <div class="form-controls">
               <textarea style="height: 50px; width: 500px;" name="site_info_text"><?php echo osc_get_preference('site_info_text', 'raito_teema_theme'); ?></textarea>
