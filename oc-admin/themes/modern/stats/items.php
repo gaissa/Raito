@@ -345,7 +345,7 @@
         </div>
     </div>
     <div class="clear"></div>
-    <div class="grid-row grid-50 clear">
+    <!-- <div class="grid-row grid-50 clear">
         <div class="row-wrapper">
             <div class="widget-box">
                 <div class="widget-box-title">
@@ -378,7 +378,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <div class="clear"></div>
 </div>
 <?php osc_current_admin_theme_path( 'parts/footer.php' ); ?>
