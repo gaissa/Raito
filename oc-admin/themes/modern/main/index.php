@@ -234,7 +234,7 @@
             </div>
         </div>
     </div>
-    <div class="grid-row grid-first-row grid-50">
+    <!--<div class="grid-row grid-first-row grid-50">
         <div class="row-wrapper">
             <div class="widget-box  widget-box-project">
                 <div class="widget-box-title"><h3><?php _e('Osclass'); ?></h3></div>
@@ -288,8 +288,9 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div class="grid-row grid-50">
+    </div> -->
+	
+    <!-- <div class="grid-row grid-50">
         <div class="row-wrapper">
             <div class="widget-box">
                 <div class="widget-box-title"><h3><?php _e('Market'); ?></h3></div>
@@ -298,11 +299,11 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <div class="clear"></div>
 </div>
 </div>
-<script type="text/javascript">
+<!-- <script type="text/javascript">
     $(function(){
         $.getJSON(
             '<?php echo osc_admin_base_url(true); ?>?page=ajax&action=dashboardbox_market',
@@ -314,6 +315,6 @@
                 }
             });
         });
-</script>
+</script> -->
 
 <?php osc_current_admin_theme_path( 'parts/footer.php' ); ?>
