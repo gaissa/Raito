@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Raito\n"
 "POT-Creation-Date: 2016-04-23 21:40+0300\n"
-"PO-Revision-Date: 2016-04-27 13:24+0300\n"
+"PO-Revision-Date: 2016-04-27 13:35+0300\n"
 "Last-Translator: Janne Kähkönen <jannekahkonen@gmail.com>\n"
 "Language-Team: Janne Kähkönen <jannekahkonen@gmail.com>\n"
 "Language: fi_FI\n"
@@ -206,7 +206,7 @@ msgstr "Luo uusi käyttäjätili"
 
 #: functions.php:539 header.php:95
 msgid "Contact"
-msgstr "Ota yhteyttä"
+msgstr "ota yhteyttä"
 
 #: functions.php:564
 msgid "Public Profile"
