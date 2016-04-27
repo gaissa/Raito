@@ -51,10 +51,7 @@
       </div>
       
       <ul>
-        <?php if( osc_is_static_page() || osc_is_contact_page() ){ ?>
-        <li class="search"><a class="ico-search icons" data-bclass-toggle="display-search"></a></li>
-        <li class="cat"><a class="ico-menu icons" data-bclass-toggle="display-cat"></a></li>
-        <?php } ?>
+		
         <?php if( osc_users_enabled() ) { ?>
         <?php if( osc_is_web_user_logged_in() ) { ?>
         <li class="first logged"> <span><?php echo sprintf(__('Hi %s', raito_teema_THEME_FOLDER), osc_logged_user_name() . '!'); ?> </span> &#10072; <strong><a href="<?php echo osc_user_dashboard_url(); ?>">
@@ -75,6 +72,10 @@
         <?php } ?>
 
         <?php } ?>
+		
+		<li><a href="<?php echo osc_contact_url(); ?>">
+          <?php _e('Contact', raito_teema_THEME_FOLDER); ?>
+          </a></li>
       </ul>
     </div>
   </div>
@@ -91,9 +92,11 @@
         }
 		osc_reset_static_pages();
         ?>
-        <li> <a href="<?php echo osc_contact_url(); ?>">
+		
+        <!--<li> <a href="<?php echo osc_contact_url(); ?>">
           <?php _e('Contact', raito_teema_THEME_FOLDER); ?>
-          </a> </li>
+          </a> </li> -->
+		  
       </ul>
       <div class="publish">
         <?php if( osc_is_web_user_logged_in() && osc_users_enabled() || ( !osc_users_enabled() && !osc_reg_user_post() )) { ?>
