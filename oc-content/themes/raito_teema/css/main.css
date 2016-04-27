@@ -432,6 +432,8 @@ h4 em {font-size: 11px;display: block;font-style: normal;margin: 5px 0 0;font-we
 }
 .user-card figure {padding: 5px;margin-bottom: 15px;
 }
+.name h3 {font-size: 24px;}
+
 .custom .user_menu li.opt_publicprofile {display: none;
 }
 .forgot .form-container-box {max-width: 400px;margin: 0 auto;
