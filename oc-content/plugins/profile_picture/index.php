@@ -94,7 +94,7 @@ function profile_picture_upload(){
 	
 	
 	# HACK TO TRANSLATE STRINGS ON BUTTONS. AT LEAST SOME OF THEM.
-	echo "<script src=" . osc_base_url() . 'oc-content/plugins/profile_picture/js/test.js' . "></script>";
+	echo "<script src=" . osc_base_url() . 'oc-content/plugins/profile_picture/js/jquery-input-file-text.js' . "></script>";
 	?>
 	
 	<script>
@@ -122,7 +122,9 @@ function profile_picture_upload(){
     if(isset($_POST['Submit'])) // Upload photo
     {
 		$filename = $_FILES['userfile']['name']; // Get the name of the file (including file extension).
-		$ext = substr($filename, strpos($filename,'.'), strlen($filename)-1); // Get the extension from the filename.
+		
+		#$ext = substr($filename, strpos($filename,'.'), strlen($filename)-1); // Get the extension from the filename.
+		$ext = '.' . pathinfo($filename, PATHINFO_EXTENSION);		
 	 
 		// Check if the filetype is allowed, if not DIE and inform the user.
 		if(!in_array($ext, $allowed_filetypes)) {
