@@ -4,7 +4,7 @@ Plugin Name: Profile Picture
 Plugin URI: http://www.osclass.org
 Description: Allows users to upload a profile picture
 Version: 3.0.2.2
-Author: Jesse - turbinejesse@gmail.com
+Author: Jesse - turbinejesse@gmail.com & Janne Kähkönen
 Author URI: http://www.osclass.org/
 Short Name: Profile_Picture
 */
@@ -66,7 +66,7 @@ function profile_picture_upload(){
 	$conn = getConnection();
 	$result=$conn->osc_dbFetchResult("SELECT user_id, pic_ext FROM %st_profile_picture WHERE user_id = '%d' ", DB_TABLE_PREFIX, $user_id);
 
-	if($result>0) //if picture exists
+	if($result > 99) //if picture exists
 	{
 
 	    list($width, $height, $type, $attr)= getimagesize($upload_path.'profile'.$user_id.$result['pic_ext']); 
@@ -85,32 +85,32 @@ function profile_picture_upload(){
 	    echo '<img src="'.osc_base_url() . 'oc-content/plugins/profile_picture/no_picture.jpg" width="'.$width.'" height="'.$height.'">';
 	} 
 
-    if( osc_is_web_user_logged_in()){
+    if( osc_is_web_user_logged_in()) {
 	if($result>0){
 	    echo '<br><a href="javascript:ShowDiv();">'.__('Upload new picture', 'profile_picture') .'</a> - <a href="javascript:deletePhoto();">' . __('Delete', 'profile_picture') . '</a>';
-	    echo '<div id="HiddenDiv" style="display:none;">'; // hides form if user already has a profile picture and displays a link to form instead
+	    echo '<br><div id="HiddenDiv" style="display:none;">'; // hides form if user already has a profile picture and displays a link to form instead
 	}
-	$url = (!empty($_SERVER['HTTPS'])) ? "https://".$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'] : "http://".$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'];
+	$url = (!empty($_SERVER['HTTPS'])) ? "https://".$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'] : "http://".$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'];	
 	
 	
-		echo "<script src=" . osc_base_url() . 'oc-content/plugins/profile_picture/js/test.js' . "></script>";
+	# HACK TO TRANSLATE STRINGS ON BUTTONS. AT LEAST SOME OF THEM.
+	echo "<script src=" . osc_base_url() . 'oc-content/plugins/profile_picture/js/test.js' . "></script>";
 	?>
 	
 	<script>
 
+	$(document).ready(function() {
+		$('#file').inputFileText( { text: '<?php _e('Choose file', 'profile_picture'); ?>' } );
+	});
 
-$(document).ready(function() {
-    $('#file').inputFileText( { text: '<?php _e('Choose file', 'profile_picture'); ?>' } );
-});
-
-</script>
-	
+	</script>		
 	<?php
+	# END OF HACK
 	
 	echo '
 	    <form name="newpic" method="post" enctype="multipart/form-data"  action="'.$url.'">
 		
-	    <input type="file" name="userfile" id="file">
+	    <input type="file" name="userfile" id="file"><hr>
 	    <input name="Submit" type="submit" value="'.$button_text.'">
 	    </form>
 	    <form name="deleteForm" method="POST" action="'.$url.'"><input type="hidden" name="deletePhoto"></form>
@@ -121,38 +121,40 @@ $(document).ready(function() {
 
     if(isset($_POST['Submit'])) // Upload photo
     {
-	$filename = $_FILES['userfile']['name']; // Get the name of the file (including file extension).
-	$ext = substr($filename, strpos($filename,'.'), strlen($filename)-1); // Get the extension from the filename.
- 
-	// Check if the filetype is allowed, if not DIE and inform the user.
-	if(!in_array($ext,$allowed_filetypes))
-	    die('The file you attempted to upload is not allowed.');
- 
-	// Now check the filesize, if it is too large then DIE and inform the user.
-	if(filesize($_FILES['userfile']['tmp_name']) > $max_filesize)
-	    die('The file you attempted to upload is too large.');
- 
-	// Check if we can upload to the specified path, if not DIE and inform the user.
-	if(!is_writable($upload_path))
-	{
-	    die('You cannot upload to the specified directory, please CHMOD it to 777.');
-	}
-	// Upload the file to your specified path.
-	if(move_uploaded_file($_FILES['userfile']['tmp_name'],$upload_path . 'profile'.$user_id.$ext)){
-	    if($result==0){
-		$conn->osc_dbExec("INSERT INTO %st_profile_picture (user_id, pic_ext) VALUES ('%d', '%s')", DB_TABLE_PREFIX, $user_id, $ext);
-	    }
-	    else {
-		$conn->osc_dbExec("UPDATE %st_profile_picture SET pic_ext = '%s' WHERE user_id = '%d' ", DB_TABLE_PREFIX, $ext, $user_id);
-	    }
+		$filename = $_FILES['userfile']['name']; // Get the name of the file (including file extension).
+		$ext = substr($filename, strpos($filename,'.'), strlen($filename)-1); // Get the extension from the filename.
+	 
+		// Check if the filetype is allowed, if not DIE and inform the user.
+		if(!in_array($ext, $allowed_filetypes)) {
+			_e('The file you attempted to upload is not allowed.');
+			#die();
+		} 
+		// Now check the filesize, if it is too large then DIE and inform the user.
+		else if(filesize($_FILES['userfile']['tmp_name']) > $max_filesize) {
+			_e('The file you attempted to upload is too large.');
+			#die();
+		} 
+		// Check if we can upload to the specified path, if not DIE and inform the user.
+		else if(!is_writable($upload_path))
+		{
+			_e('You cannot upload to the specified directory, please CHMOD it to 777.');
+			#die();
+		}
+		// Upload the file to your specified path.
+		else if (move_uploaded_file($_FILES['userfile']['tmp_name'],$upload_path . 'profile'.$user_id.$ext)){
+			if($result==0){
+			$conn->osc_dbExec("INSERT INTO %st_profile_picture (user_id, pic_ext) VALUES ('%d', '%s')", DB_TABLE_PREFIX, $user_id, $ext);
+			}
+			else {
+			$conn->osc_dbExec("UPDATE %st_profile_picture SET pic_ext = '%s' WHERE user_id = '%d' ", DB_TABLE_PREFIX, $ext, $user_id);
+			}
 
-	    echo '<script type="text/javascript">window.location = document.URL;</script>';
-	}
-
-	else{
-	    echo 'There was an error during the file upload.  Please try again.'; // It failed :(.
-	}
-     }
+			echo '<script type="text/javascript">window.location = document.URL;</script>';
+		}
+		else {
+			_e('There was an error during the file upload.  Please try again.'); // It failed :(.
+		}
+    }
 
     if(isset($_POST['deletePhoto'])) // Delete the photo
     {
@@ -161,9 +163,6 @@ $(document).ready(function() {
     }
 
 } // end profile_picture_upload()
-
-
-
 
 
 function profile_picture_show(){
@@ -199,17 +198,14 @@ function profile_picture_show(){
     else{
 	echo '<img src="'.osc_base_url() . 'oc-content/plugins/profile_picture/no_picture.jpg" width="'.$width.'" height="'.$height.'">';
     }
+	
 } //end profile_picture_show()
 
 
-
-
-
-
-    // This is needed in order to be able to activate the plugin
-    osc_register_plugin(osc_plugin_path(__FILE__), 'profile_picture_install') ;
-    // This is a hack to show a Uninstall link at plugins table (you could also use some other hook to show a custom option panel)
-    osc_add_hook(osc_plugin_path(__FILE__) . '_uninstall', 'profile_picture_uninstall') ;
+// This is needed in order to be able to activate the plugin
+osc_register_plugin(osc_plugin_path(__FILE__), 'profile_picture_install') ;
+// This is a hack to show a Uninstall link at plugins table (you could also use some other hook to show a custom option panel)
+osc_add_hook(osc_plugin_path(__FILE__) . '_uninstall', 'profile_picture_uninstall') ;
 
 
 ?>
