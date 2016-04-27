@@ -4,7 +4,8 @@ function invokeScript() {
 		$(this).next().is("a")||selectUi($(this))
 	});
 	
-	var i = $("");$("input").on("ifCreated ifClicked ifChanged ifChecked ifUnchecked ifDisabled ifEnabled ifDestroyed",	
+	var i = $("");
+	$("input").on("ifCreated ifClicked ifChanged ifChecked ifUnchecked ifDisabled ifEnabled ifDestroyed",	
 	function() {		
 		i.prepend("")
 	}).iCheck({checkboxClass:"square",radioClass:"circle",increaseArea:"20%"})

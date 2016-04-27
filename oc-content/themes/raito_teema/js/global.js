@@ -63,12 +63,12 @@ function createPlaceHolder($element){
   $element.wrap($wrapper);
   var $label = $('<label/>');
       $label.append($element.attr('placeholder').replace(/^\s*/gm, ''));
-      $element.removeAttr('placeholder');
+      // $element.removeAttr('placeholder');
 
-  $element.before($label);
-  $element.bind('remove', function() {
-        $wrapper.remove();
-    });
+  // $element.before($label);
+  // $element.bind('remove', function() {
+        // $wrapper.remove();
+    // });
 }
 
 function selectUi(thatSelect){
