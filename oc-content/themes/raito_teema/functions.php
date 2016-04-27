@@ -1602,7 +1602,8 @@ function cust_search_keyword_wildcard_with_username($params) {
 osc_add_hook('search_conditions', 'cust_search_keyword_wildcard_with_username', 10); 
 
 
-if(osc_logged_admin_username() == 'test') {
+if(osc_logged_admin_username() == 'moderator') {
+
 	//osc_is_moderator()
     #var_dump(osc_get_plugins());
   
