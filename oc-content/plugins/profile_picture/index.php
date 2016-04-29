@@ -198,7 +198,7 @@ function profile_picture_show(){
 	echo '<img src="'.osc_base_url() . 'oc-content/plugins/profile_picture/images/profile'.$user_id.$result['pic_ext'].'?'.$modtime.'" width="'.$maxwidth.'" height="'.$height.'">'; // display picture
     }
     else{
-	echo '<img src="'.osc_base_url() . 'oc-content/plugins/profile_picture/no_picture.jpg" width="'.$width.'" height="'.$height.'">';
+	echo '<img src="'.osc_base_url() . 'oc-content/plugins/profile_picture/default/no_picture.jpg" width="'.$width.'" height="'.$height.'">';
     }
 	
 } //end profile_picture_show()
