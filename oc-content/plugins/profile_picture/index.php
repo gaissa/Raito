@@ -82,12 +82,12 @@ function profile_picture_upload(){
 	    echo '<img src="'.osc_base_url() . 'oc-content/plugins/profile_picture/images/profile'.$user_id.$result['pic_ext'].'?'.$modtime.'" width="'.$maxwidth.'" height="'.$height.'">'; // display picture
 	}
 	else { // show default photo since they haven't uploaded one
-	    echo '<img src="'.osc_base_url() . 'oc-content/plugins/profile_picture/no_picture.jpg" width="'.$width.'" height="'.$height.'">';
+	    echo '<img src="'.osc_base_url() . 'oc-content/plugins/profile_picture/images/default/no_picture.jpg" width="'.$width.'" height="'.$height.'">';
 	} 
 
     if( osc_is_web_user_logged_in()) {
 	if($result>0){
-	    echo '<br><a href="javascript:ShowDiv();">'.__('Upload new picture', 'profile_picture') .'</a> - <a href="javascript:deletePhoto();">' . __('Delete', 'profile_picture') . '</a>';
+	    echo '<br><a class="profile_and_items" href="javascript:ShowDiv();">'.__('Upload new picture', 'profile_picture') .'</a> - <a class="profile_and_items" href="javascript:deletePhoto();">' . __('Delete', 'profile_picture') . '</a><br>';
 	    echo '<br><div id="HiddenDiv" style="display:none;">'; // hides form if user already has a profile picture and displays a link to form instead
 	}
 	$url = (!empty($_SERVER['HTTPS'])) ? "https://".$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'] : "http://".$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'];	
@@ -113,11 +113,14 @@ function profile_picture_upload(){
 	    <input type="file" name="userfile" id="file"><hr>
 	    <input name="Submit" type="submit" value="'.$button_text.'">
 	    </form>
+		<div style="display:none">
 	    <form name="deleteForm" method="POST" action="'.$url.'"><input type="hidden" name="deletePhoto"></form>
+		</div>
+		<br>
 	'; //echo
-    	if($result>0) echo '</div>';
+	
+    	if($result >0 ) echo '</div>';
     } //if logged-in
-
 
     if(isset($_POST['Submit'])) // Upload photo
     {
@@ -198,7 +201,7 @@ function profile_picture_show(){
 	echo '<img src="'.osc_base_url() . 'oc-content/plugins/profile_picture/images/profile'.$user_id.$result['pic_ext'].'?'.$modtime.'" width="'.$maxwidth.'" height="'.$height.'">'; // display picture
     }
     else{
-	echo '<img src="'.osc_base_url() . 'oc-content/plugins/profile_picture/default/no_picture.jpg" width="'.$width.'" height="'.$height.'">';
+	echo '<img src="'.osc_base_url() . 'oc-content/plugins/profile_picture/images/default/no_picture.jpg" width="'.$width.'" height="'.$height.'">';
     }
 	
 } //end profile_picture_show()
