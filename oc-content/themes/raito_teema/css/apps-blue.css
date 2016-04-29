@@ -19,3 +19,8 @@
 }
 #footer, #form_vh_map {border-top: solid 3px #006ca3;
 }
+.profile_and_items {
+	background: #006ca3;
+	color: #fff;
+	padding: 10px;
+}

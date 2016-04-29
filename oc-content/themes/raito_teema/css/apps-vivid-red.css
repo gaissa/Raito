@@ -5,7 +5,6 @@
 
 /*Color reset file*/
 
-
 #item-post h2, #related-searches li a, #show_filters, #tab_filter section li a, .block h2:after, .btn-focus, .btn-success, .btn-success:hover, .contact_button a, .custom .user_menu .watchlist_page a, .filters h3, .forgot .form-container-box .header:after, .forgot .form-container-box .resp-wrapper .ui-button, .item-header li .fa, .list_watch, .listing-attr .currency-value, .listings h2 .fa, .pagination a:hover, .pagination span, .rate_me span, .ribbon, .search_filter li li a, .thumbs a:hover, .title:after, .user-alerts .user_menu li.opt_alerts a, .user-change_email .user_menu li.opt_change_email a, .user-items .user_menu li.opt_items a, .user-passowrd_change .user_menu li.opt_change_password a, .user-profile .user_menu li.opt_account a, .user-username .user_menu li.opt_change_email a, .user-usernames .user_menu li.opt_change_username a, .user_menu li a:hover, .slick-arrow:hover, .filters h3, .filters .plugin-hooks h6 {background-color: #c82727;
 }
 .filters .ui-widget-content {background: #c82727;
@@ -19,4 +18,9 @@
 .premium .list_space {background-color: rgba(0, 108, 163, 0.1);
 }
 #footer, #form_vh_map {border-top: solid 3px #c82727;
+}
+.profile_and_items {
+	background: #c82727;
+	color: #fff;
+	padding: 10px;
 }
