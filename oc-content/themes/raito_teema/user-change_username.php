@@ -25,10 +25,12 @@
     osc_enqueue_script('jquery-validate');
 
     raito_teema_add_body_class('user user-usernames');
-    osc_add_hook('before-main','sidebar');
-    function sidebar(){
-        osc_current_web_theme_path('user-sidebar.php');
-    }
+	
+    #osc_add_hook('before-main','sidebar');
+    #function sidebar(){
+        #osc_current_web_theme_path('user-sidebar.php');
+    #}
+	
     osc_add_filter('meta_title_filter','custom_meta_title');
     function custom_meta_title($data){
         return osc_esc_html(__('Change username', raito_teema_THEME_FOLDER));
