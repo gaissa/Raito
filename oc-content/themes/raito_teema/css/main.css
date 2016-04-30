@@ -55,6 +55,17 @@ textarea {height: 200px;
 .meta_list .meta .cf_date_interval {width: 150px;
 }
 
+#fa-custom {
+  display: block;
+  vertical-align: middle;
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  height: 35px;
+  line-height: 35px;
+  padding: 0 0px;
+}
+
 /*custom checkbox*/ 
 .square, .circle {display: inline-block;
 *display:inline;vertical-align: middle;margin: 0 5px 0 0;padding: 0;cursor: pointer;background: #fff;height: 25px;width: 25px;text-align: center;line-height: 22px;font-size: 12px;
