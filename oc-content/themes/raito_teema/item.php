@@ -39,9 +39,7 @@
 	if( osc_item_address() !== '' ) {
         $location[] = osc_item_address();
     }	
-    #if( osc_item_city_area() !== '' ) {
-        #$location[] = osc_item_city_area();
-    #}
+
     if( osc_item_city() !== '' ) {
         $location[] = osc_item_city();
     }
@@ -57,14 +55,6 @@
     osc_current_web_theme_path('header.php') ;	
 	
 ?>
-
-	<script>
-	$(document).ready(function() {   
-		$( "#btn btn-success" ).click(function() {
-		  console.log("test");
-		});
-	});
-	</script>
 
 <div class="row">
 
@@ -84,6 +74,8 @@
 	  
       <ul class="item-header">
 	  
+	    <div class="madhouse_avaibility-custom"><?php osc_run_hook('item_detail', osc_item() ); ?></div>
+		
         <li>
           <?php if( osc_price_enabled_at_items() ) { ?>
           <i class="fa fa-money"></i><?php echo osc_item_formated_price(); ?>
@@ -105,6 +97,7 @@
         </li>
 			
         <?php }; ?>
+		
 		 <div id="custom_fields">
 				  <?php if( osc_count_item_meta() >= 1 ) { ?>
 				  <br />
@@ -116,10 +109,10 @@
 					<?php } ?>
 				  </div>
 				  <?php } ?>
-				</div>
+				</div>			
+				
       </ul> 
-	 
-	  <?php osc_run_hook('item_detail', osc_item() ); ?>
+	 	
 	  
       <?php if( osc_images_enabled_at_items() ) { ?>
 	  
@@ -159,75 +152,39 @@
             </div>
           </div>			
 
-          <?php } else { ?>
-		  
-          <div class="col-md-10">			  
-			  
-			<div id="custom_fields">
-			  <?php if( osc_count_item_meta() >= 1 ) { ?>
-			  <br />
-			  <div class="meta_list">
-				<?php while ( osc_has_item_meta() ) { ?>
-				<?php if(osc_item_meta_value()!='') { ?>
-				<div class="meta"> <strong><?php echo osc_item_meta_name(); ?>:</strong> <?php echo osc_item_meta_value(); ?> </div>
-				<?php } ?>
-				<?php } ?>
-			  </div>
-			  <?php } ?>
-			</div>
-			<?php osc_run_hook('item_detail', osc_item() ); ?>      
-		
-		  </div>
-		
-          <?php } ?>
+          <?php }  ?>
 		  
         </div>
       </div>
       <?php } ?>	  
-        
-		<?php
-		
-		if (count($location) > 0) {
-            osc_run_hook('location'); 			
-        };
-		
-		?>
+
 	 
 
-	  	  <!-- SHARE BUTTONS -->
-	      <ul class="contact_button">
+		  <!-- SHARE BUTTONS -->
+		  <ul class="contact_button">
 
 		  <!-- Email
 		  <a href="mailto:?Subject=EDIT THIS PART&Body=EDIT THIS PART #<?php echo osc_item_url() ; ?>" target="_blank"><img src="/oc-content/themes/repurpose/images/email.png" alt="Share by email" title="Share by email" /></a>-->
 		  <!-- Facebook -->
-		  <style>
-		  #fa-custom {
-			  display: block;
-			  vertical-align: middle;
-			  font-size: 15px;
-			  font-weight: 700;
-			  text-transform: uppercase;
-			  height: 35px;
-			  line-height: 35px;
-			  padding: 0 0px;
-		  }
-		  </style>
+		  
 
 		  <!-- SHARE BUTTONS -->	
 		  <li><a href="http://www.facebook.com/sharer.php?u=<?php echo osc_item_url() ; ?>" target="_blank"><i id="fa-custom" class="fa fa-facebook"></i></a></li>
 		  <li><a href="https://plus.google.com/share?url=<?php echo osc_item_url() ; ?>" target="_blank"><i id="fa-custom" class="fa fa-google"></i></a></li>
 		  <li><a href="http://twitter.com/share?url=<?php echo osc_item_url() ; ?>" target="_blank"><i id="fa-custom" class="fa fa-twitter"></i></a></li>	
 		
-          <li>
+		  <li>
 		  <a href="<?php echo osc_item_send_friend_url(); ?>" rel="nofollow">
-            <i id="fa-custom" class="fa fa-envelope"></i>
-          </a>
+			<i id="fa-custom" class="fa fa-envelope"></i>
+		  </a>
 		  </li>
-          
-        </ul>
+		  
+		</ul>
+		
     </div>
    
     <?php if( osc_comments_enabled() ) { ?>
+	
     <?php if( osc_reg_user_post_comments () && osc_is_web_user_logged_in() || !osc_reg_user_post_comments() ) { ?>
     <div id="comments">
       <?php if( osc_count_item_comments() >= 1 ) { ?>
@@ -338,7 +295,8 @@
 
 		}
 	?>
-    <div class="alert_block">
+	
+    <!-- <div class="alert_block">
       <?php if(!osc_is_web_user_logged_in() || osc_logged_user_id()!=osc_item_user_id()) { ?>
       <form action="<?php echo osc_base_url(true); ?>" method="post" name="mask_as_form" id="mask_as_form">
         <input type="hidden" name="id" value="<?php echo osc_item_id(); ?>" />
@@ -367,12 +325,15 @@
         </select>
       </form>
       <?php } ?>
-    </div>
+    </div> -->	
+	
     <?php osc_current_web_theme_path('item-sidebar.php'); ?>
   </div>
 </div>
+
 <?php related_listings(); ?>
 <?php if( osc_count_items() > 0 ) { ?>
+
 <div class="similar_ads">
   <h2 class="title">
     <?php _e('Related listings', raito_teema_THEME_FOLDER); ?>
@@ -382,5 +343,7 @@
 		osc_current_web_theme_path($loop_template);
     ?>
 </div>
+
 <?php } ?>
+
 <?php osc_current_web_theme_path('footer.php') ; ?>
