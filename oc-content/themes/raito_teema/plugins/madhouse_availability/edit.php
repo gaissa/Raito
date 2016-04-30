@@ -9,9 +9,12 @@
         }
     ?>
     <div class="control-group">
-        <label class="control-label"><?php _e("Start", "madhouse_availability"); ?></label>
+        
         <div class="controls">
-            <input class="mdh-availability" type="text" name="availabilityStart" value="<?php echo $detail; ?>">
+		
+            <input class="mdh-availability" id="mdh-availability-start" type="hidden" name="availabilityStart" value="<?php echo $detail; ?>">
+			<label class="control-label"><?php _e("Start", "madhouse_availability"); ?></label><input id="alt-datepicker-start" type="text">
+			
         </div>
     </div>
     <?php if(mdh_availability_end_date_setting() >0) : ?>
@@ -28,10 +31,12 @@
         ?>
         <div class="control-group">
             <?php if(mdh_availability_end_date_setting() == 1): ?>
-                <label class="control-label"><?php _e("End", "madhouse_availability"); ?></label>
+                
                 <div class="controls">
 
-                    <input class="mdh-availability" type="text" name="availabilityEnd" value="<?php echo $detail; ?>">
+                    <input class="mdh-availability" id="mdh-availability-end" type="hidden" name="availabilityEnd" value="<?php echo $detail; ?>">
+					<label class="control-label"><?php _e("End", "madhouse_availability"); ?></label><input id="alt-datepicker-end" type="text">
+					
                 </div>
                 <?php else: ?>
                 <label class="control-label"><?php _e("During", "madhouse_availability"); ?></label>
@@ -49,12 +54,24 @@
         </div>
     <?php endif; ?>
 </div>
+<br>
 
 <script>
-    $(".mdh-availability").datepicker({
-        showOn:'focus',        
-        minDate: -90
-    });
+
+	$("#alt-datepicker-start").datepicker({
+		showOn:'focus',
+		altField  : '#mdh-availability-start',
+		altFormat : 'yy-mm-dd',
+		//dateFormat: "yy.mm.dd",			
+		minDate: 0
+	});
+	$("#alt-datepicker-end").datepicker({
+		showOn:'focus',
+		altField  : '#mdh-availability-end',
+		altFormat : 'yy-mm-dd',
+		//dateFormat: "yy.mm.dd",			
+		minDate: 0
+	});
 
 	$.datepicker.regional['fi'] = {
 		nextText: "",
@@ -67,7 +84,7 @@
 		dayNames: [ "Sunnuntai","Maanantai","Tiistai","Keskiviikko","Torstai","Perjantai","Lauantai" ],
 		dayNamesMin: [ "Su","Ma","Ti","Ke","To","Pe","La" ],
 		weekHeader: "Vk",
-		dateFormat: "d.m.yy",
+		dateFormat: "dd.mm.yy",
 		firstDay: 1,
 		isRTL: false,
 		showMonthAfterYear: false,
@@ -75,4 +92,5 @@
 	};
 
     $.datepicker.setDefaults($.datepicker.regional['fi']);
+	
 </script>
