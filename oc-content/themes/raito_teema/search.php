@@ -29,11 +29,11 @@
     raito_teema_add_body_class('category');
 	
 	if(raito_teema_show_as() == 'gallery'){
-        $loop_template	=	'loop-search-grid.php';
+        $loop_template	=	'./loops/loop-search-grid.php';
 		$listClass = 'listing-grid';
         $buttonClass = 'active';
     }else{
-		$loop_template	=	'loop-search-list.php';
+		$loop_template	=	'./loops/loop-search-list.php';
 		$listClass = '';
 		$buttonClass = '';
 	}
