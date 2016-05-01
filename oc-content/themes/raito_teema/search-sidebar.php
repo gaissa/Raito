@@ -77,15 +77,17 @@
                 </div>
               </fieldset>
               <?php } ?>
-              <div class="plugin-hooks">
+			  
+              <!--<div class="plugin-hooks">
                 <?php
-            if(osc_search_category_id()) {
-                osc_run_hook('search_form', osc_search_category_id()) ;
-            } else {
-                osc_run_hook('search_form') ;
-            }
-            ?>
-              </div>
+				
+				#if(osc_search_category_id()) {
+					#osc_run_hook('search_form', osc_search_category_id()) ;
+				#} else {
+					#osc_run_hook('search_form') ;
+				#}
+				?>
+              </div> -->
 			  
 			<?php
 			$aCategories = osc_search_category();
