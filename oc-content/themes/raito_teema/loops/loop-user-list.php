@@ -197,6 +197,7 @@ if(View::newInstance()->_exists('listType')){
 			<!-- ITEM EDIT -->			
             <span class="admin-options"> <a href="<?php echo osc_item_edit_url(); ?>" rel="nofollow">
             <?php _e('Edit item', raito_teema_THEME_FOLDER); ?>
+			
             </a>
 			<!-- ITEM EDIT ENDS -->	
 			

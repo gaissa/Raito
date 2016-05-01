@@ -24,8 +24,16 @@ $type = 'items';
 if(View::newInstance()->_exists('listType')){
     $type = View::newInstance()->_get('listType');
 }
-$cols = 3;
+$cols = 4;
+
+########## DATABASE
+$conn = DBConnectionClass::newInstance();
+		$data = $conn->getOsclassDb();
+		$comm = new DBCommandClass($data);
+		$db_prefix = DB_TABLE_PREFIX;
+		
 ?>
+
 <div class="listing-card-list listings_grid listings_grids" id="listing-card-list">
   <?php
 	
@@ -48,9 +56,40 @@ $cols = 3;
         <?php } ?>
         <?php } ?>
         <span class="ribbon"> <i class="fa fa-star"></i> </span> </figure>
+		
     </div>
     <div class="listing-attr">
       <h4><a href="<?php echo osc_item_url() ; ?>" title="<?php echo osc_esc_html(osc_item_title()) ; ?>"><?php echo osc_highlight(strip_tags(osc_item_title()),40) ; ?></a></h4>
+	  
+	  
+	  
+<?php
+########## DATABASE
+
+$variable = osc_item_id();
+$query = "SELECT * FROM `{$db_prefix}t_item_availability` WHERE fk_i_item_id='$variable'";
+
+$result = $comm->query($query);
+echo '<div class="madhouse_avaibility-custom">';
+if ($result) {
+	$items = $result->result();
+	foreach ($items as $item) {
+	   
+	    $start = osc_format_date($item["d_start"]);
+	   
+	    if ($item["d_end"] != '') {
+			echo osc_format_date($start) . ' - ' . osc_format_date($item["d_end"]);
+	    }
+		else {
+			echo osc_format_date($start);
+		}
+	   
+	  
+	}
+}
+echo '</div>';
+		
+?>
       <article> <span class="category"><i class="fa fa-<?php echo raito_teema_category_icon( osc_item_category_id() ); ?>"></i> <?php echo osc_item_category() ; ?></span> <span class="location"> <i class="fa fa-map-marker"></i> <?php echo osc_item_city(); ?>
         <?php if( osc_item_region()!='' ) { ?>
         (<?php echo osc_item_region(); ?>)
