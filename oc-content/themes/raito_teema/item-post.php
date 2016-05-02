@@ -119,10 +119,19 @@
           </div>
           <?php } ?>
           <?php 
+		  
 			if( osc_images_enabled_at_items() ) {
                 if (function_exists('przi_ajax_uploader')) przi_ajax_photos();
 				else ItemForm::ajax_photos();
-            } ?>			
+				
+				echo('<style>
+						.qq-upload-button:after {   
+							font-family: FontAwesome, "Open Sans", Arial;
+							content: "\f0c5' . '  ' . __("drag & drop file (or click)", raito_teema_THEME_FOLDER) . '";    
+							opacity: 0.45;
+						}
+					</style>');				
+            } ?>
 			
 		 <!-- location -->
           <div class="box location">
@@ -137,7 +146,7 @@
               <div class="controls">
                 <?php 
 				if(raito_teema_locations_input_as() =='select'){ 
-                    if(count(osc_get_countries()) > 1){
+                    if(count(osc_get_countries()) >= 1){
                         ItemForm::region_select(osc_get_regions(osc_user_field('fk_c_country_code')),osc_user());
                     }else{
                         $aCountries = osc_get_countries();
@@ -157,9 +166,12 @@
               </label>
               <div class="controls">
                 <?php 
+				
 				if(raito_teema_locations_input_as() =='select'){ 
                     if(Params::getParam('action') != 'item_edit') {
-                        ItemForm::city_select(null, osc_item());
+						
+                        #ItemForm::city_select(null, osc_item());
+						ItemForm::city_select(osc_get_cities(osc_user_region_id()), osc_user());
                     } else {
                         ItemForm::city_select(osc_get_cities(osc_user_region_id()), osc_user());
                     }
