@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OSClass\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-04-27 15:24+0300\n"
+"POT-Creation-Date: 2016-05-02 22:51+0300\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Janne Kähkönen <jannekahkonen@gmail.com>\n"
 "Language-Team: OSClass <info@osclass.org>\n"
@@ -33,18 +33,18 @@ msgstr "Poista"
 msgid "Choose file"
 msgstr "Valitse kuva"
 
-#: index.php:129
+#: index.php:134
 msgid "The file you attempted to upload is not allowed."
 msgstr ""
 
-#: index.php:134
+#: index.php:139
 msgid "The file you attempted to upload is too large."
 msgstr ""
 
-#: index.php:140
+#: index.php:145
 msgid "You cannot upload to the specified directory, please CHMOD it to 777."
 msgstr ""
 
-#: index.php:155
+#: index.php:160
 msgid "There was an error during the file upload.  Please try again."
 msgstr ""

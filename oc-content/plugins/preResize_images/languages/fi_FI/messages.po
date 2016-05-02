@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OSClass\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-04-25 05:35+0300\n"
+"POT-Creation-Date: 2016-05-02 22:50+0300\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Janne Kähkönen <jannekahkonen@gmail.com>\n"
 "Language-Team: OSClass <info@osclass.org>\n"
@@ -19,11 +19,11 @@ msgstr ""
 
 #: index.php:35
 msgid "Settings & Help"
-msgstr ""
+msgstr "Asetukset ja ohjeet"
 
 #: index.php:56
 msgid "Images already uploaded"
-msgstr ""
+msgstr "Kuvat on jo ladattu"
 
 #: index.php:65 index.php:76 index.php:115 index.php:302
 msgid "Delete"
@@ -31,73 +31,80 @@ msgstr "Poista"
 
 #: index.php:94 index.php:97 index.php:297
 msgid "Click or Drop for upload images"
-msgstr ""
+msgstr "Lisää kuva"
 
 #: index.php:100 index.php:298
 msgid "Processing..."
-msgstr ""
+msgstr "Ladataan..."
 
 #: index.php:113 index.php:300
 msgid "Cancel"
-msgstr ""
+msgstr "Mitätöi"
 
 #: index.php:114 index.php:299
 msgid "Retry"
-msgstr ""
+msgstr "Uudestaan"
 
 #: index.php:169
 msgid "This action can't be undone. Are you sure you want to continue?"
-msgstr ""
+msgstr "Tätä toimintoa ei voi peruuttaa, oletko varma että haluat jatkaa"
 
 #: index.php:280
-msgid "Too many items ({netItems}) would be uploaded. Item limit is {itemLimit}."
+msgid ""
+"Too many items ({netItems}) would be uploaded. Item limit is {itemLimit}."
 msgstr ""
+"liian monta kohdetta ({netItems}) koetettiin päivittää. Suurin kohteiden "
+"määrä on {itemLimit}."
 
 #: index.php:281
-msgid "The files are being uploaded, if you leave now the upload will be cancelled."
+msgid ""
+"The files are being uploaded, if you leave now the upload will be cancelled."
 msgstr ""
+"Tiedostoja ladataan. Mikäli kirjaudut ulos nyt, tiedostojen lataaminen "
+"peruuntuu."
 
 #: index.php:282
 msgid "{file} has an invalid extension. Valid extension(s): {extensions}."
-msgstr ""
+msgstr "{file} Tiedostoa ei tueta. Tuetut tiedostotyypit ovat: {extensions}."
 
 #: index.php:283
 msgid "{file} is too large, maximum file size is {sizeLimit}."
-msgstr ""
+msgstr "{file} on liian suuri, suurin mahdollinen tiedostokoko {sizeLimit}."
 
 #: index.php:284
 msgid "{file} is empty, please select files again without it."
 msgstr ""
+"{file} on tyhjä, valitse tiedostot uudestaan ilman tätä kyseistä tiedostoa."
 
 #: index.php:301
 msgid "Upload failed"
-msgstr ""
+msgstr "Lataaminen epäonnistui"
 
 #: index.php:303
 msgid "Deleting..."
-msgstr ""
+msgstr "Poistetaan..."
 
 #: index.php:304
 #, php-format
 msgid "{percent}% of {total_size}"
-msgstr ""
+msgstr "{percent}% of {total_size}"
 
 #: index.php:331
 msgid "Make primary image"
-msgstr ""
+msgstr "Valitse kansikuvaksi"
 
 #: index.php:364
 #, php-format
 msgid "Too many items were uploaded. Item limit is %d."
-msgstr ""
+msgstr "Liian monta kohdetta, enimmäismäärä on %d."
 
 #: prziAjaxUploader.php:38
 msgid "Server error. Upload directory isn't writable."
-msgstr ""
+msgstr "Palvelinvirhe. Kohdekansioon ei voida kirjoittaa"
 
 #: prziAjaxUploader.php:41
 msgid "No files were uploaded."
-msgstr ""
+msgstr "Tiedostoja ei ladattu"
 
 #: prziAjaxUploader.php:45
 msgid "File is empty"
@@ -110,7 +117,7 @@ msgstr "Tiedosto on liian suuri"
 #: prziAjaxUploader.php:56 prziAjaxUploader.php:69
 #, php-format
 msgid "File has an invalid extension, it should be one of %s."
-msgstr ""
+msgstr "Tiedostopääte ei kelpaa, sallitut tiedostotyypit %s."
 
 #: prziAjaxUploader.php:167
 msgid "Getting content length is not supported."
@@ -118,7 +125,7 @@ msgstr ""
 
 #: settings.php:6
 msgid "Settings changed"
-msgstr ""
+msgstr "Asetuksia muutettu"
 
 #: settings.php:32
 msgid "Save changes"

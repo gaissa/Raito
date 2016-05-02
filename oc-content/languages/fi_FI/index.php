@@ -20,11 +20,11 @@ function locale_fi_FI_info() {
          'name'            => 'Finnish (FI)'
         ,'short_name'      => 'Finnish'
         ,'description'     => 'Finnish Translation'
-        ,'version'         => 2.3
+        ,'version'         => 0.1
         ,'author_name'     => 'Osclass'
-        ,'author_url'      => 'http://osclass.org/'
+        ,'author_url'      => 'https://github.com/gaissa/'
         ,'currency_format' => '{NUMBER} {CURRENCY}'
-        ,'date_format'     => 'm/d/Y'
+        ,'date_format'     => 'd/m/y'
         ,'stop_words'      => ''
     );
 }

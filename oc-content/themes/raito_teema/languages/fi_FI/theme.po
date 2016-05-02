@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Raito\n"
-"POT-Creation-Date: 2016-04-30 22:14+0300\n"
-"PO-Revision-Date: 2016-04-30 22:15+0300\n"
+"POT-Creation-Date: 2016-05-02 22:52+0300\n"
+"PO-Revision-Date: 2016-05-02 22:53+0300\n"
 "Last-Translator: Janne Kähkönen <jannekahkonen@gmail.com>\n"
 "Language-Team: Janne Kähkönen <jannekahkonen@gmail.com>\n"
 "Language: fi_FI\n"
@@ -35,13 +35,13 @@ msgstr "Etsi"
 msgid "<strong>Look</strong> for it in the most popular categories."
 msgstr "<strong> Etsi </ strong> suosituista"
 
-#: common/head.php:24 item.php:219 loops/loop-grid.php:97
-#: loops/loop-list.php:99 loops/loop-search-grid.php:72
+#: common/head.php:24 item.php:225 loops/loop-grid.php:106
+#: loops/loop-list.php:108 loops/loop-search-grid.php:72
 #: loops/loop-search-grid.php:130 loops/loop-search-list.php:74
-#: loops/loop-search-list.php:136 loops/loop-user-grid.php:73
-#: loops/loop-user-grid.php:131 loops/loop-user-grid.php:203
-#: loops/loop-user-list.php:78 loops/loop-user-list.php:137
-#: loops/loop-user-list.php:212 main.php:83
+#: loops/loop-search-list.php:136 loops/loop-user-grid.php:72
+#: loops/loop-user-grid.php:130 loops/loop-user-grid.php:202
+#: loops/loop-user-list.php:77 loops/loop-user-list.php:136
+#: loops/loop-user-list.php:211 main.php:83
 msgid "Delete"
 msgstr "Poista"
 
@@ -49,15 +49,15 @@ msgstr "Poista"
 msgid "Cancel"
 msgstr "Peruuta"
 
-#: common/head.php:83
+#: common/head.php:108
 msgid "Previous image"
 msgstr "Edellinen kuva"
 
-#: common/head.php:84
+#: common/head.php:109
 msgid "Next image"
 msgstr "Seuraava kuva"
 
-#: common/head.php:85
+#: common/head.php:110
 msgid "Close"
 msgstr "Sulje"
 
@@ -65,7 +65,7 @@ msgstr "Sulje"
 msgid "Contact us"
 msgstr "Ota yhteyttä"
 
-#: contact.php:59 item-send-friend.php:51 item-sidebar.php:91 item.php:245
+#: contact.php:59 item-send-friend.php:51 item-sidebar.php:91 item.php:251
 #: user-public-contact-form.php:44
 msgid "Your name"
 msgstr "Nimi"
@@ -88,7 +88,7 @@ msgstr "Aihe"
 msgid "Message"
 msgstr "Viesti"
 
-#: contact.php:101 item-send-friend.php:108 item-sidebar.php:142 item.php:278
+#: contact.php:101 item-send-friend.php:108 item-sidebar.php:142 item.php:284
 #: user-public-contact-form.php:84
 msgid "Send"
 msgstr "Lähetä"
@@ -97,239 +97,239 @@ msgstr "Lähetä"
 msgid "ie. PHP Programmer"
 msgstr "hakusana"
 
-#: functions.php:304
+#: functions.php:303
 msgid "Categories"
 msgstr "Työt ja palvelut"
 
-#: functions.php:402
+#: functions.php:401
 msgid "See more listings..."
 msgstr "Lisää . . ."
 
-#: functions.php:520 item-post.php:60
+#: functions.php:519 item-post.php:60
 msgid "Publish a listing"
 msgstr "Julkaise"
 
-#: functions.php:521
+#: functions.php:520
 msgid "Edit your listing"
 msgstr "Muokkaa ilmoitustasi"
 
-#: functions.php:522 item-send-friend.php:35
+#: functions.php:521 item-send-friend.php:35
 msgid "Send to a friend"
 msgstr "Lähetä ystävälle"
 
-#: functions.php:523 item-sidebar.php:74 user-public-contact-form.php:30
+#: functions.php:522 item-sidebar.php:74 user-public-contact-form.php:30
 msgid "Contact publisher"
 msgstr "Ota yhteyttä ilmoittajaan"
 
-#: functions.php:524
+#: functions.php:523
 msgid "Search results"
 msgstr "hakutulokset"
 
-#: functions.php:525
+#: functions.php:524
 #, php-format
 msgid "Search results: %s"
 msgstr "hakutulokset: %s"
 
-#: functions.php:526
+#: functions.php:525
 msgid "Dashboard"
 msgstr "instrumentbräda"
 
-#: functions.php:527
+#: functions.php:526
 #, php-format
 msgid "%s's profile"
 msgstr "%sn profiili"
 
-#: functions.php:528 functions.php:569
+#: functions.php:527 functions.php:568
 msgid "Account"
 msgstr "Käyttäjätili"
 
-#: functions.php:529 functions.php:574
+#: functions.php:528 functions.php:573
 msgid "Listings"
 msgstr "Ilmoitukset"
 
-#: functions.php:530
+#: functions.php:529
 msgid "Alerts"
 msgstr "varningar"
 
-#: functions.php:531 user-profile.php:29 user-profile.php:41
+#: functions.php:530 user-profile.php:29 user-profile.php:41
 msgid "Update account"
 msgstr "Päivitä käyttäjätili"
 
-#: functions.php:532 functions.php:584
+#: functions.php:531 functions.php:583
 msgid "Change email"
 msgstr "Vaihda sähköposti"
 
-#: functions.php:533 functions.php:589 user-change_username.php:36
+#: functions.php:532 functions.php:588 user-change_username.php:36
 msgid "Change username"
 msgstr "Vaihda käyttäjänimi"
 
-#: functions.php:534 functions.php:537 functions.php:594
+#: functions.php:533 functions.php:536 functions.php:593
 #: user-change_password.php:32 user-change_password.php:46
 #: user-forgot_password.php:52
 msgid "Change password"
 msgstr "Vaihda salasana"
 
-#: functions.php:535 header.php:65 item-sidebar.php:43
+#: functions.php:534 header.php:65 item-sidebar.php:43
 msgid "Login"
 msgstr "kirjaudu sisään"
 
-#: functions.php:536
+#: functions.php:535
 msgid "Recover password"
 msgstr "Palauta salasana"
 
-#: functions.php:538
+#: functions.php:537
 msgid "Create a new account"
 msgstr "Luo uusi käyttäjätili"
 
-#: functions.php:539 header.php:77 header.php:98
+#: functions.php:538 header.php:77 header.php:98
 msgid "Contact"
 msgstr "ota yhteyttä"
 
-#: functions.php:564
+#: functions.php:563
 msgid "Public Profile"
 msgstr "Julkinen Profiili"
 
-#: functions.php:599 user-sidebar.php:25
+#: functions.php:598 user-sidebar.php:29
 msgid "Delete account"
 msgstr "Poista käyttäjätili"
 
-#: functions.php:703
+#: functions.php:702
 msgid "Theme settings updated correctly"
 msgstr "Teeman asetukset päivitetty"
 
-#: functions.php:720 functions.php:726 functions.php:739
+#: functions.php:719 functions.php:725 functions.php:738
 msgid "Templates settings updated correctly"
 msgstr ""
 
-#: functions.php:749
+#: functions.php:748
 msgid "Ads management updated correctly"
 msgstr ""
 
-#: functions.php:757
+#: functions.php:756
 msgid "Category icons settings updated correctly"
 msgstr "Kategoriakuvake päivitetty"
 
-#: functions.php:769
+#: functions.php:768
 msgid "Theme color settings updated correctly"
 msgstr "Teeman väriasetus päivitetty"
 
-#: functions.php:785
+#: functions.php:784
 msgid "The favicon image has been uploaded correctly"
 msgstr ""
 
-#: functions.php:787 functions.php:805 functions.php:852
+#: functions.php:786 functions.php:804 functions.php:851
 msgid "An error has occurred, please try again"
 msgstr "Tapahtui virhe, yritä uudelleen"
 
-#: functions.php:803
+#: functions.php:802
 msgid "The logo image has been uploaded correctly"
 msgstr ""
 
-#: functions.php:817
+#: functions.php:816
 msgid "The favicon image has been removed"
 msgstr ""
 
-#: functions.php:819 functions.php:833 functions.php:865
+#: functions.php:818 functions.php:832 functions.php:864
 msgid "Image not found"
 msgstr "Kuvaa ei löydy"
 
-#: functions.php:831
+#: functions.php:830
 msgid "The logo image has been removed"
 msgstr ""
 
-#: functions.php:850
+#: functions.php:849
 msgid "The banner image has been uploaded correctly"
 msgstr ""
 
-#: functions.php:863
+#: functions.php:862
 msgid "The banner image has been removed"
 msgstr ""
 
-#: functions.php:892
+#: functions.php:891
 msgid "Raito -theme settings"
 msgstr ""
 
-#: functions.php:946 functions.php:988
+#: functions.php:945 functions.php:987
 msgid "All categories"
 msgstr "Kaikki ilmoitukset"
 
-#: functions.php:1112
+#: functions.php:1111
 msgid "Choose one category"
 msgstr "Valitse yksi työ tai palvelu"
 
-#: functions.php:1119
+#: functions.php:1118
 msgid "Title: this field is required"
 msgstr "Otsikko: Tämä kenttä on tarpeellinen"
 
-#: functions.php:1122
+#: functions.php:1121
 msgid "Title too short"
 msgstr "Otsikko on liian lyhyt"
 
-#: functions.php:1129
+#: functions.php:1128
 msgid "Description too short"
 msgstr "Kuvaus on liian lyhyt"
 
-#: functions.php:1134
+#: functions.php:1133
 msgid "Price: no more than 50 characters"
 msgstr "Hinta: korkeintaan 50 merkkiä"
 
-#: functions.php:1138
+#: functions.php:1137
 msgid "Currency: make your selection"
 msgstr "Valitse valuutta"
 
-#: functions.php:1142
+#: functions.php:1141
 msgid "Photo: must be png,gif,jpg,jpeg"
 msgstr "Valokuva: kelvolliset formaatit png,gif,jpg,jpeg"
 
-#: functions.php:1147
+#: functions.php:1146
 msgid "Name: this field is required"
 msgstr "Nimi: tämä kenttä on tarpeellinen"
 
-#: functions.php:1150
+#: functions.php:1149
 msgid "Name: enter at least 3 characters"
 msgstr "Nimi: vähintään kolme merkkiä"
 
-#: functions.php:1153
+#: functions.php:1152
 msgid "Name: no more than 35 characters"
 msgstr "Nimi: korkeintaan 35 merkkiä"
 
-#: functions.php:1158 user-change_email.php:92
+#: functions.php:1157 user-change_email.php:92
 msgid "Email: this field is required"
 msgstr "Sähkopostiosoite: tämä kenttä on tarpeellinen"
 
-#: functions.php:1161 user-change_email.php:93
+#: functions.php:1160 user-change_email.php:93
 msgid "Invalid email address"
 msgstr "Väärä sähköpostiosoite"
 
-#: functions.php:1166
+#: functions.php:1165
 msgid "Please select a country"
 msgstr "Valitse maa"
 
-#: functions.php:1171 functions.php:1197
+#: functions.php:1170 functions.php:1196
 msgid "Region: this field is required"
 msgstr "Alue: tämä kenttä on tarpeellinen"
 
-#: functions.php:1174
+#: functions.php:1173
 msgid "Region: enter at least 3 characters"
 msgstr "Alue: vähintään kolme merkkiä"
 
-#: functions.php:1177
+#: functions.php:1176
 msgid "Region: no more than 100 characters"
 msgstr "Alue: Ei enempää kuin 100 merkkiä"
 
-#: functions.php:1182 functions.php:1202
+#: functions.php:1181 functions.php:1201
 msgid "City: this field is required"
 msgstr "Kylä: tämä kenttä on tarpeellinen"
 
-#: functions.php:1185
+#: functions.php:1184
 msgid "City: enter at least 3 characters"
 msgstr "Kylä: vähintään kolme merkkiä"
 
-#: functions.php:1188
+#: functions.php:1187
 msgid "City: no more than 100 characters"
 msgstr "Kylä: ei enempää kuin 100 merkkiä"
 
-#: functions.php:1619
+#: functions.php:1618
 msgid "Users"
 msgstr ""
 
@@ -383,7 +383,7 @@ msgstr "%s - suosituimmat"
 msgid "Category"
 msgstr "työ tai palvelu"
 
-#: item-post.php:90 item.php:262
+#: item-post.php:90 item.php:268
 msgid "Title"
 msgstr "Otsikko"
 
@@ -396,47 +396,51 @@ msgid "Price"
 msgstr "Hinta"
 
 #: item-post.php:130
+msgid "drag & drop file (or click)"
+msgstr "vedä & pudota tiedosto (tai klikkaa)"
+
+#: item-post.php:139
 msgid "Listing Location"
 msgstr "Sijainti"
 
-#: item-post.php:135 user-profile.php:93
+#: item-post.php:144 user-profile.php:93
 msgid "Region"
 msgstr "Alue"
 
-#: item-post.php:156 user-profile.php:101
+#: item-post.php:165 user-profile.php:101
 msgid "City"
 msgstr "Kylä"
 
-#: item-post.php:175 user-profile.php:110 user-public-profile.php:80
+#: item-post.php:187 user-profile.php:110 user-public-profile.php:88
 msgid "Address"
 msgstr "Katuosoite"
 
-#: item-post.php:187
+#: item-post.php:199
 msgid "Seller's information"
 msgstr "Myyjän tiedot"
 
-#: item-post.php:191 user-profile.php:53 user-register.php:45
+#: item-post.php:203 user-profile.php:53 user-register.php:45
 msgid "Name"
 msgstr "Nimi"
 
-#: item-post.php:199 user-login.php:43 user-recover.php:43 user-register.php:53
+#: item-post.php:211 user-login.php:43 user-recover.php:43 user-register.php:53
 msgid "E-mail"
 msgstr "E-mail"
 
-#: item-post.php:209
+#: item-post.php:221
 msgid "Show e-mail on the listing page"
 msgstr "Näytä sähköpostini listausnäkymässä"
 
-#: item-post.php:227 user-change_email.php:73 user-change_password.php:83
+#: item-post.php:239 user-change_email.php:73 user-change_password.php:83
 #: user-change_username.php:121 user-profile.php:136
 msgid "Update"
 msgstr "Päivitä"
 
-#: item-post.php:227
+#: item-post.php:239
 msgid "Publish"
 msgstr "Julkaise"
 
-#: item-send-friend.php:59 item.php:253
+#: item-send-friend.php:59 item.php:259
 msgid "Your e-mail"
 msgstr "Sähköposti"
 
@@ -487,12 +491,12 @@ msgstr "Puhelinnumero"
 msgid "Attachment"
 msgstr "Liite"
 
-#: item.php:69 loops/loop-grid.php:95 loops/loop-list.php:97
+#: item.php:69 loops/loop-grid.php:104 loops/loop-list.php:106
 #: loops/loop-search-grid.php:70 loops/loop-search-grid.php:128
 #: loops/loop-search-list.php:72 loops/loop-search-list.php:134
-#: loops/loop-user-grid.php:71 loops/loop-user-grid.php:129
-#: loops/loop-user-grid.php:191 loops/loop-user-list.php:73
-#: loops/loop-user-list.php:135 loops/loop-user-list.php:199 main.php:81
+#: loops/loop-user-grid.php:70 loops/loop-user-grid.php:128
+#: loops/loop-user-grid.php:190 loops/loop-user-list.php:72
+#: loops/loop-user-list.php:134 loops/loop-user-list.php:198 main.php:81
 msgid "Edit item"
 msgstr "muokkaa ilmoitusta"
 
@@ -514,72 +518,72 @@ msgstr ""
 msgid "Image"
 msgstr "Kuva"
 
-#: item.php:192
+#: item.php:198
 msgid "Comments"
 msgstr "Kommentit"
 
-#: item.php:218
+#: item.php:224
 msgid "Delete your comment"
 msgstr "Poista kommenttisi"
 
-#: item.php:230
+#: item.php:236
 msgid "Leave your comment (spam and offensive messages will be removed)"
 msgstr "Jätä kommentti"
 
-#: item.php:270
+#: item.php:276
 msgid "Comment"
 msgstr "Kommentti"
 
-#: item.php:308
+#: item.php:314
 msgid "Mark as..."
 msgstr "Merkitse..."
 
-#: item.php:311
+#: item.php:317
 msgid "Mark as spam"
 msgstr "Merkitse roskapostiksi"
 
-#: item.php:314
+#: item.php:320
 msgid "Mark as misclassified"
 msgstr "Merkitse luokittelemattomaksi"
 
-#: item.php:317
+#: item.php:323
 msgid "Mark as duplicated"
 msgstr "Merkitse duplikaatiksi"
 
-#: item.php:320
+#: item.php:326
 msgid "Mark as expired"
 msgstr "Merkitse sulkeutuneeksi"
 
-#: item.php:323
+#: item.php:329
 msgid "Mark as offensive"
 msgstr "Merkitse loukkaavaksi"
 
-#: item.php:339
+#: item.php:345
 msgid "Related listings"
 msgstr "Samankaltaiset ilmoitukset"
 
-#: loops/loop-grid.php:96 loops/loop-list.php:98 loops/loop-search-grid.php:71
-#: loops/loop-search-grid.php:129 loops/loop-search-list.php:73
-#: loops/loop-search-list.php:135 loops/loop-user-grid.php:72
-#: loops/loop-user-grid.php:130 loops/loop-user-list.php:77
-#: loops/loop-user-list.php:136 main.php:82
+#: loops/loop-grid.php:105 loops/loop-list.php:107
+#: loops/loop-search-grid.php:71 loops/loop-search-grid.php:129
+#: loops/loop-search-list.php:73 loops/loop-search-list.php:135
+#: loops/loop-user-grid.php:71 loops/loop-user-grid.php:129
+#: loops/loop-user-list.php:76 loops/loop-user-list.php:135 main.php:82
 msgid "This action can not be undone. Are you sure you want to continue?"
 msgstr "Tätä toimintoa ei voi peruuttaa, haluatko varmasti jatkaa?"
 
-#: loops/loop-grid.php:101 loops/loop-list.php:103
+#: loops/loop-grid.php:110 loops/loop-list.php:112
 #: loops/loop-search-grid.php:76 loops/loop-search-grid.php:134
 #: loops/loop-search-list.php:78 loops/loop-search-list.php:140
-#: loops/loop-user-grid.php:77 loops/loop-user-grid.php:135
-#: loops/loop-user-grid.php:209 loops/loop-user-list.php:83
-#: loops/loop-user-list.php:141 loops/loop-user-list.php:218 main.php:87
+#: loops/loop-user-grid.php:76 loops/loop-user-grid.php:134
+#: loops/loop-user-grid.php:208 loops/loop-user-list.php:82
+#: loops/loop-user-list.php:140 loops/loop-user-list.php:217 main.php:87
 msgid "Activate"
 msgstr "Aktivoi"
 
-#: loops/loop-user-grid.php:199 loops/loop-user-list.php:208
+#: loops/loop-user-grid.php:198 loops/loop-user-list.php:207
 msgid "Delete item"
 msgstr "Poista ilmoitus"
 
-#: loops/loop-user-grid.php:199 loops/loop-user-list.php:208
+#: loops/loop-user-grid.php:198 loops/loop-user-list.php:207
 msgid "Are you sure?"
 msgstr "Oletko varma?"
 
@@ -619,7 +623,7 @@ msgstr "Min"
 msgid "Max"
 msgstr "Max"
 
-#: search-sidebar.php:99
+#: search-sidebar.php:101
 msgid "Apply"
 msgstr "ETSI"
 
@@ -737,11 +741,11 @@ msgstr "Maa"
 msgid "Website"
 msgstr "Kotisivu"
 
-#: user-public-profile.php:83
+#: user-public-profile.php:91
 msgid "Location"
 msgstr "Sijainti"
 
-#: user-public-profile.php:102
+#: user-public-profile.php:110
 msgid "Latest listings"
 msgstr "Viimeisimmät ilmoitukset"
 
@@ -765,7 +769,7 @@ msgstr "Virhe. Salasanat eivät täsmää"
 msgid "Create An Account"
 msgstr "Luo uusi käyttäjätili"
 
-#: user-sidebar.php:26
+#: user-sidebar.php:30
 msgid "Are you sure you want to delete your account?"
 msgstr "Oletko varma että haluat poistaa käyttäjätilisi?"
 
