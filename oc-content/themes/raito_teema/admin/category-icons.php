@@ -20,7 +20,7 @@
     <p>
       <?php _e('Choose custom icons for categories. The items from the category will take the related icons in google map.', raito_teema_THEME_FOLDER); ?>
       <br/>
-      <?php _e('We use <a style="color: #018be3; text-decoration: none;" title="Visit Font Awesome site for help" target="_blank" href="http://fortawesome.github.io/Font-Awesome/3.2.1/icons/">Font Awesome Icons.</a> Just type icon name omitting <strong>"icon-"</strong> eg. home or car.', raito_teema_THEME_FOLDER); ?>
+      <?php _e('We use <a style="color: #018be3; text-decoration: none;" title="Visit Font Awesome site for help" target="_blank" href="http://fortawesome.github.io/Font-Awesome/icons/">Font Awesome Icons.</a> Just type icon name omitting <strong>"icon-"</strong> eg. home or car.', raito_teema_THEME_FOLDER); ?>
     </p>
   </div>
 </div>
