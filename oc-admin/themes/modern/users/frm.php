@@ -275,7 +275,7 @@
                         <?php UserForm::city_select($cities, $user); ?>
                     </div>
                 </div>
-                <div class="form-row">
+                <!--<div class="form-row">
                     <div class="form-label"><?php _e('City area'); ?></div>
                     <div class="form-controls">
                         <?php UserForm::city_area_text($user); ?>
@@ -286,7 +286,7 @@
                     <div class="form-controls">
                         <?php UserForm::zip_text($user); ?>
                     </div>
-                </div>
+                </div> -->
                 <div class="form-row">
                     <div class="form-label"><?php _e('Address'); ?></div>
                     <div class="form-controls">

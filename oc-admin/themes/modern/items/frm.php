@@ -179,7 +179,8 @@ function customPageHeader() { ?>
                             </div>
                         <?php } ?>
 
-                        <?php if( osc_images_enabled_at_items() ) { ?>
+                        <?php if( osc_images_enabled_at_items() ) { ?>						
+						
                         <div class="photo_container">
                             <label><?php _e('Photos'); ?></label>
                             <?php ItemForm::photos(); ?>
@@ -221,28 +222,31 @@ function customPageHeader() { ?>
                             </div>
                         </div>
 
-                        <div class="well ui-rounded-corners input-separate-top">
+                        <div class="well ui-rounded-corners input-separate-top"
+						>
                             <h3 class="label"><?php _e('Location'); ?></h3>
-                            <div class="input-has-placeholder input-separate-top">
+                            <!--<div class="input-has-placeholder input-separate-top">
                                 <label><?php _e('Country'); ?></label>
                                 <?php ItemForm::country_select(); ?>
-                            </div>
+                            </div> -->
+							
                             <div class="input-has-placeholder input-separate-top">
                                 <label><?php _e('Region'); ?></label>
                                 <?php ItemForm::region_text(); ?>
                             </div>
-                            <div class="input-has-placeholder input-separate-top">
+                             <div class="input-has-placeholder input-separate-top">
                                 <label><?php _e('City'); ?></label>
                                 <?php ItemForm::city_text(); ?>
                             </div>
-                            <div class="input-has-placeholder input-separate-top">
+							
+                            <!--<div class="input-has-placeholder input-separate-top">
                                 <label><?php _e('City area'); ?></label>
                                 <?php ItemForm::city_area_text(); ?>
                             </div>
                             <div class="input-has-placeholder input-separate-top">
                                 <label><?php _e('Zip code'); ?></label>
                                 <?php ItemForm::zip_text(); ?>
-                            </div>
+                            </div> -->
                             <div class="input-has-placeholder input-separate-top">
                                 <label><?php _e('Address'); ?></label>
                                 <?php ItemForm::address_text(); ?>
