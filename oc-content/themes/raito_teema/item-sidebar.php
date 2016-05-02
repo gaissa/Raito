@@ -48,30 +48,30 @@
     <?php if( osc_item_user_id() != null ) { ?>
 	
 	
-    <div class="user-card">	
-  
+    <div class="user-card">	  
 	  
       <!--<figure><img class="img-responsive" src="http://www.gravatar.com/avatar/<?php echo md5( strtolower( trim( osc_user_email() ) ) ); ?>?s=400&d=<?php echo osc_current_web_theme_url('images/default.gif') ; ?>" /></figure> -->
 	  
     </div>
 	
-    <h1 class="name">
-	
-	<li><a class="see_all" href="<?php echo osc_user_public_profile_url( osc_item_user_id() ); ?>">
-            <?php _e('Profile and other items', raito_teema_THEME_FOLDER); ?>
-    </a> </li><hr>
+    <h1 class="name">	
 	
 	  <i class="fa fa-user"></i>
       <a href="<?php echo osc_user_public_profile_url( osc_item_user_id() ); ?>" ><?php echo osc_item_contact_name(); ?></a></h1>
 	    <?php profile_picture_show(); ?>
-		<br><br>
+		<br><hr>
 		
     <?php } else { ?>
     <h3 class="name"><i class="fa fa-user"></i><?php printf('%s', osc_item_contact_name()); ?></h3>
     <?php } ?>
-	<h5 class="name">
+	
+	<li><a class="profile_and_items" href="<?php echo osc_user_public_profile_url( osc_item_user_id() ); ?>">
+            <?php _e('Profile and other items', raito_teema_THEME_FOLDER); ?>
+    </a> </li><hr>
+	
+	 <div class="title">
     <?php _e("Contact publisher", raito_teema_THEME_FOLDER); ?>:
-  </h5>
+    </div>
     <?php if( osc_item_show_email() ) { ?>
     <p class="email"><?php printf(__('E-mail: %s', raito_teema_THEME_FOLDER), osc_item_contact_email()); ?></p>
     <?php } ?>
@@ -129,14 +129,14 @@
         </div>
       </div>
       <?php }; ?>
-	  
+	  <hr>
       <div class="form-group">
         <div class="controls">
           <?php
     		osc_run_hook('item_contact_form', osc_item_id());		  
 			osc_current_web_theme_path('google-recaptcha.php');
 		  ?>
-			
+		  
           <button type="submit" class="btn btn-success">
           <?php _e("Send", raito_teema_THEME_FOLDER);?>
           </button>
@@ -149,14 +149,3 @@
   </div>
   
 </div>
-
-<script>
-$(document).ready(function() {
-    console.log("ready!");
-
-	$( "body" ).click(function() {
-	  console.log("test");
-	});
-
-});
-</script>
