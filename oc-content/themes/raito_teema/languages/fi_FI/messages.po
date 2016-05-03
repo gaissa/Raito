@@ -8,7 +8,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2016-05-02 22:52+0300\n"
+"PO-Revision-Date: 2016-05-03 13:52+0300\n"
 "Last-Translator: Janne Kähkönen <jannekahkonen@gmail.com>\n"
 "Language-Team: Translations <translations@osclass.org>\n"
 "Language: fi_FI\n"
@@ -40,7 +40,7 @@ msgstr ""
 
 #: oc-admin/admins.php:77 oc-admin/admins.php:177
 msgid "Email invalid"
-msgstr "Virheellinen säköpostiosoite"
+msgstr "Virheellinen sähköpostiosoite"
 
 #: oc-admin/admins.php:81 oc-admin/admins.php:181
 msgid "Username invalid"
@@ -80,7 +80,7 @@ msgstr "Ylläpitäjää ei löydy"
 
 #: oc-admin/admins.php:198
 msgid "Existing email"
-msgstr "säköpostiosoite on jo käytössä"
+msgstr "sähköpostiosoite on jo käytössä"
 
 #: oc-admin/admins.php:205
 msgid "Existing username"
@@ -133,7 +133,7 @@ msgstr "Ongelmia teeman lisäyksessä"
 
 #: oc-admin/appearance.php:84
 msgid "Theme removed successfully"
-msgstr "Teema poisto onnistui"
+msgstr "Teema poistettu"
 
 #: oc-admin/appearance.php:86
 msgid "There was a problem removing the theme"
@@ -579,7 +579,7 @@ msgstr "%d ilmoitus ei ole enää merkitty roskapostiksi"
 
 #: oc-admin/items.php:200
 msgid "%d listing has been unmarked as missclassified"
-msgstr "%d ilmitus on merkitty luokittelemattomaksi"
+msgstr "%d ilmoitus on merkitty luokittelemattomaksi"
 
 #: oc-admin/items.php:217
 msgid "%d listing has been unmarked as duplicated"
@@ -843,7 +843,7 @@ msgstr ""
 
 #: oc-admin/pages.php:103
 msgid "The page has been updated"
-msgstr "Sivu päivitetty onnistuneesti"
+msgstr "Sivu on päivitetty"
 
 #: oc-admin/pages.php:108
 msgid "The page couldn't be updated, at least one title should not be empty"
@@ -993,7 +993,7 @@ msgstr ""
 
 #: oc-admin/tools.php:119 oc-admin/tools.php:151
 msgid "The folder is not writable"
-msgstr ""
+msgstr "Kohdekansioon ei voi kirjoittaa"
 
 #: oc-admin/tools.php:122 oc-admin/tools.php:154
 msgid "Backup completed successfully"
@@ -1033,19 +1033,19 @@ msgstr ""
 
 #: oc-admin/users.php:72
 msgid "The user has been created. We've sent an activation e-mail"
-msgstr ""
+msgstr "Käyttäjätili on luotu ja aktivointi on lähetetty"
 
 #: oc-admin/users.php:74
 msgid "The user has been created successfully"
-msgstr ""
+msgstr "Käyttäjätili luotu"
 
 #: oc-admin/users.php:76
 msgid "Sorry, but that e-mail is already in use"
-msgstr ""
+msgstr "Valitettavasti antamasi säköpostiosoite on jo käytössä"
 
 #: oc-admin/users.php:78 oc-includes/osclass/controller/user.php:111
 msgid "The specified e-mail is not valid"
-msgstr ""
+msgstr "Sähköpostiosoite ei ole kelvollinen"
 
 #: oc-admin/users.php:80
 msgid "Sorry, the password cannot be empty"
@@ -1057,12 +1057,12 @@ msgstr "Virhe, salasanat eivät täsmää"
 
 #: oc-admin/users.php:84 oc-includes/osclass/controller/register.php:97
 msgid "Username is already taken"
-msgstr ""
+msgstr "Käyttäjänimi on jo käytössä"
 
 #: oc-admin/users.php:86 oc-includes/osclass/controller/register.php:100
 #: oc-includes/osclass/controller/user.php:159
 msgid "The specified username is not valid, it contains some invalid words"
-msgstr ""
+msgstr "Käyttäjänimi ei kelpaa se sisältää vieraita merkkejä"
 
 #: oc-admin/users.php:88 oc-admin/users.php:150
 #: oc-includes/osclass/controller/register.php:103
@@ -1072,7 +1072,7 @@ msgstr "Nimi ei voi olla tyhjä"
 
 #: oc-admin/users.php:90
 msgid "There was some error"
-msgstr ""
+msgstr "Tapahtui virhe"
 
 #: oc-admin/users.php:141 oc-includes/osclass/controller/register.php:94
 #: oc-includes/osclass/controller/user.php:190
@@ -1081,7 +1081,7 @@ msgstr "Virhe salasanat eivät täsmää"
 
 #: oc-admin/users.php:144
 msgid "The user has been updated and activated"
-msgstr ""
+msgstr "Käyttäjä on päivitetty ja aktivoitu"
 
 #: oc-admin/users.php:147
 msgid "E-mail is already in used by another user"
@@ -1103,47 +1103,47 @@ msgstr "Käyttäjiä ei ole valittu"
 
 #: oc-admin/users.php:178
 msgid "Activation email sent to one user"
-msgstr "Aktivointisäköposti lähetetty käyttäjälle"
+msgstr "Aktivointisähköposti lähetetty käyttäjälle"
 
 #: oc-admin/users.php:199
 msgid "No users have been activated"
-msgstr ""
+msgstr "Käyttäjiä ei aktivoitu"
 
 #: oc-admin/users.php:201
 msgid "One user has been activated"
-msgstr ""
+msgstr "Yksi käyttäjä on aktivoitu"
 
 #: oc-admin/users.php:224
 msgid "No users have been deactivated"
-msgstr ""
+msgstr "Käyttäjiä ei poistettu käytöstä"
 
 #: oc-admin/users.php:226
 msgid "One user has been deactivated"
-msgstr ""
+msgstr "Yks käyttäjä on poistettu käytöstä"
 
 #: oc-admin/users.php:248
 msgid "No users have been enabled"
-msgstr ""
+msgstr "Käyttäjiä ei lisätty"
 
 #: oc-admin/users.php:250
 msgid "One user has been unblocked"
-msgstr ""
+msgstr "Yksi käyttäjä on estetty"
 
 #: oc-admin/users.php:272
 msgid "No users have been disabled"
-msgstr ""
+msgstr "Käyttäjiä ei estetty"
 
 #: oc-admin/users.php:274
 msgid "One user has been blocked"
-msgstr ""
+msgstr "Yksi käyttäjä on estetty"
 
 #: oc-admin/users.php:299
 msgid "No users have been deleted"
-msgstr ""
+msgstr "Käyttäjiä ei poistettu"
 
 #: oc-admin/users.php:301
 msgid "One user has been deleted"
-msgstr ""
+msgstr "Yksi käyttäjä poistettiin"
 
 #: oc-admin/users.php:312 oc-admin/users.php:346
 msgid "Alert id isn't in the correct format"
@@ -1200,7 +1200,7 @@ msgstr ""
 #: oc-includes/osclass/ItemActions.php:91
 #: oc-includes/osclass/ItemActions.php:304
 msgid "Image with an incorrect extension."
-msgstr "Kuvatiedostossa on väärä pääte"
+msgstr "Kuvatiedostossa on väärä tiedoston pääte"
 
 #: oc-includes/osclass/ItemActions.php:94
 #: oc-includes/osclass/ItemActions.php:307
@@ -1241,7 +1241,7 @@ msgstr "Liian monta numeroa"
 #: oc-includes/osclass/ItemActions.php:133
 #: oc-includes/osclass/ItemActions.php:341
 msgid "Price must be positive number."
-msgstr "Hinnan on oltava positiivinen"
+msgstr "hinta ei voi olla miinusmerkkinen"
 
 #: oc-includes/osclass/ItemActions.php:134
 msgid "Name too long."
@@ -1379,7 +1379,7 @@ msgstr "Sinulla ei ole kuvan käyttöoikeuksia"
 #: oc-includes/osclass/controller/item.php:442
 #: oc-includes/osclass/controller/user-non-secure.php:148
 msgid "The Recaptcha code is wrong"
-msgstr ""
+msgstr "Kuvantunnistus meni väärin"
 
 #: oc-includes/osclass/controller/contact.php:52
 #: oc-includes/osclass/controller/contact.php:61
@@ -1436,7 +1436,7 @@ msgstr "Ilmoiduksen ID tunnistetta ei löydy"
 
 #: oc-includes/osclass/controller/item.php:240
 msgid "Great! We've just updated your listing"
-msgstr "Onnistui, ilmoituksesi on päivitetty"
+msgstr "ilmoituksesi on päivitetty"
 
 #: oc-includes/osclass/controller/item.php:267
 msgid "The listing has been validated"
@@ -1542,6 +1542,7 @@ msgstr ""
 msgid ""
 "The listing hasn't been enabled. Please enable it in order to make it public"
 msgstr ""
+"Ilmoitusta ei le aktivoitu. Sinun on aktivoitava se julkaistaaksesi sen"
 
 #: oc-includes/osclass/controller/login.php:26
 #: oc-includes/osclass/controller/register.php:27
@@ -1608,7 +1609,7 @@ msgstr "olemme lähettäneet sinulle sähköpostiin ohjeet salasanasi uusimiseen
 
 #: oc-includes/osclass/controller/login.php:185
 msgid "We were not able to identify you given the information provided"
-msgstr ""
+msgstr "Emme tunnistaneet sinua"
 
 #: oc-includes/osclass/controller/login.php:189
 msgid "The recaptcha code is wrong"
@@ -1629,11 +1630,11 @@ msgstr ""
 
 #: oc-includes/osclass/controller/register.php:70
 msgid "The user has been created. An activation email has been sent"
-msgstr "Käyttäjätili on lisätty. Tilin aktivointi säköposti on lähetetty"
+msgstr "Käyttäjä lisätty. Aktivointi lähetetty sähköpostiin"
 
 #: oc-includes/osclass/controller/register.php:73
 msgid "Your account has been created successfully"
-msgstr "Käyttäjätilisi on luotu onnistuneesti"
+msgstr "Käyttäjätilisi on luotu"
 
 #: oc-includes/osclass/controller/register.php:82
 #: oc-includes/osclass/controller/user.php:135
@@ -1666,7 +1667,7 @@ msgstr "Tilisi on vahvistettu"
 
 #: oc-includes/osclass/controller/user-non-secure.php:52
 msgid "Your email has been changed successfully"
-msgstr "Sähköpostiosoitteesi on vaihdettu onnistuneesti"
+msgstr "Sähköpostiosoitteesi on vaihdettu"
 
 #: oc-includes/osclass/controller/user-non-secure.php:81
 #: oc-includes/osclass/controller/user.php:227
@@ -1695,7 +1696,7 @@ msgstr ""
 
 #: oc-includes/osclass/controller/user-non-secure.php:167
 msgid "Your email has been sent properly."
-msgstr "Sähköpostiviestisi on lähetetty onnistuneesti"
+msgstr "Sähköpostiviestisi on lähetetty"
 
 #: oc-includes/osclass/controller/user.php:79
 msgid "Your profile has been updated successfully"

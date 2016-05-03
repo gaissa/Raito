@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Raito\n"
-"POT-Creation-Date: 2016-05-02 22:52+0300\n"
-"PO-Revision-Date: 2016-05-02 22:53+0300\n"
+"POT-Creation-Date: 2016-05-03 14:14+0300\n"
+"PO-Revision-Date: 2016-05-03 14:15+0300\n"
 "Last-Translator: Janne Kähkönen <jannekahkonen@gmail.com>\n"
 "Language-Team: Janne Kähkönen <jannekahkonen@gmail.com>\n"
 "Language: fi_FI\n"
@@ -65,12 +65,12 @@ msgstr "Sulje"
 msgid "Contact us"
 msgstr "Ota yhteyttä"
 
-#: contact.php:59 item-send-friend.php:51 item-sidebar.php:91 item.php:251
+#: contact.php:59 item-send-friend.php:51 item-sidebar.php:90 item.php:251
 #: user-public-contact-form.php:44
 msgid "Your name"
 msgstr "Nimi"
 
-#: contact.php:61 contact.php:79 item-sidebar.php:109
+#: contact.php:61 contact.php:79 item-sidebar.php:108
 #: user-public-contact-form.php:62
 msgid "optional"
 msgstr "valinnainen"
@@ -83,12 +83,12 @@ msgstr "Sähköpostisi"
 msgid "Subject"
 msgstr "Aihe"
 
-#: contact.php:87 item-send-friend.php:93 item-sidebar.php:117
+#: contact.php:87 item-send-friend.php:93 item-sidebar.php:116
 #: user-public-contact-form.php:70
 msgid "Message"
 msgstr "Viesti"
 
-#: contact.php:101 item-send-friend.php:108 item-sidebar.php:142 item.php:284
+#: contact.php:101 item-send-friend.php:108 item-sidebar.php:141 item.php:284
 #: user-public-contact-form.php:84
 msgid "Send"
 msgstr "Lähetä"
@@ -99,7 +99,7 @@ msgstr "hakusana"
 
 #: functions.php:303
 msgid "Categories"
-msgstr "Työt ja palvelut"
+msgstr "Näin palvelemme teitä"
 
 #: functions.php:401
 msgid "See more listings..."
@@ -117,7 +117,7 @@ msgstr "Muokkaa ilmoitustasi"
 msgid "Send to a friend"
 msgstr "Lähetä ystävälle"
 
-#: functions.php:522 item-sidebar.php:74 user-public-contact-form.php:30
+#: functions.php:522 item-sidebar.php:73 user-public-contact-form.php:30
 msgid "Contact publisher"
 msgstr "Ota yhteyttä ilmoittajaan"
 
@@ -397,7 +397,7 @@ msgstr "Hinta"
 
 #: item-post.php:130
 msgid "drag & drop file (or click)"
-msgstr "vedä & pudota tiedosto (tai klikkaa)"
+msgstr "vedä & pudota (tai klikkaa)"
 
 #: item-post.php:139
 msgid "Listing Location"
@@ -470,24 +470,24 @@ msgid ""
 msgstr ""
 "Du måste logga in eller registrera ett nytt konto för att kontakta annonsören"
 
-#: item-sidebar.php:70
+#: item-sidebar.php:69
 msgid "Profile and other items"
 msgstr "Julkaisijan profiili ja ilmoitukset"
 
-#: item-sidebar.php:77
+#: item-sidebar.php:76
 #, php-format
 msgid "E-mail: %s"
 msgstr "E-mail: %s"
 
-#: item-sidebar.php:99
+#: item-sidebar.php:98
 msgid "Your e-mail address"
 msgstr "Sähköposti"
 
-#: item-sidebar.php:107 user-public-contact-form.php:60
+#: item-sidebar.php:106 user-public-contact-form.php:60
 msgid "Phone number"
 msgstr "Puhelinnumero"
 
-#: item-sidebar.php:126
+#: item-sidebar.php:125
 msgid "Attachment"
 msgstr "Liite"
 
