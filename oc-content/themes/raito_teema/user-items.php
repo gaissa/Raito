@@ -27,11 +27,11 @@
     osc_current_web_theme_path('header.php') ;
 	
 	if(raito_teema_show_as() == 'gallery'){
-        $loop_template	=	'loop-user-grid.php';
+        $loop_template	=	'./loops/loop-user-grid.php';
 		$listClass = 'listing-grid';
         $buttonClass = 'active';
     }else{
-		$loop_template	=	'loop-user-list.php';
+		$loop_template	=	'./loops/loop-user-list.php';
 		$listClass = '';
 		$buttonClass = '';
 	}

@@ -28,19 +28,15 @@
 	
 	osc_current_web_theme_path('header.php');
 	
-	$loop_template = 'loop-user-public-list.php';	
+	$loop_template = './loops/loop-user-public-list.php';	
 	
     $address = '';
 	
     if(osc_user_address()!='') {
-        if(osc_user_city_area()!='') {
-            $address = osc_user_address().", ".osc_user_city_area();
-        } else {
-            $address = osc_user_address();
-        }
-    } else {
-        $address = osc_user_city_area();
-    }
+     
+        $address = osc_user_address();        
+    } 
+	
     $location_array = array();
     if(trim(osc_user_city()." ".osc_user_zip())!='') {
         $location_array[] = trim(osc_user_city()." ".osc_user_zip());
@@ -48,9 +44,9 @@
     if(osc_user_region()!='') {
         $location_array[] = osc_user_region();
     }
-    if(osc_user_country()!='') {
-        $location_array[] = osc_user_country();
-    }
+    #if(osc_user_country()!='') {
+        #$location_array[] = osc_user_country();
+    #}
     $location = implode(", ", $location_array);
     unset($location_array);
 
@@ -59,9 +55,7 @@
 <div class="row">
 <div class="col-sm-8 col-md-9">
   
-    <div class="user-card">
-	
-	
+    <div class="user-card">	
 	  
       <ul id="user_data">
         <li class="name">        
@@ -71,12 +65,22 @@
 			<?php echo osc_user_name(); ?>
 			</h3>
 			<?php profile_picture_show(); ?>
+			<br><br>
 			<p><?php echo nl2br(osc_user_info());?> </p>
 		
         </li>
+		<hr>
+		
+		<?php if( osc_user_email() !== '' ) { ?>
+        <li class="email"><i class="fa fa-envelope"></i> <strong><a target="_blank" href="<?php echo osc_user_email(); ?>"> <?php echo osc_user_email() ; ?></a></strong> 
+        <?php } ?>
+		
+		<?php if( osc_user_phone_mobile() !== '' ) { ?>
+        &bull; <i class="fa fa-phone-square"></i> <strong><a target="_blank" href="<?php echo osc_user_phone_mobile(); ?>"> <?php echo osc_user_phone_mobile(); ?></a></strong></li>
+        <?php } ?>
 		
         <?php if( osc_user_website() !== '' ) { ?>
-        <li class="website"><i class="fa fa-link"></i> <strong><a target="_blank" href="<?php echo osc_user_website(); ?>"><?php echo osc_user_website(); ?></a></strong></li>
+        <li class="website"><i class="fa fa-external-link"></i> <strong><a target="_blank" href="<?php echo osc_user_website(); ?>"><?php echo osc_user_website(); ?></a></strong></li>
         <?php } ?>
 		
 		<br>
@@ -87,11 +91,12 @@
         <li class="location"><i class="fa fa-location-arrow"></i> <strong><?php _e('Location', raito_teema_THEME_FOLDER);?>:</strong><br><?php echo  $location; ?></li>
         <?php } ?>
       </ul>
-    </div> 	  
+    </div> 
+    <br>
 	
       <?php     
 	  
-	  osc_current_web_theme_path('user-public-sidebar.php'); 
+	  osc_current_web_theme_path('user-public-contact-form.php'); 
 	  
 	  ?>	
 	  
