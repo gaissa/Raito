@@ -13,7 +13,6 @@ favicon.ico
 robots.txt
 .htaccess
 /*.php
-oc-content/themes/raito_teema/sass
 oc-content/themes/raito_teema/TEMP
 oc-content/plugins/profile_picture/images/*
 
