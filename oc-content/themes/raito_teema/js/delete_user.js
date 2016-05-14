@@ -1,6 +1,7 @@
 $(document).ready(function(){
     $(".opt_delete_account a").click(function(){
         $("#dialog-delete-account").dialog('open');
+		return false;
     });
 
     $("#dialog-delete-account").dialog({
