@@ -30,7 +30,6 @@ define('raito_teema_THEME_FOLDER', 'raito_teema');
 if (!osc_get_preference('keyword_placeholder', 'raito_teema_theme')) {
     osc_set_preference('keyword_placeholder', osc_esc_html(__('ie. PHP Programmer', raito_teema_THEME_FOLDER)), 'raito_teema_theme');
 }
-osc_enqueue_style('font-awesome', osc_current_web_theme_url('css/font-awesome/css/font-awesome.min.css'));
 
 // used for date/dateinterval custom fields
 osc_enqueue_script('php-date');
@@ -524,7 +523,7 @@ if (!function_exists('get_breadcrumb_lang')) {
         $lang['search']                 = __('Search results', raito_teema_THEME_FOLDER);
         $lang['search_pattern']         = __('Search results: %s', raito_teema_THEME_FOLDER);
         $lang['user_dashboard']         = __('Dashboard', raito_teema_THEME_FOLDER);
-        $lang['user_dashboard_profile'] = __("%s's profile", raito_teema_THEME_FOLDER);
+        $lang['user_dashboard_profile'] = __("%s | profile", raito_teema_THEME_FOLDER);
         $lang['user_account']           = __('Account', raito_teema_THEME_FOLDER);
         $lang['user_items']             = __('Listings', raito_teema_THEME_FOLDER);
         $lang['user_alerts']            = __('Alerts', raito_teema_THEME_FOLDER);
@@ -1560,7 +1559,7 @@ function cust_search_keyword_wildcard_with_username($params) {
         $pattern = $query_elements['sPattern'];
 
 
-        $query_elements['sPattern'] = str_replace(' ', '* ', $pattern) . '*';	
+        $query_elements['sPattern'] = str_replace(' ', '* ', $pattern) . '*';
 
         $mSearch->setJsonAlert($query_elements);
 
