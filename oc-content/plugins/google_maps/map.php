@@ -66,12 +66,12 @@ if($item['d_coord_lat'] != '' && $item['d_coord_long'] != '') {
 				$addr[] = $item['s_address'];
 			}			
             
-			if( ( $item['s_city'] == '' ) ) {
+			#if( ( $item['s_city'] == '' ) ) {
 				$addr[] = "Rovaniemi";
-			}
-			else if( ( $item['s_city'] != '' ) && ( $item['s_city'] != null ) ) {
-				$addr[] = $item['s_city'];
-			}
+			#}
+			#else if( ( $item['s_city'] != '' ) && ( $item['s_city'] != null ) ) {
+				#$addr[] = $item['s_city'];
+			#}
 			
             #if( ( $item['s_city_area'] != '' ) && ( $item['s_city_area'] != null ) ) {
 				#$addr[] = $item['s_city_area'];
