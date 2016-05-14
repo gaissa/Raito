@@ -32,8 +32,7 @@ $cols = 4;
 
 <div class="toolbars toolbar"><span class="sorting"> <a href="<?php echo osc_user_list_items_url(); ?>?sShowAs=list" class="list-button <?php if(raito_teema_show_as()=='list')echo "active"; ?>" data-class-toggle="listing-grid" data-destination="#listing-card-list"><span> <i class="fa fa-th-list"></i> </span></a> <a href="<?php echo osc_user_list_items_url(); ?>?sShowAs=gallery" class="grid-button <?php if(raito_teema_show_as()=='gallery') echo "active"; ?>" data-class-toggle="listing-grid" data-destination="#listing-card-list"><span> <i class="fa fa-th-large"></i></span></a> </span> </div>
 <div id="listing-card-list" class="listing-card-list listings_grid listings_grids">
-<?php
-	$i = 0;
+<?php	
 	
 	//latest items
 	if($type == 'latestItems'){

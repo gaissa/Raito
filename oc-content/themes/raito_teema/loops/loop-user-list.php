@@ -30,8 +30,7 @@ if(View::newInstance()->_exists('listType')){
 <div class="toolbar toolbars"><span class="sorting"> <a href="<?php echo osc_user_list_items_url(); ?>?sShowAs=list" class="list-button <?php if(raito_teema_show_as()=='list')echo "active"; ?>" data-class-toggle="listing-grid" data-destination="#listing-card-list"><span> <i class="fa fa-th-list"></i> </span></a> <a href="<?php echo osc_user_list_items_url(); ?>?sShowAs=gallery" class="grid-button <?php if(raito_teema_show_as()=='gallery') echo "active"; ?>" data-class-toggle="listing-grid" data-destination="#listing-card-list"><span> <i class="fa fa-th-large"></i></span></a> </span> </div>
 <ul class="listing-card-list" id="listing-card-list">
   <?php
-	$i = 0;
-	
+		
 	//latest items
 	if($type == 'latestItems'){
 
